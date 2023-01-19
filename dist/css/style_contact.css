@@ -68,9 +68,8 @@ h1 {
     font-size: 64px;
     background: none;
 }
-h2 {
-    font-size: 2px;
-}
+
+
 p {
     font-size: 20px;
     width: 40%;
@@ -110,15 +109,15 @@ p {
     mix-blend-mode: overlay;
 }
 /* SECTION: CONTACT FORM */
-h3{
+h2{
     position:absolute;
-    top: 150px;
-    left: 50px;
+    top: 160px;
+    left: 55px;
    z-index: 5;
     color: rgb(5, 255, 234);
     font-size: 36px;
 }
-.newsletter{
+.sendmail{
     position:absolute;
     top: 200px;
     left: 50px;
@@ -140,7 +139,7 @@ input[type="email"]{
     color:black;
 }
 /* SUBSCRIBE BUTTON */
-.newsletter button{
+.sendmail button{
     position: absolute;
     top:9px;
     width: 120px;
