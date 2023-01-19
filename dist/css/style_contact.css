@@ -82,6 +82,7 @@ p {
     background:black;
     padding: 7px;
     outline:auto;
+    display: none;
 }
 .showcase .text {
     position: absolute;
