@@ -65,10 +65,11 @@ header .highlight, header .current a
  font-weight:bold;
 }
 h1 {
+    margin:0;
     font-size: 64px;
+    font-style: italic;
     background: none;
 }
-
 
 p {
     font-size: 20px;
@@ -111,9 +112,9 @@ p {
 /* SECTION: CONTACT FORM */
 h2{
     position:absolute;
-    top: 120px;
+    top: 160px;
     left: 55px;
-   z-index: 5;
+    z-index: 5;
     color: rgb(5, 255, 234);
     font-size: 36px;
 }
