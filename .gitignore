@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 core.Microsoft*
 core.mongo*
 core.python*
@@ -7,3 +8,6 @@ __pycache__/
 node_modules/
 .github/
 cloudinary_python.txt
+=======
+node_modules
+>>>>>>> f197455480ceb6ac3d7a94386f85496073c08a39
