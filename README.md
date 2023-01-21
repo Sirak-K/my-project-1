@@ -25,3 +25,6 @@ Improvements:
 -> Page: About
 -- Increase readability of captions under box-images. 
 -- Adjust text from wikipedia to not be copy-paste.
+
+Notes on design for Page: About
+-- No video to reduce distraction from value propositions & website features.
