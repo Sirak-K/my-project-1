@@ -31,6 +31,8 @@ header{
 #branding{
     position:relative;
     left: 30px;
+    padding-right: 5px;
+    outline: auto;
     float:left;
     margin: 10px;
 }
