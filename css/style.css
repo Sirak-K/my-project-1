@@ -40,6 +40,8 @@ h1{
     /* margin:0; */
     font-size: 64px;
     font-style: italic;
+    padding-right: 5px;
+    outline: auto;
 }
 h2{
     margin:0;
