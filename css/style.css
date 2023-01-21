@@ -32,13 +32,11 @@ header{
     left: 30px;
     float:left;
     margin: 10px;
-    outline: auto;
 }
 h1{
     font-size: 64px;
     font-style: italic;
     padding-right: 5px;
-    outline: auto;
 }
 h2{
     margin:0;
