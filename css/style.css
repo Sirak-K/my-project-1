@@ -5,7 +5,7 @@
     font-family: 'Rajdhani', sans-serif;
     color: rgb(255, 255, 255);
     box-sizing: border-box;
-    overflow:hidden;
+   
     margin:0;
     padding:0;
 }
@@ -31,8 +31,6 @@ header{
 #branding{
     position:relative;
     left: 30px;
-    padding-right: 5px;
-    outline: auto;
     float:left;
     margin: 10px;
 }
