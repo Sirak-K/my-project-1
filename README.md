@@ -17,11 +17,11 @@ Upcoming features:
 
 Improvements:
 
-Page: All
-- Add social media links
-- Add footer.
-- Position nav-bar more to the left.
+-> Page: All
+-- Add social media links
+-- Add footer.
+-- Position nav-bar more to the left.
 
-Page: About
-- Increase readability of captions under box-images. 
-
+-> Page: About
+-- Increase readability of captions under box-images. 
+-- Adjust text from wikipedia to not be copy-paste.
