@@ -19,6 +19,7 @@
     justify-content: space-between; /* equal distr. */
     align-items: center;
     z-index: 2;
+    display:none;
 }
 .container{
     min-height: 100px;
