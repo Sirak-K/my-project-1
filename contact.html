@@ -36,13 +36,14 @@
 <!--NEWSLETTER-->
 <h2>Send an Email</h2>
 <div class="sendmail">
-        <form>
-        <input type="email" placeholder="Enter Email..." required>
+        <form id="formEmail">
+        <input type="email" id="validateEmail" placeholder="Enter Email..." required>
         <button type="submit" class="button" onclick="audio.play();">Send</button>
         <script>
             const audio = new Audio (); audio.src="./audio/Percz (38).mp3"
         </script>
     </form>
+    <div class="invalid-input"></div>
 </div>
 
 

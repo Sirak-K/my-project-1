@@ -197,3 +197,7 @@ header h1 {
 }
 }
  
+#invalid-input {
+    color:red;
+    display: none;
+}
