@@ -18,7 +18,6 @@
     display:flex;
     justify-content: space-between; /* equal distr. */
     align-items: center;
-    z-index: 2;
 }
 .container{
     min-height: 100px;
@@ -151,12 +150,65 @@ input[type="email"]{
     color:cyan;
 }
 
- /* RESPONSIVENESS: MEDIA QUERIES */
- @media (max-width: 768px){
-   /* RESPONSIVENESS - MEDIA QUERIES */
-@media (max-width: 768px){
+/* -------------- FOOTER -------------- */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #0f0c0c;
+    min-height: 120px;
+    margin: 0;
+}
+.cv-pdf i {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding-left: 5px;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+.cv-pdf i:hover {
+    color: rgb(50, 252, 10);
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-top: 5px;
+}
+.social-links li a i {
+    margin: 0 10px;
+    width:64px;
+    height: 64px;
+    padding: 24px 0;
+    border-radius: 50%;
+    font-size: 36px;
+    line-height: 16px;
+    text-align: center;
+    color: white;
+    background-color: rgb(35, 0, 236);
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
     
-    header #branding
+}
+.social-links li a i:hover {
+    background:greenyellow;
+    color: black;
+}
+#footer-details {
+    padding: 20px;
+    border: solid 1px cyan;
+}
+
+/* RESPONSIVENESS - MEDIA QUERIES */
+@media (max-width: 768px){
+
+header #branding
 {
     position:relative;
     right:100px;
@@ -165,20 +217,17 @@ input[type="email"]{
     text-align: center;
     width: 100%;
 }
-
 header h1 {
     position:relative;
     bottom: 10px;
     font-size:52px;
 }
-
-   header nav,
-   header nav li
+header nav,
+header nav li
 {
     position: relative;
     bottom: 20px;
     left: 50px;
-    /* outline: auto; */
    margin:0;
    float:none;
    text-align: center;
@@ -186,17 +235,16 @@ header h1 {
    min-height: 200px;
    display:inline;
 }
-   header a {
+header a {
     font-size:28px;
 }
 }
-    h3 {
+h3 {
     margin-left:5px;
     margin-top: 15px;
     font-size: 36px;
 }
-}
- 
+
 #invalid-input {
     color:red;
     display: none;
