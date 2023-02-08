@@ -50,7 +50,7 @@ header nav{
     background-color: rgb(0, 0, 0);
     margin-top:30px;
     display:flex;
-    width: 40%;
+    width: 100%;
     justify-content: space-evenly;
     float: right;
     position:relative;
@@ -151,7 +151,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #0f0c0c;
+    background-color: black;
     min-height: 120px;
     margin: 0;
 }
@@ -204,39 +204,46 @@ footer {
 
  /* RESPONSIVENESS: MEDIA QUERIES */
 @media (max-width: 768px){
-    header #branding
+    #branding
 {
-    position:relative;
-    right:100px;
+    position: relative;
+    top: 5px;
     margin:0;
-    float:none;
+    padding: 0;
+    height: 70px;
+    width: 80%;
     text-align: center;
-    width: 100%;
+    /* outline: auto yellow; */
 }
-   header nav,
-   header nav li
-{
-   margin:0;
-   float:none;
-   text-align: center;
-   width: 100%;
-   min-height: 200px;
-   display:inline;
-   outline: auto;
+header {
+    height: 140px;
+    background-color: grey;
 }
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    height: 130px;
+    
+    /* outline: auto red; */
+}
+ul {
+    position: relative;
+    bottom: 20px;
+    height: 100px;
+    margin: 2px;
+    padding: 2px;
+    margin-top: 20px;
+    
+}
+
    header a {
-    font-size:24px;
+    font-size:36px;
+    
 }
    .showcase h3,
    .showcase h2 {
-    position: relative;
-    bottom: 20px;
-    font-size: 48px;
-}
-   header #branding {
-    position:relative;
-    left:1px;
-    float:left;
+    font-size: 52px;
 }
 }
 
