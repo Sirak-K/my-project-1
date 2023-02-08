@@ -5,6 +5,7 @@
     font-family: 'Rajdhani', sans-serif;
     color: rgb(255, 255, 255);
     box-sizing: border-box;
+    overflow: hidden;
     margin:0;
     padding:0;
 }
@@ -33,7 +34,15 @@ header{
     float:left;
     margin: 10px;
 }
+<<<<<<< HEAD:dist/css/style_contact.css
 
+=======
+h1{
+    font-size: 64px;
+    font-style: italic;
+    padding-right: 5px;
+}
+>>>>>>> 9e0cdb406adf716dda67af6dee0fc3a1db6fddc6:css/style_contact.css
 header nav{
     background-color: rgb(0, 0, 0);
     float:right;
@@ -66,6 +75,10 @@ h1 {
     font-style: italic;
     background: none;
 }
+<<<<<<< HEAD:dist/css/style_contact.css
+=======
+
+>>>>>>> 9e0cdb406adf716dda67af6dee0fc3a1db6fddc6:css/style_contact.css
 p {
     font-size: 20px;
     width: 40%;
