@@ -79,7 +79,6 @@ header .highlight, header .current a
     font-size: 54px;
 }
 .showcase video{
-    /* display:none; */
     position:absolute;
     top: 0;
     left: 0;
