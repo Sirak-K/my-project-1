@@ -70,6 +70,7 @@ CSS: Jigsaw
 7) CREDITS
 
 MEDIA: IMAGES
+
 -- Page: About
 
 BG-Image: Vackground, Unsplash.com
