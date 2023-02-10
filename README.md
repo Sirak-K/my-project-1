@@ -1,30 +1,52 @@
 # my-project-1
-Based on Code Inst. template
-
+1) INTRO
 Website: NeuroGen
 Description: NeuroGen is a website/blog that provides information about nootropics and bio-hacking.
 
-Website - Overview
+2) EXISTING FEATURES
+- NAVIGATION BAR
+--> The navbar is identical on all the site's pages with clear color contrast for ease of navigation.
+- LANDING PAGE
+--> The landing page for this site consists of a video playing in the background to emphasize the purpose and direction of the design, which is science-oriented.
+- FOOTER
+--> The footer consists of links to social media pages.
 
-![Presentation Image 1 - Homepage](https://user-images.githubusercontent.com/122515678/213641366-a44fc399-3abb-4139-9f06-9324d3ad7081.png)
-![Presentation Image 2 - About](https://user-images.githubusercontent.com/122515678/213641371-a52d7e7b-dd6e-483f-826c-065879fc81c8.png)
-![Presentation Image 3 - Contact](https://user-images.githubusercontent.com/122515678/213641372-2813e83e-384c-429d-871a-b940601628f4.png)
+3) FEATURES LEFT TO IMPLEMENT
+- SIGN UP PAGE
+--> An user will be able to store their items, bookmark articles (about nootropics) and make their own customized book-collection.
+- SHOP
+--> An user will be able to buy nootropics and books from NeuroGen.
 
-Upcoming features:
-- Forum
-- Learning apps
-- Shop
+4) TESTING / RESPONSIVENESS / BUGS
+- Responsiveness for smartphones (iPhone XR)
 
-Improvements:
+5) VALIDATION
+- HTML
+official W3C validator
+- CSS
+official (Jigsaw) validator
 
--> Page: All
--- Add social media links
--- Add footer.
--- Position nav-bar more to the left.
+6) UNFIXED BUGS (SHORTCOMINGS)
 
--> Page: About
--- Increase readability of captions under box-images. 
--- Adjust text from wikipedia to not be copy-paste.
+7) DEPLOYMENT
+- Github Pages.
 
-Notes on design for Page: About
--- No video to reduce distraction from value propositions & website features.
+8) CREDITS
+
+- CONTENT: CODE
+-- Inspired by Traversy Media
+
+- MEDIA: IMAGES
+-- Page: About
+--> BG-Image: Vackground, Unsplash.com
+--> Box Image #1: Danilo Alves, Unsplash.com
+--> Box Image #2: Miguel á Padrinan Google.com
+--> Box Image #3: Suzy Hazelwood, Pexels.com
+
+- MEDIA: VIDEO
+-- Pages: Home & Contact
+--> BG-Video: Pressmaster, Pexels.com (https://www.pexels.com/video/digital-formation-of-a-dna-in-an-animated-presentation-3191572/)
+
+- MEDIA: ICONS
+-- Font Awesome
+
