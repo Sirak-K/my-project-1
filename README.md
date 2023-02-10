@@ -2,12 +2,15 @@
 1) INTRO
 Website: NeuroGen
 Description: NeuroGen is a website/blog that provides information about nootropics and bio-hacking.
+Value proposition: Brain Enhancement products.
 
 2) EXISTING FEATURES
+
 - NAVIGATION BAR
 --> The navbar is identical on all the site's pages with clear color contrast for ease of navigation.
 - LANDING PAGE
 --> The landing page for this site consists of a video playing in the background to emphasize the purpose and direction of the design, which is science-oriented.
+--> Two lines of large-sized text containing the website's Value Proposition. 
 - FOOTER
 --> The footer consists of links to social media pages.
 

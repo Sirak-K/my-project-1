@@ -38,7 +38,8 @@ header a{
     font-size:48px;
     padding: 15px;
 }
-h1{
+#branding a{
+    text-transform: none;
     font-size: 80px;
     font-style: italic;
     padding-right: 20px;

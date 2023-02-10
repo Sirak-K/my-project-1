@@ -6,20 +6,9 @@
     color: white;
     box-sizing: border-box;
     margin:0;
-    padding:0;
-    
+    padding:0; 
 }
 
-header{
-    margin: 0;
-    padding: 0;
-    display:flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: black;
-    border-bottom: cyan 3px solid;
-    
-}
 .landing-video{ 
     margin: 0;
     padding: 0;
@@ -52,11 +41,25 @@ header{
     background: #03a9f4;
     mix-blend-mode: overlay;
 }
-
-h1{
-    font-size: 70px;
+header{
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    border-bottom: cyan 3px solid;
+    align-items: center;
+}
+#branding a{
+    text-decoration: none;
+    text-transform: none;
+    font-size: 80px;
     font-style: italic;
-    padding-right: 5px;
+    padding-right: 20px;
+    margin: 5px;
+    position: relative;
+    left: 17px;
 }
 h2{
     color: red;
