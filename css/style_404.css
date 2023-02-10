@@ -7,15 +7,10 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
+    
 }
-#branding{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    top: 3px;
-    width: 100%;
-}
-.container{
+
+header{
     margin: 0;
     padding: 0;
     display:flex;
@@ -23,6 +18,7 @@
     width: 100%;
     background-color: black;
     border-bottom: cyan 3px solid;
+    
 }
 .landing-video{ 
     margin: 0;
@@ -56,12 +52,6 @@
     background: #03a9f4;
     mix-blend-mode: overlay;
 }
-header{
-    width: 100%;
-    color: white;
-    border-bottom: cyan 3px solid;
-    height: 90px;
-} 
 
 h1{
     font-size: 70px;
@@ -69,23 +59,14 @@ h1{
     padding-right: 5px;
 }
 h2{
-    z-index: 5;
     color: red;
     margin:0;
     font-size: 40px;
     font-style: italic;
 }
 p{  
+    position: static;
     font-size: 36px;
-}
-header .highlight, header .current a
-{
- color:e8491d;
- font-weight:bold;
-}
-header a:hover{
- color:#05f7ff;
- font-weight:bold;
 }
 
 /* -------------- FOOTER -------------- */
@@ -134,59 +115,54 @@ header a:hover{
 
  /* RESPONSIVENESS: MEDIA QUERIES */
  @media (max-width: 768px){
-   body {
-    float: none;
-    margin: 0;
-    padding: 0;
-   }
-    #branding{
-    margin-top:5px;
-    padding: 0;
-    height: 70px;
-    display: flex;
-}
-.container {
-    height: 150px;
+
+    body {
+        margin-block-start: 0;
+    margin-block-end: 0;
+    }
+
+header {
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     background-color: black;
+    display: flex;
+    flex-direction: column;
 }
-header {
-    margin: 0;
-    padding: 0;
-    float: none;
-}
-.container a {
-    display:flex;
-    font-size:30px;
-}
+
 h1 {
-    position: relative;
-    left: 40px;
-   font-style:unset;
+    font-style:unset;
     margin: 0;
     padding: 0;
+    text-align:center;
 }
 h2 {
     display: inline;
-    font-size: 20px;
+    font-size: 30px;
+    text-align: center;
 }
 h3 {
     font-size: 24px;
     padding: 0;
     margin: 0;
 }
+p {
+    
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
 
 /* FOOTER - RESPONSIVENESS */
 .container-fluid{
     position: relative;
-    top: 500px;
+    top: 300px;
+    padding: 10px;
     height: 100px;
     width: 100%;
-    border: solid 2px cyan;
+    /* border: solid 2px cyan; */
     outline: none;
-}
+} 
 #footer-details {
     display: inline;
     margin: 0;
@@ -195,9 +171,10 @@ h3 {
     border: none;
 }
 .col-sm-4 {
-    position: relative;
-    top: -90px;
-    left: 300px;
+     position: relative;
+     right: 5px;
+    top: 5px;
+    
 }
 .list-inline {
     display: flex;
@@ -206,12 +183,12 @@ h3 {
     width: 100%;
 }
 .social-links li a i {
-    font-size: 48px;
-    width: 64px;
-    height: 64px;
-    padding: 24px 0;
+    font-size: 36px;
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
     margin: 0 5px;
-    line-height: 16px;
+    line-height: 8px;
     text-align:center;
 }
 }
