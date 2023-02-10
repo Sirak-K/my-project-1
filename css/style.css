@@ -8,6 +8,7 @@
     margin:0;
     padding:0;
 }
+
 .container{
     margin: 0;
     padding: 0;
@@ -49,17 +50,13 @@
     background: #03a9f4;
     mix-blend-mode: overlay;
 }
-#branding{
-    margin: 0;
-    padding: 0;
-}
+
 
 /* ----------- NAV-BAR ----------- */
 nav{
     float:right;
     margin-top: 15px;
 }
-
 nav li {
     margin: 10px;
 }
@@ -69,7 +66,6 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-
 header a{
     color:#ffffff;
     text-decoration: none;
@@ -93,7 +89,7 @@ h3{
     color: rgb(5, 255, 234);
     font-size: 32px;
 }
-.textz {
+.texts {
     margin: 20px;
     top: 50px;
     left: 50px;
@@ -108,9 +104,7 @@ header .highlight, header .current a
  color:#05f7ff;
  font-weight:bold;
 }
-
-
-/* SECTION: NEWSLETTER */
+/* NEWSLETTER */
 input[type="email"]{
     width: 250px;
     padding:10px;
@@ -123,7 +117,6 @@ input[type="email"]{
     flex-direction: column;
     width: 30vw;
 }
-
 /* SUBSCRIBE BUTTON */
 .newsletter button{
     position: relative;
@@ -186,8 +179,7 @@ input[type="email"]{
     margin: 0;
     padding: 0;
    }
-    #branding
-{
+    #branding {
     margin-top:5px;
     padding: 0;
     height: 70px;
@@ -267,14 +259,13 @@ input[type="email"]{
 width: 100%;
 }
 
-.textz {
+.texts {
     position: relative;
     top: 0px;
     left: 12px;
     margin: 0;
     margin-top: 10px;
     width: 90%;
-    /* margin-top: 10px; */
     padding: 0;
 }
 /* FOOTER - RESPONSIVENESS */

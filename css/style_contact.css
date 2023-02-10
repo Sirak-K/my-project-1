@@ -8,7 +8,10 @@
     margin:0;
     padding:0;
 }
-
+#branding{
+    display: flex;
+    align-items: center;
+}
 .container{
     margin: 0;
     padding: 0;
@@ -46,17 +49,11 @@
     background: #03a9f4;
     mix-blend-mode: overlay;
 }
-
-#branding{
-    display: flex;
-    align-items: center;
-}
 /* ----------- NAV-BAR ----------- */
 nav{
     float:right;
     margin-top: 15px;
 }
-
 nav li {
     margin: 10px;
 }
@@ -66,7 +63,6 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-
 header a{
     color:#ffffff;
     text-decoration: none;
@@ -86,7 +82,6 @@ h2{
     font-size: 50px;
     color: rgb(5, 255, 234);
 }
-
 header .highlight, header .current a
 {
  color:e8491d;
@@ -96,18 +91,15 @@ header a:hover{
  color:#05f7ff;
  font-weight:bold;
 }
-
-.showcase #btn {
+#btn {
     font-size: 36px;
     font-family: 'Rajdhani';
     color:cyan;
     background:black;
     padding: 7px;
-    outline:auto;
     display: none;
 }
-
-/* SECTION: CONTACT FORM */
+/* CONTACT FORM */
 input[type="email"]{
     width: 250px;
     padding:10px;
@@ -123,12 +115,10 @@ input[type="email"]{
     height:300px;
     color: #ffffff;
 }
-
 /* SUBSCRIBE BUTTON */
 .sendmail button{
     position: relative;
     top: 5px;
-    
     width: 100px;
     font-size: 28px;
     border-color: rgb(234, 0, 255);
@@ -187,15 +177,13 @@ input[type="email"]{
     margin: 0;
     padding: 0;
    }
-    #branding
-{
+    #branding{
     margin-top:5px;
     padding: 0;
     height: 70px;
     display: flex;
 }
 .container {
-    /* outline: auto; */
     height: 150px;
     width: 100%;
     margin: 0;
@@ -222,17 +210,20 @@ nav {
     margin: 0;
     padding:0 ;
 }
-
 header {
     margin: 0;
     padding: 0;
     float: none;
 }
+.text {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
 .container a {
     display:flex;
     font-size:30px;
 }
-
 h1 {
     position: relative;
     left: 40px;
@@ -250,11 +241,7 @@ h3 {
     padding: 0;
     margin: 0;
 }
-.text {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-}
+
 /* FOOTER - RESPONSIVENESS */
 .container-fluid{
     position: relative;

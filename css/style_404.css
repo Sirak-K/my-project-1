@@ -8,6 +8,13 @@
     margin:0;
     padding:0;
 }
+#branding{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 3px;
+    width: 100%;
+}
 .container{
     margin: 0;
     padding: 0;
@@ -17,7 +24,6 @@
     background-color: black;
     border-bottom: cyan 3px solid;
 }
-
 .landing-video{ 
     margin: 0;
     padding: 0;
@@ -56,21 +62,12 @@ header{
     border-bottom: cyan 3px solid;
     height: 90px;
 } 
-#branding{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    top: 3px;
-    width: 100%;
-    outline: auto red;
-}
+
 h1{
     font-size: 70px;
     font-style: italic;
     padding-right: 5px;
-    outline: auto;
 }
-
 h2{
     z-index: 5;
     color: red;
@@ -80,7 +77,6 @@ h2{
 }
 p{  
     font-size: 36px;
-    outline: auto;
 }
 header .highlight, header .current a
 {
@@ -143,8 +139,7 @@ header a:hover{
     margin: 0;
     padding: 0;
    }
-    #branding
-{
+    #branding{
     margin-top:5px;
     padding: 0;
     height: 70px;
@@ -157,27 +152,6 @@ header a:hover{
     padding: 0;
     background-color: black;
 }
-nav ul,
-nav li {
-    margin: 0;
-    padding: 0;
-    top: 90px;
-}
-ul {
-    position: relative;
-    top: 100px;
-    right: 300px;
-    margin: 0;
-    padding: 0;
-}
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    height: 50px;
-    margin: 0;
-    padding:0 ;
-}
-
 header {
     margin: 0;
     padding: 0;
@@ -187,7 +161,6 @@ header {
     display:flex;
     font-size:30px;
 }
-
 h1 {
     position: relative;
     left: 40px;
@@ -198,42 +171,13 @@ h1 {
 h2 {
     display: inline;
     font-size: 20px;
-    
 }
 h3 {
     font-size: 24px;
     padding: 0;
     margin: 0;
 }
-.newsletter {
-    position: relative;
-    top: 50px;
-    width: 70%;
-    padding: 0;
-    margin: 0;
-    top: 100px;
-    left: 50px;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-}
-input[type="email"]{
-    width: 100%;
-}
-.newsletter button{
-width: 100%;
-}
 
-.textz {
-    position: relative;
-    top: 0px;
-    left: 12px;
-    margin: 0;
-    margin-top: 10px;
-    width: 90%;
-    /* margin-top: 10px; */
-    padding: 0;
-}
 /* FOOTER - RESPONSIVENESS */
 .container-fluid{
     position: relative;

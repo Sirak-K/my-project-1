@@ -8,7 +8,6 @@
     margin:0;
     padding:0;
 }
-
 .container{
     margin: 0;
     padding: 0;
@@ -18,17 +17,11 @@
     background-color: black;
     border-bottom: cyan 3px solid;
 }
-
-#branding{
-    margin: 0;
-    padding: 0;
-}
 /* ----------- NAV-BAR ----------- */
 nav{
     float:right;
     margin-top: 15px;
 }
-
 nav li {
     margin: 10px;
 }
@@ -38,7 +31,6 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-
 header a{
     color:#ffffff;
     text-decoration: none;
@@ -86,17 +78,12 @@ header .highlight, header .current a
     text-align: center;
     display: flex;
     justify-content: space-evenly;
-    /* outline: solid 5px yellow; */
     padding-bottom: 5px;
 }
-
 .texts {
-    /* outline: auto red; */
     position: relative;
     width: 400px;
-    
 }
-
 /* BOXES */
 #boxes {
     position: absolute;
@@ -110,14 +97,12 @@ header .highlight, header .current a
     padding: 0;
     color:rgb(238, 171, 25);
 }
-
 #boxes .box{
     color: rgb(52, 55, 240);
     text-align: center;
     width: 400px;
     height: 200px;
 }
-
 .img-resize-1 {
     height: 100%;
     width: 100%;
@@ -134,7 +119,6 @@ header .highlight, header .current a
     width: 100%;
     object-fit: cover;
 }
-
 a {
     font-size: 24px;
 }
@@ -197,7 +181,7 @@ a {
     display: flex;
 }
 .container {
-    /* outline: auto; */
+
     height: 150px;
     width: 100%;
     margin: 0;
