@@ -5,74 +5,62 @@
     font-family: 'Rajdhani', sans-serif;
     color: rgb(253, 253, 253);
     box-sizing: border-box;
-    overflow: hidden;
     margin:0;
     padding:0;
 }
 
-
-/* SECTION: SHOWCASE */
-.showcase{
-    position: absolute;
-    width:100%;
-    min-height: 100vh;
-    outline: yellow 10px;
-}
-
 .container{
-    min-height: 100px;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: space-between;
     width: 100%;
-    background-color:rgb(0, 0, 0);
-    outline: solid 3px yellow;
-    display: flex;
-    justify-content: space-evenly;
-}
-header{
-    background-color: grey;
-    width: 100%;
-    color: white;
+    background-color: black;
     border-bottom: cyan 3px solid;
-    height: 90px;
-} 
+}
+
 #branding{
-    display: flex;
-    justify-content: space-evenly;
-    position:relative;
-    right: 280px;
-    top: 3px;
-    width: 300px;
-    
+    margin: 0;
+    padding: 0;
 }
+/* ----------- NAV-BAR ----------- */
 nav{
-    position: relative;
-    left: 300px;
-    height: 80px;
-    margin: 15px;
+    float:right;
+    margin-top: 15px;
 }
-header li{
-    display:inline;
-    padding: 0 10px 0 10px;
-    list-style-type: none; 
+
+nav li {
+    margin: 10px;
 }
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 header a{
     color:#ffffff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size:55px;
+    font-size:48px;
     padding: 15px;
 }
 h1{
-    font-size: 70px;
+    font-size: 80px;
     font-style: italic;
-    padding-right: 5px;
+    padding-right: 20px;
+    margin: 5px;
+    position: relative;
+    left: 17px;
 }
 h2{
-    margin:0;
-    font-size: 20px;
+    margin: 10px;
+    font-size: 50px;
 }
 h3{
-    margin:0;
-    font-size: 36px;
+    color: rgb(5, 255, 234);
+    font-size: 32px;
 }
 p {
     display:flex;
@@ -204,85 +192,82 @@ footer {
     border: solid 1px cyan;
 }
 
- /* RESPONSIVENESS: MEDIA QUERIES */
-@media (max-width: 768px){
+/* RESPONSIVENESS: MEDIA QUERIES */
+ @media (max-width: 768px){
+   body {
+    float: none;
+    margin: 0;
+    padding: 0;
+   }
     #branding
 {
-    position: relative;
-    top: 5px;
-    margin:0;
+    margin-top:5px;
     padding: 0;
     height: 70px;
-    width: 80%;
-    text-align: center;
-  
+    display: flex;
 }
-header {
-    height: 140px;
-    background-color: grey;
+.container {
+    /* outline: auto; */
+    height: 150px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+nav ul,
+nav li {
+    margin: 0;
+    padding: 0;
+    top: 90px;
+}
+ul {
+    position: relative;
+    top: 100px;
+    right: 300px;
+    margin: 0;
+    padding: 0;
 }
 nav {
     display: flex;
     justify-content: space-evenly;
-    height: 130px;
-}
-ul {
-    position: relative;
-    bottom: 20px;
-    height: 100px;
-    margin: 2px;
-    padding: 2px;
-    margin-top: 20px;
-}
-   header a {
-    font-size:36px;
+    height: 50px;
+    margin: 0;
+    padding:0 ;
 }
 
-#boxes {
-    background-color: rgb(66, 28, 28);
-    /* border: #ea00ff solid 5px; */
+header {
+    margin: 0;
+    padding: 0;
+    float: none;
+}
+.container a {
     display:flex;
-    justify-content: space-evenly;
-    /* align-items: center; */
-    height: 300px;
+    font-size:30px;
 }
-/* #boxes img {
-    height: 150px;
-    width:150px;
-    align-items: center;
-    border: red solid 5px;
-    
-} */
 
-.about-text {
+h1 {
     position: relative;
-    top: 100px;
-    /* border: yellow solid 2px; */
-    text-align: center;
-    height: 150px;
+    left: 40px;
+   font-style:unset;
+    margin: 0;
+    padding: 0;
 }
-p{
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-.texts {
-    /* border: green solid 5px; */
-    width: 100%;
-    padding: 2px;
-}
-
 h2 {
+    display: inline;
+    font-size: 20px;
+    
+}
+h3 {
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+}
+p {
+    font-size: 12px;
+}
+.text {
     display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    font-size:24px;
-    /* border: red solid 5px; */
+    justify-content: center;
+    margin: 0;
 }
-
-#bg-img{
-    position: relative;
-    bottom: 200px;
-}
-
 }

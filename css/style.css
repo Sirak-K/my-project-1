@@ -5,81 +5,101 @@
     font-family: 'Rajdhani', sans-serif;
     color: white;
     box-sizing: border-box;
-    overflow:hidden;
     margin:0;
     padding:0;
 }
-
-/* SECTION: SHOWCASE */
-.showcase{
-    position: absolute;
-    width:100%;
-    min-height: 100vh;
-    display:flex;
-    justify-content: space-between; /* equal distr. */
-    align-items: center;
-}
 .container{
-    min-height: 100px;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: space-between;
     width: 100%;
-    background-color:rgb(0, 0, 0);
-    outline: solid 3px yellow;
-    display: flex;
-    justify-content: space-evenly;
-}
-header{
-    background-color: grey;
-    width: 100%;
-    color: white;
+    background-color: black;
     border-bottom: cyan 3px solid;
-    height: 90px;
-} 
+}
+
+.videos{ 
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    background-position: center;
+}
+.overlay {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    background-position: center;
+    background: #03a9f4;
+    mix-blend-mode: overlay;
+}
+
 #branding{
-    display: flex;
-    justify-content: space-evenly;
-    position:relative;
-    right: 280px;
-    top: 3px;
-    width: 300px;
+    margin: 0;
+    padding: 0;
 }
+
+/* ----------- NAV-BAR ----------- */
 nav{
-    position: relative;
-    left: 300px;
-    height: 80px;
-    margin: 15px;
+    float:right;
+    margin-top: 15px;
 }
-header li{
-    display:inline;
-    padding: 0 10px 0 10px;
-    list-style-type: none; 
+
+nav li {
+    margin: 10px;
 }
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 header a{
     color:#ffffff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size:55px;
+    font-size:48px;
     padding: 15px;
 }
 h1{
-    font-size: 70px;
+    font-size: 80px;
     font-style: italic;
-    padding-right: 5px;
+    padding-right: 20px;
+    margin: 5px;
+    position: relative;
+    left: 17px;
 }
 h2{
-    margin:0;
-    font-size: 20px;
+    margin: 10px;
+    font-size: 50px;
 }
 h3{
-    margin:0;
-    font-size: 70px;
-}
-h4{
-    position:absolute;
-    top: 350px;
-    left: 50px;
-    z-index: 5;
     color: rgb(5, 255, 234);
-    font-size: 36px;
+    font-size: 32px;
+}
+.textz {
+    margin: 20px;
+    top: 50px;
+    left: 50px;
+    padding-top: 0;
 }
 header .highlight, header .current a
 {
@@ -90,75 +110,45 @@ header .highlight, header .current a
  color:#05f7ff;
  font-weight:bold;
 }
- .showcase .text {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    padding-top: 0;
-    z-index:3;
-    font-size: 54px;
-}
-.showcase video{
-    position:absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.showcase .overlay {
-    position: absolute;
-    top:0;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: #03a9f4;
-    mix-blend-mode: overlay;
-}
-/* SECTION: NEWSLETTER */
 
-.newsletter{
-    position:absolute;
-    top: 400px;
-    left: 50px;
-    display:flex;
-    z-index: 3;
-    width: 100%;
-    height:50px;
-    color: #ffffff;
-    background: none;
-    opacity: 0.9;
-}
+
+/* SECTION: NEWSLETTER */
 input[type="email"]{
-    position: relative;
-    left:5px;
-    top:8px;
     width: 250px;
-    padding:4px;
-    height: 35px;
+    padding:10px;
     color:black;
 }
+.newsletter{
+    position: relative;
+    left: 30px;
+    display:flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
 /* SUBSCRIBE BUTTON */
 .newsletter button{
-    position: absolute;
-    top:9px;
+    position: relative;
+    top: 5px;
     width: 120px;
-    left: 295px;
-    font-size: 24px;
+    font-size: 28px;
     border-color: rgb(234, 0, 255);
     background-color: black;
     color:cyan;
 }
 
 /* -------------- FOOTER -------------- */
-footer {
-    position: absolute;
+
+.container-fluid {
+    outline: solid 2px cyan;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
     background-color: black;
-    min-height: 120px;
-    margin: 0;
 }
+
 .cv-pdf i {
     font-size: 18px;
     color: white;
@@ -202,52 +192,108 @@ footer {
 }
 #footer-details {
     padding: 20px;
-    border: solid 1px cyan;
+    /* border: solid 1px cyan; */
 }
-
 
  /* RESPONSIVENESS: MEDIA QUERIES */
-@media (max-width: 768px){
+ @media (max-width: 768px){
+   body {
+    float: none;
+    margin: 0;
+    padding: 0;
+   }
     #branding
 {
-    position: relative;
-    top: 5px;
-    margin:0;
+    margin-top:5px;
     padding: 0;
     height: 70px;
-    width: 80%;
-    text-align: center;
-    /* outline: auto yellow; */
-}
-header {
-    height: 140px;
-    background-color: grey;
-}
-
-nav {
     display: flex;
-    justify-content: space-evenly;
-    height: 130px;
-    
-    /* outline: auto red; */
+}
+.container {
+    /* outline: auto; */
+    height: 150px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+nav ul,
+nav li {
+    margin: 0;
+    padding: 0;
+    top: 90px;
 }
 ul {
     position: relative;
-    bottom: 20px;
-    height: 100px;
-    margin: 2px;
-    padding: 2px;
-    margin-top: 20px;
-    
+    top: 100px;
+    right: 300px;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    margin: 0;
+    padding:0 ;
 }
 
-   header a {
-    font-size:36px;
+header {
+    margin: 0;
+    padding: 0;
+    float: none;
+}
+.container a {
+    display:flex;
+    font-size:30px;
+}
+
+h1 {
+    position: relative;
+    left: 40px;
+   font-style:unset;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    display: inline;
+    font-size: 20px;
     
 }
-   .showcase h3,
-   .showcase h2 {
-    font-size: 52px;
+h3 {
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
 }
+.newsletter {
+    position: relative;
+    top: 50px;
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    outline: auto;
+    top: 100px;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+}
+input[type="email"]{
+    width: 100%;
+}
+.newsletter button{
+width: 100%;
+}
+
+.textz {
+    position: relative;
+    top: 0px;
+    left: 12px;
+    margin: 0;
+    margin-top: 10px;
+    width: 90%;
+    /* margin-top: 10px; */
+    padding: 0;
+}
+
 }
 
