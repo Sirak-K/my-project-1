@@ -138,29 +138,20 @@ input[type="email"]{
 }
 
 /* -------------- FOOTER -------------- */
-
 .container-fluid {
+    display: flex;
+    justify-content: space-evenly;
     outline: solid 2px cyan;
     position: fixed;
     bottom: 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
     background-color: black;
 }
-
-.cv-pdf i {
-    font-size: 18px;
-    color: white;
-    text-align: center;
-    padding-left: 5px;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+#footer-details {
+    padding: 20px;
 }
-.cv-pdf i:hover {
-    color: rgb(50, 252, 10);
+.col-sm-4 {
+    display: inline;
 }
 .social-links {
     display: flex;
@@ -184,15 +175,10 @@ input[type="email"]{
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
-    
 }
 .social-links li a i:hover {
     background:greenyellow;
     color: black;
-}
-#footer-details {
-    padding: 20px;
-    /* border: solid 1px cyan; */
 }
 
  /* RESPONSIVENESS: MEDIA QUERIES */
@@ -210,7 +196,6 @@ input[type="email"]{
     display: flex;
 }
 .container {
-    /* outline: auto; */
     height: 150px;
     width: 100%;
     margin: 0;
@@ -271,11 +256,11 @@ h3 {
     width: 70%;
     padding: 0;
     margin: 0;
-    outline: auto;
     top: 100px;
     left: 50px;
     right: 0;
     bottom: 0;
+    text-align: center;
 }
 input[type="email"]{
     width: 100%;
@@ -294,6 +279,41 @@ width: 100%;
     /* margin-top: 10px; */
     padding: 0;
 }
-
+/* FOOTER - RESPONSIVENESS */
+.container-fluid{
+    position: relative;
+    top: 500px;
+    height: 100px;
+    width: 100%;
+    border: solid 2px cyan;
+    outline: none;
+}
+#footer-details {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: none;
+}
+.col-sm-4 {
+    position: relative;
+    top: -90px;
+    left: 300px;
+}
+.list-inline {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.social-links li a i {
+    font-size: 48px;
+    width: 64px;
+    height: 64px;
+    padding: 24px 0;
+    margin: 0 5px;
+    line-height: 16px;
+    text-align:center;
+}
 }
 
