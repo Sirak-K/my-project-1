@@ -17,8 +17,7 @@
     background-color: black;
     border-bottom: cyan 3px solid;
 }
-
-.videos{ 
+.landing-video{ 
     margin: 0;
     padding: 0;
     position: fixed;
@@ -33,7 +32,7 @@
     background-size: cover;
     background-position: center;
 }
-.overlay {
+.landing-overlay {
     margin: 0;
     padding: 0;
     position: fixed;
@@ -50,7 +49,6 @@
     background: #03a9f4;
     mix-blend-mode: overlay;
 }
-
 #branding{
     margin: 0;
     padding: 0;

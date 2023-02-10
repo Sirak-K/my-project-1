@@ -3,24 +3,52 @@
 /* Global */
 *{
     font-family: 'Rajdhani', sans-serif;
-    color: rgb(255, 255, 255);
+    color: white;
     box-sizing: border-box;
-    overflow: hidden;
     margin:0;
     padding:0;
 }
-/* SECTION: SHOWCASE */
-.showcase{
-    position: absolute;
-    width:100%;
-    min-height: 100vh;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    outline: solid 7px red;
-}
 .container{
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
     background-color: black;
+    border-bottom: cyan 3px solid;
+}
+
+.landing-video{ 
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    background-position: center;
+}
+.landing-overlay {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    background-position: center;
+    background: #03a9f4;
+    mix-blend-mode: overlay;
 }
 header{
     width: 100%;
@@ -31,25 +59,28 @@ header{
 #branding{
     display: flex;
     justify-content: space-evenly;
-    position:relative;
-    right: 225px;
+    align-items: center;
     top: 3px;
     width: 100%;
+    outline: auto red;
 }
 h1{
     font-size: 70px;
     font-style: italic;
     padding-right: 5px;
+    outline: auto;
 }
+
 h2{
+    z-index: 5;
+    color: red;
     margin:0;
     font-size: 40px;
+    font-style: italic;
 }
 p{  
-    position: relative;
-    top: 30px;
     font-size: 36px;
-    
+    outline: auto;
 }
 header .highlight, header .current a
 {
@@ -59,51 +90,6 @@ header .highlight, header .current a
 header a:hover{
  color:#05f7ff;
  font-weight:bold;
-}
-
-.showcase #btn {
-    font-size: 36px;
-    font-family: 'Rajdhani';
-    color:cyan;
-    background:black;
-    padding: 7px;
-    outline:auto;
-    display: none;
-}
-.showcase .text {
-    position: absolute;
-    top: 150px;
-    left: 100px;
-    padding-top: 0;
-    z-index:3;
-    font-size: 54px;
-}
-.showcase video{
-    position:absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.2;
-    object-fit: cover;
-}
-.showcase .overlay {
-    position: absolute;
-    top:0;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: #343f44;
-    mix-blend-mode: overlay;
-}
-
-h2{
-    position:absolute;
-    top: 160px;
-    left: 55px;
-    z-index: 5;
-    color: rgb(5, 255, 234);
-    font-size: 36px;
 }
 
 /* -------------- FOOTER -------------- */
@@ -150,50 +136,104 @@ h2{
     color: black;
 }
 
-/* RESPONSIVENESS: MEDIA QUERIES */
-@media (max-width: 768px){
+ /* RESPONSIVENESS: MEDIA QUERIES */
+ @media (max-width: 768px){
+   body {
+    float: none;
+    margin: 0;
+    padding: 0;
+   }
     #branding
 {
-    position: relative;
-    top: 5px;
-    margin:0;
+    margin-top:5px;
     padding: 0;
     height: 70px;
-    width: 80%;
-    text-align: center;
-    /* outline: auto yellow; */
-}
-header {
-    height: 140px;
-    background-color: grey;
-}
-
-nav {
     display: flex;
-    justify-content: space-evenly;
-    height: 130px;
-    
-    /* outline: auto red; */
+}
+.container {
+    height: 150px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+nav ul,
+nav li {
+    margin: 0;
+    padding: 0;
+    top: 90px;
 }
 ul {
     position: relative;
-    bottom: 20px;
-    height: 100px;
-    margin: 2px;
-    padding: 2px;
-    margin-top: 20px;
-    
+    top: 100px;
+    right: 300px;
+    margin: 0;
+    padding: 0;
 }
-   header a {
-    font-size:28px;
-}
-}
-    h3 {
-    margin-left:5px;
-    margin-top: 15px;
-    font-size: 36px;
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    margin: 0;
+    padding:0 ;
 }
 
+header {
+    margin: 0;
+    padding: 0;
+    float: none;
+}
+.container a {
+    display:flex;
+    font-size:30px;
+}
+
+h1 {
+    position: relative;
+    left: 40px;
+   font-style:unset;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    display: inline;
+    font-size: 20px;
+    
+}
+h3 {
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+}
+.newsletter {
+    position: relative;
+    top: 50px;
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    top: 100px;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+input[type="email"]{
+    width: 100%;
+}
+.newsletter button{
+width: 100%;
+}
+
+.textz {
+    position: relative;
+    top: 0px;
+    left: 12px;
+    margin: 0;
+    margin-top: 10px;
+    width: 90%;
+    /* margin-top: 10px; */
+    padding: 0;
+}
 /* FOOTER - RESPONSIVENESS */
 .container-fluid{
     position: relative;
@@ -230,4 +270,6 @@ ul {
     line-height: 16px;
     text-align:center;
 }
+}
+
 

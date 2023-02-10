@@ -18,7 +18,7 @@
     background-color: black;
     border-bottom: cyan 3px solid;
 }
-.videos{ 
+.landing-video{ 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -31,7 +31,7 @@
     background-size: cover;
     background-position: center;
 }
-.overlay {
+.landing-overlay {
     position: fixed;
     top: 50%;
     left: 50%;
