@@ -87,7 +87,7 @@ h3{
     color: rgb(5, 255, 234);
     font-size: 32px;
 }
-.texts {
+.landing-text {
     margin: 20px;
     top: 50px;
     left: 50px;
@@ -257,7 +257,7 @@ input[type="email"]{
 width: 100%;
 }
 
-.texts {
+.landing-text {
     position: relative;
     top: 0px;
     left: 12px;
