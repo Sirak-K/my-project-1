@@ -2,7 +2,9 @@
 1) INTRO
 
 Website: NeuroGen
-Description: NeuroGen is a website/blog that provides information about nootropics and bio-hacking.
+
+Description: NeuroGen is a website/blog that provides information about neuroscience, nootropics and biohacking.
+
 Value proposition: Brain enhancement solutions.
 
 
