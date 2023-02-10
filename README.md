@@ -80,7 +80,9 @@ Box Image #1: Danilo Alves, Unsplash.com
 Box Image #3: Suzy Hazelwood, Pexels.com
 
 MEDIA: VIDEO
+
 -- Pages: Home & Contact
+
 BG-Video: Pressmaster, Pexels.com (https://www.pexels.com/video/digital-formation-of-a-dna-in-an-animated-presentation-3191572/)
 
 MEDIA: ICONS
