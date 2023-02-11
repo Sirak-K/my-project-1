@@ -5,6 +5,7 @@
     font-family: 'Rajdhani', sans-serif;
     color: rgb(253, 253, 253);
     box-sizing: border-box;
+    overflow: hidden;
     margin:0;
     padding:0;
 }
