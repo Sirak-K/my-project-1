@@ -24,9 +24,12 @@ PAGE-SPECIFIC CONTENT 1): Home
 
 - LANDING PAGE (Video Background)
 
+--> Form Validation: Email.
+
 --> The landing page for this site consists of a video playing in the background to emphasize the purpose and direction of the design, which is science-oriented.
 
 --> Two lines of large-sized text containing the website's Value Proposition.
+
 
 ![Presentation 2 - About](https://user-images.githubusercontent.com/122515678/218111267-87b23303-9017-4a55-bb16-cc517fc8fa34.png)
 PAGE-SPECIFIC CONTENT 2): About
@@ -38,7 +41,7 @@ PAGE-SPECIFIC CONTENT 3): Contact
 
 --> Video background.
 
---> Contact Form.
+--> Form Validation: Email.
 
 
 3) FEATURES LEFT TO IMPLEMENT
