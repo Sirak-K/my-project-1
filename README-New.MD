@@ -6,14 +6,14 @@ NeuroGen is a website that provides the user with brain enhancement tools and in
 
 ### Home
 - Consists of a landing page with a video and captivating value proposition with large font-size and hard-to-miss contrast.
-- Contains a subscription form.
+- Contains a subscription form with sound playback on submission.
 
 ### About 
 - Contains a link to an online quiz app.
 - Special static image background instead of video is shown here to reduce distraction from the three boxes of value.
 
 ### Contact
-- Contains a contact form.
+- Contains a contact form with sound playback on submission.
 
 ## Design 
 - Header Logo: Exists on every page.
