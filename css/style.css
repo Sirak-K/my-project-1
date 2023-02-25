@@ -26,7 +26,6 @@ body {
 }
 
 .landing-video{ 
-    display:none;
     margin: 0;
     padding: 0;
     position: fixed;
@@ -42,7 +41,6 @@ body {
     background-position: center;
 }
 .landing-overlay {
-    display:none;
     margin: 0;
     padding: 0;
     position: fixed;
