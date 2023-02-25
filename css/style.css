@@ -480,10 +480,7 @@ top:200px;}
     .landing-video {
         transform: translateX(-30%) translateY(-35%);
     }
-    .landing-overlay {
-        background:rgb(28, 235, 21);
-        mix-blend-mode: overlay;
-    }
+
     .landing-text h2 {
         margin: 0;
         padding: 0; 
