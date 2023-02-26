@@ -9,10 +9,12 @@
 
 
 body {
-    background-color: rgb(87, 80, 80);
+    /* background-color: rgb(87, 80, 80); */
     font-family: 'Rajdhani', sans-serif;
     color: white;
     width: 100%;
+    overflow-x:hidden;
+    
 }
 .header-container{
     display:flex;
@@ -20,9 +22,15 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100px;
-    background-color: black;
-    border-bottom: cyan 3px solid;
+    height: 150px;
+    background-color:rgb(7, 7, 7, 0.4);
+    border-bottom: 2px solid;
+        border-image: linear-gradient(
+        to right,
+        #FF00FF 10%,
+        rgb(0, 255, 255) 60%,
+        #FF00FF 70%
+        ) 1 2 10%;
 }
 
 .landing-video{ 
@@ -36,7 +44,7 @@ body {
     width: auto;
     height: auto;
     z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-45%);
     background-size: cover;
     background-position: center;
 }
@@ -61,7 +69,10 @@ body {
 /* ----------- NAV-BAR ----------- */
 
 .navbar {
-    width: 40%;
+   
+    width: 50%;
+    position: relative;
+    top: 20px;
 }
 
 .navbar ul {
@@ -73,7 +84,7 @@ body {
 }
 .navbar a {
     color:#ffffff;
-    font-size: 3.7rem;
+    font-size: 5.4rem;
     text-transform: uppercase;
     text-decoration: unset;
 }
@@ -81,17 +92,13 @@ body {
 .logotype{
     color:#ffffff;
     text-decoration: unset;
-    font-size:5.5rem;
+    font-size:7.8rem;
     margin:10px;
     padding-left: 20px;
 }
 h2{
     margin: 10px;
-    font-size: 4rem;
-}
-h3{
-    color: rgb(5, 255, 234);
-    font-size: 2rem;
+    font-size: 5rem;
 }
 .landing-text {
     margin: 20px;
@@ -114,57 +121,94 @@ h3{
  
 }
 /* NEWSLETTER */
-input[type="email"]{
-    width: 250px;
-    padding:10px;
-    color:black;
-}
 .newsletter{
     text-align: center;
     position: relative;
-    left: 40px;
-    top: -20px;
-    width: 25%;
+    left: 480px;
+    top: 180px;
+    width: 50%;
+    border-right: 10px solid ;
+    border-top: 5px solid ;
+    
+        border-left: 10px solid ;
+        border-image:linear-gradient(
+            to top,
+            
+            rgba(8, 255, 255, 0.8),
+            rgba(255, 25, 224, 0.9),
+            rgba(255, 25, 224, 0.1)
+          ) 1 2 20%;
+}
+
+.newsletter h3 {
+    color: rgb(5, 255, 234);
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+input[type="email"]{
+    width: 250px;
+    padding:10px;
+    outline: unset;
 }
 
 #validateEmail {
     text-align: center;
     width: 100%;
-    outline: auto;
-    font-size: 1.5rem;
+    font-family: "Rajdhani";
+    font-size: 2.7rem;
+    margin: 0;
+    padding: 10px;
+    background-color: black;
+    color:white;
+    outline: unset;
+
 }
 /* SUBSCRIBE BUTTON */
 .form-button{
     font-family: "Conthrax";
     width: 100%;
     top: 5px;
-    font-size: 2rem;
-    border-color: rgb(234, 0, 255);
+    font-size: 3rem;
     background-color: black;
     color:cyan;
+    border-top: 10px solid ;
+        border-right: 10px solid ;
+        border-bottom: 10px solid;
+        border-left: 10px solid ;
+        border-image:linear-gradient(
+            to bottom,
+            rgba(50, 8, 201, 0.5),
+            rgba(8, 255, 255, 0.8),
+            rgba(255, 25, 224, 0.8),
+            rgba(255, 25, 224, 0.1)
+          ) 1 2 10% 90%;
 }
 .form-button:hover{
  background-color:#05f7ff;
  color: black;
-
 }
 /* -------------- FOOTER -------------- */
 .footer-container {
-    display: flex;
-    justify-content: space-evenly;
-    outline: solid 2px cyan;
     position: fixed;
     bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.9) ;
+    border-top: 2px solid;
+    border-image: linear-gradient(
+        to left,
+    #FF00FF 10%,
+    rgb(0, 255, 255) 60%,
+    #FF00FF 70%
+) 1 2 10%;
 }
+
 #footer-details {
     padding: 20px;
 }
-.col-sm-4 {
-    display: inline;
-    
-}
+
 .social-links {
     display: flex;
     justify-content: center;
@@ -173,13 +217,13 @@ input[type="email"]{
     padding-top: 5px;
 }
 .social-links li a i {
-    margin: 0 10px;
-    width:64px;
-    height: 64px;
+    margin: 0 30px;
+    width: 80px;
+    height: 80px;
     padding: 24px 0;
     border-radius: 50%;
-    font-size: 36px;
-    line-height: 16px;
+    font-size: 4rem;
+    line-height: 2rem;
     text-align: center;
     color: white;
     background-color: rgb(35, 0, 236);
@@ -198,7 +242,12 @@ display:none;
 position: relative;
 top:200px;}
 
- /* RESPONSIVENESS: MEDIA QUERIES */
+ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
+ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
+ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
+ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
+ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
+ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
 
  /* IPHONE SE & XR, GOOGLE PIXEL 5 (1080px) green */
 @media screen and (min-width: 320px) and (max-width: 374px){
@@ -209,7 +258,7 @@ top:200px;}
         flex-direction: column;
         margin: 0;
         padding: 0;  
-        height: 150px;    
+        height: 120px;    
         width: 100%;
     }
     #branding  {
@@ -221,17 +270,20 @@ top:200px;}
         left: 0px;
         margin: 0;
         padding: 0;
-        font-size: 4rem;
+        font-size: 4.2rem;
     }
    
     .navbar {
+        width: 100%;
         margin: 0;
         padding: 0;  
     }
     .navbar a {
         position: relative;
-        left: 5px;
-        font-size: 2rem;  
+        bottom: 40px;
+        left: -8px;
+        font-size: 1.8rem;  
+        padding: 10px;
     }
     .landing-video {
         transform: translateX(-30%) translateY(-35%);
@@ -245,13 +297,26 @@ top:200px;}
         /* display:none; */
     }
     .newsletter {
-        display:flex;
+        position: relative;
+        top: 0;
         width: 100%;
+        left:0;
         margin: 0;
         padding: 0;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        border-right: none;
+        border-left: none;
+        border-image: linear-gradient(
+            to left,
+            #FF00FF 10%,
+            rgb(0, 255, 255) 60%,
+            #FF00FF 70%
+            ) 1 2 10%;
+        
     }
     .newsletter h3{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         text-align: center;
         margin: 0;
         padding: 0;
@@ -263,30 +328,49 @@ top:200px;}
         padding: 0;
     }
     #validateEmail {
+        font-size: 1.2rem;
         width: 100%;
         text-align: center;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        border-right: none;
+        border-left: none;
+        border-image: linear-gradient(
+            to right,
+            #FF00FF 10%,
+            rgb(0, 255, 255) 60%,
+            #FF00FF 70%
+            ) 1 2 10%;
     }
     /* FOOTER */
     .footer-container {  
-        position: relative;
-        top: 300px;
-        height: 150px;
+        position: fixed;
+        bottom: 0;
         width: 100%;
+        
+        border-top: 2px solid;
+        border-image: linear-gradient(
+        to left,
+        #FF00FF 10%,
+        rgb(0, 255, 255) 60%,
+        #FF00FF 70%
+        ) 1 2 10%;
     }
 
     .social-links li a i { 
-        
+        margin: 5px;
+        padding: 0;
         width: 50px;
-        height: 42px;
-        font-size: 1.8rem;
-        line-height: 0.4rem;  
+        height: 50px;
+        font-size: 2.3rem;
+        line-height: 3.2rem;  
 }
 }
 
 /* SAMSUNG GALAXY S20 (360px) blue;  */
 /* iPhone X (375 x 812)*/
 @media screen and (min-width: 375px) and (max-width: 480px) 
-{body {background-color: blue; width: 100%; }
+{body {background-color: blue; width: 100%;}
     .header-container {
     display:flex;
     flex-direction: column;
@@ -309,7 +393,6 @@ top:200px;}
         margin: 0;
         padding: 0;
         font-size: 5rem; 
-        /* outline: solid green 10px; */
     }
  
     .navbar {
@@ -343,35 +426,82 @@ top:200px;}
         left: 0;
         top: 50px;
         width: 100%;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        border-right: none;
+        border-left: none;
+        border-image: linear-gradient(
+            to right,
+            #FF00FF 10%,
+            rgb(0, 255, 255) 60%,
+            #FF00FF 70%
+            ) 1 2 10%;
+    }
+    .newsletter h3 {
+        font-size: 1.8rem;
+        background-color: black;
     }
     .newsletter button {
+        height: 70px;
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 2.3rem;
+        border-top: 10px solid ;
+        border-right: 10px solid ;
+        border-bottom: 10px solid;
+        border-left: 10px solid ;
+        border-image:linear-gradient(
+            to top,
+            rgba(50, 8, 201, 0.5),
+            rgba(8, 255, 255, 0.8),
+            rgba(255, 25, 224, 0.8),
+            rgba(255, 25, 224, 0.1)
+          ) 1 2 10% 90%;
     }
     #validateEmail {
         width: 100%;
+        font-size: 1.2rem;
         text-align: center;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        border-right: none;
+        border-left: none;
+        border-image: linear-gradient(
+            to right,
+            #FF00FF 10%,
+            rgb(0, 255, 255) 60%,
+            #FF00FF 70%
+            ) 1 2 10%;
     }
     /* FOOTER */
     .footer-container {  
-        position: relative;
-        top: 180px;
+        position: fixed;
+        bottom: 0;
         width: 100%;
         height: 80px;
         padding:0;
         margin:0;
         align-items: center;
+        border-top: 2px solid;
+        border-image: linear-gradient(
+        to left,
+        #FF00FF 10%,
+        rgb(0, 255, 255) 60%,
+        #FF00FF 70%
+        ) 1 2 10%;
     }
     .social-links {
         /* outline: auto; */
         position: relative;
         bottom: 5px;
+        
     }
     .social-links li a i { 
-        width: 50px;
-        height: 45px;
-        font-size: 2rem;
-        line-height: 0.1rem;  
+        width: 53px;
+        height: 50px;
+        font-size: 2.2rem;
+        line-height: 3.2rem;  
+        margin: 0 10px;
+        padding: 0;
 }
 }
 
@@ -463,88 +593,14 @@ top:200px;}
 /* IPADS & TABLETS [576 < 767] brown */
 @media screen and (min-width: 576px) and (max-width: 767px) {
     body {background-color: brown; }
-    #branding  {
-        display:flex;
-        justify-content: center;
-        margin-top: 10px;
-    }
-    #branding a {
-        margin: 0;
-        padding: 0;
-        font-size: 5rem;
-    }
     .header-container
     {
         display:flex;
         flex-direction: column;
         margin: 0;
         padding: 0;  
-        height: 150px;    
-    }
-    .navbar {
-        margin: 0;
-        padding: 0;  
-        position: relative;
-        left: 150px;
-    }
-    .navbar a {
-        margin: 0;
-        position: relative;
-        bottom: 27px;
-        font-size: 2rem;  
-        text-transform: uppercase;
-    }
-    .landing-video {
-        transform: translateX(-30%) translateY(-35%);
-    }
-
-    .landing-text h2 {
-        margin: 0;
-        padding: 0; 
-        font-size: 2rem;
-        text-align: center;
-        /* display:none; */
-    }
-    .newsletter {
-        display:flex;
-        width: 100%;
-    }
-    .newsletter h3{
-        font-size: 1.8rem;
-        text-align: center;
-    }
-    .newsletter button {
-        width: 100%;
-        font-size: 1.5rem;
-    }
-    #validateEmail {
-        width: 100%;
-        text-align: center;
-    }
-    /* FOOTER */
-    .footer-container {  
-        position: relative;
-        top: 195px;
-        width: 100%;
-    }
-    .social-links li a i { 
-        width: 50px;
-        height: 42px;
-        font-size: 1.8rem;
-        line-height: 0.4rem;  
-}
-}
-
-/* IPADS & LAPTOPS - Smaller screens [769 < 991] red */
-@media screen and (min-width: 768px) and (max-width: 991px){
-    body {background-color:  red; }
-    .header-container
-    {
-        display:flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;  
-        height: 200px;    
+        height: 190px;    
+        background-color: rgba(0, 0, 0, 0.4);
     }
     #branding  {
         display:flex;
@@ -554,22 +610,34 @@ top:200px;}
     .logotype {
         margin: 0;
         padding: 0;
-        font-size: 5rem;
+        font-size: 6rem;
     }
-
+    
     .navbar {
+        width: 100%;
         margin: 0;
         padding: 0;  
+        position: relative;
+        left: 25px;
+        top: 25px;
     }
     .navbar a {
         margin: 0;
         position: relative;
-        left: 80px;
-        bottom: 27px;
-        font-size: 3.8rem;  
+        bottom: 50px;
+        font-size: 3.3rem;  
+        text-transform: uppercase;
     }
-    .landing-video {
-        transform: translateX(-40%) translateY(-35%);
+   .landing-video {
+        min-width: 100%;
+        width: 300%;
+        top: 40%;
+        left: 60%;
+        transform: translateX(-50%) translateY(-40%) rotate(210deg);
+    }
+    .landing-overlay {
+        background: #4404f3;
+        mix-blend-mode:darken;
     }
 
     .landing-text h2 {
@@ -577,14 +645,28 @@ top:200px;}
         padding: 0; 
         font-size: 4rem;
         text-align: center;
+        /* display:none; */
     }
     .newsletter {
-        display:flex;
+        position: relative;
+        top: 21px;
+        left: 0;
         width: 100%;
+        border-top: 8px solid ;
+        border-bottom: 8px solid ;
+        border-image:linear-gradient(
+            to top right,
+            rgba(16, 253, 253, 0.8),
+            rgb(4, 203, 253),
+            rgb(255, 3, 221),
+            rgba(1, 14, 190, 0.8) 
+          ) 1 2 10%;
     }
     .newsletter h3{
-        font-size: 3.5rem;
+        font-size: 3rem;
         text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        
     }
     .newsletter button {
         width: 100%;
@@ -593,11 +675,136 @@ top:200px;}
     #validateEmail {
         width: 100%;
         text-align: center;
+        font-size: 2.5rem;
+        border-top: 8px solid ;
+        border-bottom: 8px solid ;
+        border-image:linear-gradient(
+            to top right,
+            rgba(16, 253, 253, 0.8),
+            rgb(4, 203, 253),
+            rgba(255, 3, 221, 0.9),
+            rgba(1, 14, 190, 0.8) 
+          ) 1 2 10%;
+    }
+    /* FOOTER */
+    .footer-container { 
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .social-links li a i { 
+        margin: 10px;
+        padding: 0px;
+        width: 75px;
+        height: 75px;
+        font-size: 3.5rem;
+        line-height: 4.9rem;  
+}
+}
+
+/* IPADS & LAPTOPS - Smaller screens [768 < 991] red */
+@media screen and (min-width: 768px) and (max-width: 991px){
+    body {background-color:  red; }
+    .header-container {
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;  
+        height: 270px; 
+        width: 100%;   
+        }
+    #branding  {
+            /* outline: auto; */
+            display:flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            
+        }
+    .logotype {
+            position: relative;
+            left: 0;
+            top:10px;
+            margin: 0;
+            padding: 0;
+            font-size: 9rem; 
+        }
+     
+    .navbar {
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            left: 25px;
+            top: -15px;
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+    .navbar a {
+            padding: 0;
+            margin: 0 em;
+            font-size: 4.3rem;  
+        }
+  
+        .landing-video {
+            min-width: 100%;
+            width: 500%;
+            transform: translateX(-53%) translateY(-45%) rotate(35deg);
+        }
+        .landing-overlay {
+            background: #4404f3;
+            mix-blend-mode:darken;
+        }
+
+    .landing-text h2 {
+        margin: 0;
+        padding: 0; 
+        font-size: 4rem;
+        text-align: center;
+    }
+    .newsletter {
+        position: relative;
+        left: 0;
+        top:30px;
+        width: 100%;
+        border-top: 8px solid ;
+        border-bottom: 8px solid ;
+        border-image:linear-gradient(
+            to top right,
+            rgba(16, 253, 253, 0.8),
+            rgb(4, 203, 253),
+            rgb(255, 3, 221),
+            rgba(1, 14, 190, 0.8) 
+          ) 1 2 10%;
+         
+    }
+    .newsletter h3{
+        font-size: 3.5rem;
+        text-align: center;
+        background-color: black;
+        
+    }
+    .newsletter button {
+        width: 100%;
+        font-size: 3rem;
+        margin-top: px;
+      }
+
+/* source | slice | width | outset | repeat */
+/* border-image: url("/images/border.png") 27 23 / 50px 30px / 1rem round space; */
+
+    #validateEmail {
+        width: 100%;
+        text-align: center;
     }
     /* FOOTER */
     .footer-container {  
-        position: relative;
-        top: 280px;
+        position: fixed;
+        bottom: 0;
         width: 100%;
     }
     .social-links li a i { 
@@ -615,67 +822,93 @@ top:200px;}
     }
 }
 /* Dell XPS 13 (1080px) orange */
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-    body {background-color: orange; }
-    #branding  {
-        display:flex;
-        justify-content: center;
-        margin-top: 10px;
-    }
-    #branding a {
-        margin: 0;
-        padding: 0;
-        font-size: 6rem;
-    }
-    .header-container
-    {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {background-color: orange;  }
+    .header-container {
         display:flex;
         flex-direction: column;
         margin: 0;
         padding: 0;  
-        height: 200px;    
-    }
-    .navbar {
-        margin: 0;
-        padding: 0;  
-    }
-    .navbar a {
-        margin: 0;
-        position: relative;
-        left: 250px;
-        bottom: 30px;
-        font-size: 3.5rem;  
-    }
+        height: 300px; 
+        width: 100%;   
+        }
+        #branding  {
+            /* outline: auto; */
+            display:flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            
+        }
+        .logotype {
+            position: relative;
+            left: 0;
+            top:10px;
+            margin: 0;
+            padding: 0;
+            font-size: 9rem; 
+        }
+        .navbar {
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            left: 25px;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+        .navbar a {
+            padding: 10px;
+            margin: 0;
+            font-size: 4.8rem;  
+        }
+  
     .landing-video {
-        transform: translateX(-50%) translateY(-25%);
+        min-width: 100%;
+        width: 330%;
+        top: 40%;
+        left: 60%;
+        transform: translateX(-53%) translateY(-60%) rotate(120deg);
+    }
+    .landing-overlay {
+        background: #4404f3;
+        mix-blend-mode:darken;
     }
 
     .landing-text h2 {
         margin: 0;
         padding: 0; 
-        font-size: 4rem;
-        text-align: center;
+        font-size: 5rem;
+        text-align: center;  
     }
     .newsletter {
-        display:flex;
-        width: 100%;
+        position: relative;
+        left: 0;
+        top:5px;
+        width: 100%;  
     }
     .newsletter h3{
         font-size: 3.5rem;
         text-align: center;
+        background-color: black; 
     }
     .newsletter button {
         width: 100%;
         font-size: 3rem;
-    }
+        margin-top: px;
+      }
     #validateEmail {
+        font-size: 2.5rem;
         width: 100%;
         text-align: center;
     }
     /* FOOTER */
     .footer-container {  
-        position: relative;
-        top: 280px;
+        position: fixed;
+        bottom: 0;
         width: 100%;
     }
     .social-links li a i { 
@@ -692,3 +925,9 @@ top:200px;}
         margin: 5px 15px;
     }
 }
+
+ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
+  /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
+   /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
+    /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
+     /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
