@@ -7,7 +7,18 @@
     padding:0;
 }
 
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
+/* :root {
+    --step--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.80rem);
+    --step--1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1.00rem);
+    --step-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+    --step-1: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+    --step-2: clamp(1.62rem, calc(1.50rem + 0.58vw), 1.95rem);
+    --step-3: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
+    --step-4: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
+    --step-5: clamp(2.80rem, calc(2.45rem + 1.77vw), 3.82rem);
+  } */
 body {
     /* background-color: rgb(87, 80, 80); */
     font-family: 'Rajdhani', sans-serif;
@@ -21,7 +32,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 200px;
+    height: 6em;
     background-color:rgb(7, 7, 7, 0.4);
     border-bottom: 2px solid;
         border-image: linear-gradient(
@@ -32,29 +43,18 @@ body {
         ) 1 2 10%;
 }
 .logotype{
+    position: relative;
+    top: 0.2em;
+    left: 4%;
     color:#ffffff;
     text-decoration: unset;
-    font-size: 11rem;
-    margin: 10px;
-    padding-left: 20px;
+    /* font-size: var(--step-5); */
+    font-size: 4rem;
+    margin: 0.5em;
     font-family: "Conthrax";
 }
-.landing-video{ 
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-45%);
-    background-size: cover;
-    background-position: center;
-}
-.landing-overlay {
+.landing-video,
+.landing-overlay { 
     margin: 0;
     padding: 0;
     position: fixed;
@@ -68,6 +68,9 @@ body {
     transform: translateX(-50%) translateY(-50%);
     background-size: cover;
     background-position: center;
+}
+
+.landing-overlay {
     background: #524399;
     mix-blend-mode: overlay;
 }
@@ -75,11 +78,10 @@ body {
 /* ----------- NAV-BAR ----------- */
 
 .navbar {
-    /* outline: auto; */
-    width: 45%;
+    width: 38%;
     position: relative;
-    top: px;
-    left: -100px;
+    top: 0em;
+    left: -4em;
 }
 
 .navbar ul {
@@ -87,28 +89,25 @@ body {
     justify-content: space-between;
     list-style: none;
     margin: 0;
-    padding: 15px;
+    padding: 1em;
 }
 .navbar a {
     color:#ffffff;
-    font-size: 10rem;
+    font-size: 4rem;
     text-transform: uppercase;
     text-decoration: unset;
-   
 }
 
-
-.landing-text h2{
-    margin: 10px;
-    font-size: 10rem;
-    
-}
 .landing-text {
-    margin: 40px;
-    top: 50px;
-    left: 50px;
-    padding-top: 0;
+    margin: 2em;
+    top: 2em;
+    left: 2em;
 }
+.landing-text h2{
+    margin: 0.2em;
+    font-size: 4rem;
+}
+
 
 
 .navbar .highlight, 
@@ -123,48 +122,44 @@ body {
 }
  .logotype:hover{
  color:#05f7ff;
- 
 }
 /* NEWSLETTER */
 .newsletter{
     text-align: center;
     position: relative;
-    left: 1100px;
-    top: 100px;
+    left: 36em;
+    top: 3em;
     width: 40%;
 }
 
 .newsletter h3 {
     color: rgb(5, 255, 234);
-    font-size: 4rem;
+    font-size: 2.5rem;
     background-color: rgba(0, 0, 0, 0.9);
 }
 
 input[type="email"]{
-    width: 250px;
-    padding:10px;
+    padding:1em;
     outline: unset;
-    
 }
 
 #validateEmail {
     text-align: center;
     width: 100%;
     font-family: "Rajdhani";
-    font-size: 2.7rem;
+    font-size: 2rem;
     margin: 0;
-    padding: 10px;
+    padding: 0.2em;
     background-color: none;
     color:white;
     outline: unset;
-
 }
 /* SUBSCRIBE BUTTON */
 .form-button{
     font-family: "Conthrax";
     width: 100%;
-    top: 5px;
-    font-size: 5rem;
+ 
+    font-size: 2.5rem;
     background-color: black;
     color:cyan;
     border-top: 10px solid ;
@@ -190,7 +185,7 @@ input[type="email"]{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    height: 200px;
+    height: 5em;
     background-color: rgba(0, 0, 0, 0.9) ;
     border-top: 2px solid;
     border-image: linear-gradient(
@@ -214,12 +209,12 @@ input[type="email"]{
 }
 .social-links li a i {
     margin: 0 30px;
-    width: 160px;
-    height: 160px;
+    width: 80px;
+    height: 80px;
     padding: 24px 0;
     border-radius: 50%;
-    font-size: 7.5rem;
-    line-height: 7rem;
+    font-size: 4rem;
+    line-height: 2rem;
     text-align: center;
     color: white;
     background-color: rgb(35, 0, 236);
@@ -246,7 +241,7 @@ top:200px;}
  /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
 
  /* IPHONE SE & XR, GOOGLE PIXEL 5 (1080px) green */
-@media screen and (min-width: 320px) and (max-width: 374px){
+@media screen and (min-width: 20em) and (max-width: 23.375em){
     body {background-color: green; width: 100%; }
     .header-container
     {
@@ -262,35 +257,40 @@ top:200px;}
         justify-content: center;
     }
     .logotype {
-        top: 20px;
-        left: 0px;
+        position: relative;
+        left: 0.1em;
+        top: 0.5em;
         margin: 0;
         padding: 0;
-        font-size: 4.2rem;
+        font-size: 2.5rem; 
     }
-   
-    .navbar {
-        width: 100%;
-        margin: 0;
-        padding: 0;  
-    }
-    .navbar a {
+ 
+.navbar {
         position: relative;
-        bottom: 40px;
-        left: -8px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        left: 0.2em;
+        top: 1em;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+.navbar a {
+        padding: 0;
+        margin: 0 em;
         font-size: 1.8rem;  
-        padding: 10px;
     }
     .landing-video {
-        transform: translateX(-30%) translateY(-35%);
+        transform: translateX(-30%) translateY(-40%);
     }
-
     .landing-text h2 {
+        position: relative;
+        left: 0.4em;
         margin: 0;
         padding: 0; 
-        font-size: 2rem;
-        text-align: center;
-        /* display:none; */
+        font-size: 1.8rem;
     }
     .newsletter {
         position: relative;
@@ -365,7 +365,7 @@ top:200px;}
 
 /* SAMSUNG GALAXY S20 (360px) blue;  */
 /* iPhone X (375 x 812)*/
-@media screen and (min-width: 375px) and (max-width: 480px) 
+@media screen and (min-width: 23.438em) and (max-width: 30em) 
 {body {background-color: blue; width: 100%;}
     .header-container {
     display:flex;
@@ -384,36 +384,40 @@ top:200px;}
     }
     .logotype {
         position: relative;
-        left: 0;
-        top:10px;
+        left: 0.1em;
+        top: 1em;
         margin: 0;
         padding: 0;
-        font-size: 5rem; 
+        font-size: 3rem; 
     }
  
-    .navbar {
+.navbar {
         position: relative;
-        top: -20px;
-        width: 95%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        left: 0.2em;
+        top: 1.8em;
+        width: 100%;
         height: 100%;
-        margin: 10px;
-        padding: 0px;
-    }
-    .navbar a {
-        padding: 10px;
         margin: 0;
-        font-size: 2rem;  
+        padding: 0;
+    }
+.navbar a {
+        padding: 0;
+        margin: 0 em;
+        font-size: 1.8rem;  
     }
     .landing-video {
         transform: translateX(-30%) translateY(-40%);
     }
     .landing-text h2 {
         position: relative;
-        left: 13px;
-        top:30px;
-        margin: 0px;
+        left: 0.4em;
+        top: 1em;
+        margin: 0;
         padding: 0; 
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
      /* NEWSLETTER */
@@ -502,7 +506,7 @@ top:200px;}
 }
 
 /* MOBILE DEVICES [481] purple */
-@media screen and (min-width: 481px) and (max-width: 575px){
+@media screen and (min-width: 30.063em) and (max-width: 35.938){
     body {background-color: purple;width: 100%; }
     
     #branding  {
@@ -587,7 +591,7 @@ top:200px;}
 }
 
 /* IPADS & TABLETS [576 < 767] brown */
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 36em) and (max-width: 48.5em) {
     body {background-color: brown; }
     .header-container
     {
@@ -604,25 +608,30 @@ top:200px;}
         margin-top: 10px;
     }
     .logotype {
+        position: relative;
+        left: -0.2em;
+        top:0.5em;
         margin: 0;
         padding: 0;
-        font-size: 6rem;
+        font-size: 4rem; 
     }
-    
-    .navbar {
-        width: 100%;
-        margin: 0;
-        padding: 0;  
+ 
+.navbar {
         position: relative;
-        left: 25px;
-        top: 25px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        left: 2em;
+        top: 1.8em;
+        width: 90%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
     }
-    .navbar a {
-        margin: 0;
-        position: relative;
-        bottom: 50px;
-        font-size: 3.3rem;  
-        text-transform: uppercase;
+.navbar a {
+        padding: 0;
+        margin: 0 em;
+        font-size: 3rem;  
     }
    .landing-video {
         min-width: 100%;
@@ -701,7 +710,7 @@ top:200px;}
 }
 
 /* IPADS & LAPTOPS - Smaller screens [768 < 991] red */
-@media screen and (min-width: 768px) and (max-width: 991px){
+@media screen and (min-width: 48em) and (max-width: 61.938em){
     body {background-color:  red; }
     .header-container {
         display:flex;
@@ -721,11 +730,11 @@ top:200px;}
         }
     .logotype {
             position: relative;
-            left: 0;
-            top:10px;
+            left: -0.2em;
+            top:0.5em;
             margin: 0;
             padding: 0;
-            font-size: 9rem; 
+            font-size: 5rem; 
         }
      
     .navbar {
@@ -733,17 +742,17 @@ top:200px;}
             display: flex;
             justify-content: space-evenly;
             flex-direction: column;
-            left: 25px;
-            top: -15px;
-            width: 100%;
+            left: 4em;
+            top: 1.8em;
+            width: 80%;
             height: 100%;
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
         }
     .navbar a {
             padding: 0;
             margin: 0 em;
-            font-size: 4.3rem;  
+            font-size: 3.5rem;  
         }
   
         .landing-video {
@@ -818,7 +827,7 @@ top:200px;}
     }
 }
 /* Dell XPS 13 (1080px) orange */
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 62em) and (max-width: 75em) {
     body {background-color: orange;  }
     .header-container {
         display:flex;

@@ -31,8 +31,9 @@
 <!-- CONTACT FORM -->
 <div class="sendmail">
     <h2>Send an Email</h2>
-        <form id="formEmail">
-        <input type="email" id="validateEmail" placeholder="Enter Email..." required>
+        <form id="formEmail" method="POST"
+        action="https://formdump.codeinstitute.net">
+        <input type="email" id="validateEmail" name="name-contact" placeholder="Enter Email..." required>
         <button type="submit" class="button" onclick="audio.play();">Send</button>
         <script>
             const audio = new Audio (); audio.src="./audio/Percz (38).mp3"

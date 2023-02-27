@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
         <!--SITE LOGO-->
         <title>Home | NeuroGen</title>
 </head>
@@ -26,7 +26,7 @@
 <!-- HEADER: END-->
 
 <!-- LANDING PAGE: VIDEO BACKGROUND -->
-    <video src="img/video-1.mp4" class="landing-video" autoplay loop muted></video>
+    <video src="assets/media/video/video-1.mp4" class="landing-video" autoplay loop muted></video>
     <div class="landing-overlay"></div>
 
 <!-- LANDING PAGE: TEXT (VALUE PROPOSITION) -->
@@ -38,8 +38,9 @@
 <!-- NEWSLETTER: SUBSCRIPTION FORM -->
 <div class="newsletter">
     <h3>Subscribe To Our Newsletter</h3>
-        <form id="formEmail">
-        <input type="email" id="validateEmail" placeholder="Enter Email...">
+        <form id="formEmail" method="POST"
+        action="https://formdump.codeinstitute.net"></form>
+        <input type="email" id="validateEmail" name="nameEmail"placeholder="Enter Email...">
         <button type="submit" class="form-button" onclick="audio.play();">Subscribe</button>
         <script>
             const audio = new Audio (); audio.src="./audio/Percz (38).mp3"
