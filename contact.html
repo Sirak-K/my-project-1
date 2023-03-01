@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style_contact.css">
+    <link rel="stylesheet" href="/assets/css/style_contact.css">
     <title>Contact | NeuroGen</title>
 </head>
 <body>
@@ -24,28 +24,35 @@
     </header>
     <!-- HEADER: END-->
 
-<!-- LANDING PAGE: VIDEO BACKGROUND -->
-    <video src="img/video-1.mp4" class="landing-video" autoplay loop muted></video>
+<!-- CONTACT PAGE: VIDEO BACKGROUND -->
+    <video src="assets/media/video/video-1.mp4" class="landing-video" autoplay loop muted></video>
     <div class="landing-overlay"></div>
 
-<!-- CONTACT FORM -->
-<div class="sendmail">
-    <h2>Send an Email</h2>
+    <!-- CONTACT PAGE: LANDING TEXT  -->
+    <div class="landing-text">
+    <h2>Enhance Your Brain.</h2>
+    <h2>Enhance Your Life.</h2>
+</div>
+
+
+   <!-- NEWSLETTER: SUBSCRIPTION FORM -->
+<div class="contact-form-container">
+<div class="contact-form">
+    <h3>Send an Email</h3>
         <form id="formEmail" method="POST"
-        action="https://formdump.codeinstitute.net">
-        <input type="email" id="validateEmail" name="name-contact" placeholder="Enter Email..." required>
-        <button type="submit" class="button" onclick="audio.play();">Send</button>
+        action="https://formdump.codeinstitute.net"></form>
+        <input type="email" id="validateEmail" name="nameEmail"placeholder="Enter Email...">
+        <button type="submit" class="form-button" onclick="audio.play();">Send</button>
         <script>
             const audio = new Audio (); audio.src="./audio/Percz (38).mp3"
         </script>
     </form>
-    <div class="invalid-input"></div>
+</div>
 </div>
 
 <!-- FOOTER -->
 <footer class="footer-container">
     <div id="footer-details" class="row">
-
         <div class="col-sm-4">
             <ul class="list-inline social-links">
                 <li class="list-item">

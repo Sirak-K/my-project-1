@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style_about.css">
+    <link rel="stylesheet" href="./assets/css/style_about.css">
     <title> About | NeuroGen</title>
 </head>
 <body>
@@ -23,47 +23,38 @@
     </header>
     <!-- HEADER: END-->
 
-<!-- Background Image -->
-<div id="bg-img">
-    <img src="./img/bg_img.jpg" alt="Background Image for About Page">
-</div>
+<!-- LANDING PAGE: VIDEO BACKGROUND -->
+<video src="assets/media/video/video-1.mp4" class="landing-video" autoplay loop muted></video>
+<div class="landing-overlay"></div>
 
-<!-- BOXES: TEXT-->
-<section class="about-text">
-<div class="texts">
-    <h3>Nootropics</h3>
-    <p>Nootropics are substances claimed to improve cognitive function in individuals. </p>
-</div>
-<div class="texts">
-    <h3>Quiz App</h3>
-    <p>Memory is the ability of the brain to encode, store, and retrieve information over time. </p>
-</div>
-<div class="texts">
-<h3>Books</h3>
-    <p>Reading is a powerful way of learning. You can find books of various genres below.
-        </p>
-</div>
-</section>
-<!-- BOXES: IMAGES -->
-<section id="boxes">
-    <!--BOX 1 -->
-    <div class="box">
-    <img class="img-resize-1" src="./img/box_img_1.jpg" alt="Image of Nootropics">
+<!-- LANDING PAGE: IMAGE BACKGROUND -->
+    <div class="landing-image-container">
+        <div class="landing-image">
+            <img src="assets/media/img/landing_img_1.png" alt="">
+        </div>
+        <div class="landing-image-overlay"></div>
     </div>
-    <!--BOX 2 -->
-    <div class="box">
-    <a href="https://sirak-k.github.io/my-project-2/" target="_blank"><img class="img-resize-2" src="./img/box_img_2.png" alt="Image of a Rubiks Cube"></a>
-    </div>
-    <!--BOX 3 -->
-    <div class="box">
-    <img class="img-resize-3" src="./img/box_img_3.jpg" alt="Image of Books">
-    </div>
-</section>
 
- <!-- FOOTER -->
- <footer class="footer-container">
+<!-- ABOUT SECTION - (VALUE PROPOSITION) -->
+<section class="blog-container">
+      <article class="blog-post">
+        <h2>Nootropics</h2> 
+        <a href="#"><img src="./assets/media/img/box_img_1.jpg" alt="Box Image 1"></a> 
+      </article>
+      <article class="blog-post">
+        <h2>Online Quiz App</h2>
+        <a href="https://sirak-k.github.io/my-project-2/"><img src="./assets/media/img/box_img_2.png" alt="Box Image 2"></a>
+      </article>
+      <article class="blog-post">
+        <h2>Books</h2>
+        <a href="#"><img src="./assets/media/img/box_img_3.jpg" alt="Box Image 3"></a>
+      </article>
+  </section>
+
+
+<!-- FOOTER -->
+<footer class="footer-container">
     <div id="footer-details" class="row">
-
         <div class="col-sm-4">
             <ul class="list-inline social-links">
                 <li class="list-item">

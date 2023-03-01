@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+
+/* Global */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+
+body {
+    background-color: rgb(87, 80, 80);
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+    width: 100%;
+}
+.header-container{
+    display:flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    border-bottom: cyan 3px solid;
+}
+
+.landing-video{ 
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    background-position: center;
+}
+.landing-overlay {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    background-position: center;
+    background: #03a9f4;
+    mix-blend-mode: overlay;
+}
+
+/* ----------- NAV-BAR ----------- */
+
+.navbar {
+    width: 40%;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 50px;
+    padding: 15px;
+}
+.navbar a {
+    color:#ffffff;
+    font-size: 3.7rem;
+    text-transform: uppercase;
+    text-decoration: unset;
+}
+
+.logotype{
+    color:#ffffff;
+    text-decoration: unset;
+    font-size:5.5rem;
+    margin:10px;
+    padding-left: 20px;
+}
+h2{
+    margin: 10px;
+    font-size: 50px;
+}
+h3{
+    color: rgb(5, 255, 234);
+    font-size: 32px;
+}
+p {
+    display:flex;
+    font-size: 20px;
+    color: white;
+}
+header .highlight, header .current a
+{
+ color:e8491d;
+ font-weight:bold;
+}
+ header a:hover{
+ color:#05f7ff;
+ font-weight:bold;
+}
+/* ABOUT - MAIN CONTENT */
+.about-text {
+    position: absolute;
+    top: 280px;
+    height: 100px;
+    width: 100%;
+    background-color:blue;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5px;
+}
+.texts {
+    position: relative;
+    width: 400px;
+}
+/* BOXES */
+#boxes {
+    position: absolute;
+    top: 380px;
+   display: flex;
+   /* gap: 300px; */
+   justify-content: space-evenly;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color:rgb(238, 171, 25);
+}
+#boxes .box{
+    color: rgb(52, 55, 240);
+    text-align: center;
+    width: 400px;
+    height: 200px;
+}
+.img-resize-1 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.img-resize-2 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: solid 3px blue;
+}
+.img-resize-3 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+a {
+    font-size: 24px;
+}
+/* -------------- FOOTER -------------- */
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    outline: solid 2px cyan;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+}
+#footer-details {
+    padding: 20px;
+}
+.col-sm-4 {
+    display: inline;
+    
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-top: 5px;
+}
+.social-links li a i {
+    margin: 0 10px;
+    width:64px;
+    height: 64px;
+    padding: 24px 0;
+    border-radius: 50%;
+    font-size: 36px;
+    line-height: 16px;
+    text-align: center;
+    color: white;
+    background-color: rgb(35, 0, 236);
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+.social-links li a i:hover {
+    background:greenyellow;
+    color: black;
+}
+
+
+
+ /* RESPONSIVENESS: MEDIA QUERIES */
+
+ /* IPHONE SE & XR, GOOGLE PIXEL 5 (1080px) green */
+ @media screen and (min-width: 320px) and (max-width: 374px){
+    body {background-color: green; width: 100%; }
+    .header-container
+    {
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;  
+        height: 150px;    
+        width: 100%;
+    }
+    #branding  {
+        display:flex;
+        justify-content: center;
+    }
+    #branding a {
+        top: 20px;
+        left: 0px;
+        margin: 0;
+        padding: 0;
+        font-size: 4rem;
+    }
+   
+    .navbar {
+        margin: 0;
+        padding: 0;  
+    }
+    .navbar a {
+        position: relative;
+        left: 5px;
+        font-size: 2rem;  
+    }
+    .landing-video {
+        transform: translateX(-30%) translateY(-35%);
+    }
+
+    .landing-text h2 {
+        margin: 0;
+        padding: 0; 
+        font-size: 2rem;
+        text-align: center;
+        /* display:none; */
+    }
+    .newsletter {
+        display:flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .newsletter h3{
+        font-size: 1.8rem;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .newsletter button {
+        width: 100%;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+    #validateEmail {
+        width: 100%;
+        text-align: center;
+    }
+    /* FOOTER */
+    .footer-container {  
+        position: relative;
+        top: 300px;
+        height: 150px;
+        width: 100%;
+    }
+
+    .social-links li a i { 
+        
+        width: 50px;
+        height: 42px;
+        font-size: 1.8rem;
+        line-height: 0.4rem;  
+}
+}
+
+/* SAMSUNG GALAXY S20 (360px) blue;  */
+/* iPhone X (375 x 812)*/
+@media screen and (min-width: 375px) and (max-width: 480px) 
+{body {background-color: blue; width: 100%; }
+    #branding  {
+        display:flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        
+    }
+    .logotype {
+        position: relative;
+        left: 0;
+        top:10px;
+        margin: 0;
+        padding: 0;
+        font-size: 5rem; 
+        /* outline: solid green 10px; */
+    }
+    .header-container
+    {
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;  
+        height: 150px; 
+        width: 100%;   
+    }
+    .navbar {
+        position: relative;
+        top: -20px;
+        width: 95%;
+        height: 100%;
+        margin: 10px;
+        padding: 0px;
+    }
+    .navbar a {
+        padding: 10px;
+        margin: 0;
+        font-size: 2rem;  
+    }
+    .landing-video {
+        transform: translateX(-30%) translateY(-40%);
+    }
+    .landing-text h2 {
+        position: relative;
+        left: 13px;
+        top:30px;
+        margin: 0px;
+        padding: 0; 
+        font-size: 2.5rem;
+    }
+
+     /* NEWSLETTER */
+    .newsletter {
+        position: relative;
+        left: 0;
+        top: 50px;
+        width: 100%;
+    }
+    .newsletter button {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    #validateEmail {
+        width: 100%;
+        text-align: center;
+    }
+    /* FOOTER */
+    .footer-container {  
+        position: relative;
+        top: 180px;
+        width: 100%;
+        height: 80px;
+        padding:0;
+        margin:0;
+        align-items: center;
+    }
+    .social-links {
+        /* outline: auto; */
+        position: relative;
+        bottom: 5px;
+    }
+    .social-links li a i { 
+        width: 50px;
+        height: 45px;
+        font-size: 2rem;
+        line-height: 0.1rem;  
+}
+}
+
+/* MOBILE DEVICES [481] purple */
+@media screen and (min-width: 481px) and (max-width: 575px){
+    body {background-color: purple;width: 100%; }
+    
+    #branding  {
+        display:flex;
+        justify-content: center;
+        margin-top: 10px;
+        width: 100%;
+    }
+    #branding a {
+        position: relative;
+        bottom: 20px;
+        margin: 0;
+        padding: 0;
+        font-size: 5rem;
+        
+    }
+    .header-container
+    {
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;  
+        height: 150px;    
+        width: 100%;
+    }
+    .navbar {
+        margin: 0;
+        padding: 0;  
+        position: relative;
+        bottom: 50px;
+        left: 25px;
+    }
+    .navbar a {
+        margin: 0;
+        position: relative;
+        bottom: 27px;
+        font-size: 2.5rem;  
+    }
+    .landing-video {
+        transform: translateX(-30%) translateY(-35%);
+    }
+
+    .landing-text h2 {
+        margin: 0;
+        padding: 0; 
+        font-size: 3rem;
+        text-align: center;
+        /* display:none; */
+    }
+    .newsletter {
+        display:flex;
+        width: 100%;
+    }
+    .newsletter h3{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .newsletter button {
+        position: relative;
+        left:0px;
+        top:0;
+        width: 100%;
+        font-size: 2rem;
+    }
+    #validateEmail {
+        width: 100%;
+        text-align: center;
+    }
+    /* FOOTER */
+    .footer-container {  
+        position: relative;
+        top: 190px;
+        left:0px;
+        width: 100%;
+    }
+    .social-links li a i { 
+        width: 70px;
+        height: 70px;
+        font-size: 2.8rem;
+        line-height: 1.6rem;  
+}
+}
+
+/* IPADS & TABLETS [576 < 767] brown */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    body {background-color: brown; }
+    #branding  {
+        display:flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    #branding a {
+        margin: 0;
+        padding: 0;
+        font-size: 5rem;
+    }
+    .header-container
+    {
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;  
+        height: 150px;    
+    }
+    .navbar {
+        margin: 0;
+        padding: 0;  
+        position: relative;
+        left: 150px;
+    }
+    .navbar a {
+        margin: 0;
+        position: relative;
+        bottom: 27px;
+        font-size: 2rem;  
+        text-transform: uppercase;
+    }
+    .landing-video {
+        transform: translateX(-30%) translateY(-35%);
+    }
+
+    .landing-text h2 {
+        margin: 0;
+        padding: 0; 
+        font-size: 2rem;
+        text-align: center;
+        /* display:none; */
+    }
+    .newsletter {
+        display:flex;
+        width: 100%;
+    }
+    .newsletter h3{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .newsletter button {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    #validateEmail {
+        width: 100%;
+        text-align: center;
+    }
+    /* FOOTER */
+    .footer-container {  
+        position: relative;
+        top: 195px;
+        width: 100%;
+    }
+    .social-links li a i { 
+        width: 50px;
+        height: 42px;
+        font-size: 1.8rem;
+        line-height: 0.4rem;  
+}
+}
+
+/* LAPTOPS - Smaller screens [769 < 991] red */
+@media screen and (min-width: 768px) and (max-width: 991px){
+    body {background-color:  red; }
+    #branding  {
+        display:flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    #branding a {
+        margin: 0;
+        padding: 0;
+        font-size: 5rem;
+    }
+    .header-container
+    {
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;  
+        height: 200px;    
+    }
+    .navbar {
+        margin: 0;
+        padding: 0;  
+    }
+    .navbar a {
+        margin: 0;
+        position: relative;
+        left: 80px;
+        bottom: 27px;
+        font-size: 3.8rem;  
+    }
+    .landing-video {
+        transform: translateX(-40%) translateY(-35%);
+    }
+
+    .landing-text h2 {
+        margin: 0;
+        padding: 0; 
+        font-size: 4rem;
+        text-align: center;
+    }
+    .newsletter {
+        display:flex;
+        width: 100%;
+    }
+    .newsletter h3{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .newsletter button {
+        width: 100%;
+        font-size: 3rem;
+    }
+    #validateEmail {
+        width: 100%;
+        text-align: center;
+    }
+    /* FOOTER */
+    .footer-container {  
+        position: relative;
+        top: 280px;
+        width: 100%;
+    }
+    .social-links li a i { 
+        border-style:solid;
+        border-width: 3px;
+        border-color: cyan;
+        width: 100px;
+        height: 100px;
+        margin: 10px 5px;
+        font-size: 4rem;
+        line-height: 2.7rem;  
+    }
+    .list-item {
+        margin: 5px 15px;
+    }
+}
+/* Dell XPS 13 (1080px) orange */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    body {background-color: orange; }
+    #branding  {
+        display:flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    #branding a {
+        margin: 0;
+        padding: 0;
+        font-size: 6rem;
+    }
+    .header-container
+    {
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;  
+        height: 200px;    
+    }
+    .navbar {
+        margin: 0;
+        padding: 0;  
+    }
+    .navbar a {
+        margin: 0;
+        position: relative;
+        left: 250px;
+        bottom: 30px;
+        font-size: 3.5rem;  
+    }
+    .landing-video {
+        transform: translateX(-50%) translateY(-25%);
+    }
+
+    .landing-text h2 {
+        margin: 0;
+        padding: 0; 
+        font-size: 4rem;
+        text-align: center;
+    }
+    .newsletter {
+        display:flex;
+        width: 100%;
+    }
+    .newsletter h3{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .newsletter button {
+        width: 100%;
+        font-size: 3rem;
+    }
+    #validateEmail {
+        width: 100%;
+        text-align: center;
+    }
+    /* FOOTER */
+    .footer-container {  
+        position: relative;
+        top: 280px;
+        width: 100%;
+    }
+    .social-links li a i { 
+        border-style:solid;
+        border-width: 3px;
+        border-color: cyan;
+        width: 100px;
+        height: 100px;
+        margin: 10px 5px;
+        font-size: 4rem;
+        line-height: 2.7rem;  
+    }
+    .list-item {
+        margin: 5px 15px;
+    }
+}
