@@ -2,14 +2,12 @@
 
 /* Global */
 *{
-    /* outline: 1px solid greenyellow; */
     box-sizing: border-box;
     margin: 0;
     padding:0;
 }
 
 body {
-    background-color: rgb(87, 80, 80); 
     font-family: 'Rajdhani', sans-serif;
     font-size: clamp(1rem, 1vw + 0.5rem, 5rem);
     color: white;
@@ -47,7 +45,6 @@ body {
 /* -------------- LANDING VIDEO -------------- */ 
 .landing-video,
 .landing-overlay { 
-    /* display:none; */
     margin: 0;
     padding: 0;
     position: fixed;
@@ -63,12 +60,10 @@ body {
     background-position: center;
 }
 .landing-overlay {
-    /* display:none; */
     background: #524399;
     mix-blend-mode: overlay;
 }
 .landing-image-container{
-    /* outline: red solid 5px; */
     height: 36em;
     width: 100%;
     margin: 0;
@@ -107,7 +102,6 @@ body {
 }
 .navbar ul {
     display: flex;
-    /* justify-content: space-between; */
     gap: 3em;
     list-style: none;
     margin: 0;
@@ -139,9 +133,7 @@ body {
 }
 /* -------------- BLOG -------------- */
 .blog-container {
-    /* outline: yellow 5px solid; */
     display: flex;
-    /* justify-content: space-evenly; */
     flex-direction: row;
     gap: 6em;
     position: absolute;
@@ -150,93 +142,52 @@ body {
     max-width: 80%;
     height: 18em;
     margin: auto auto;
-    
 }
-.blog-post {
-    /* outline: rgb(4, 255, 0) 5px solid; */
-    max-width:15em;
-    padding: 1em 1.2em;
-    margin: 0;
-    position: relative;
-    text-align: center;
-    background-color: black;
-    border-top: 4px solid;
-    border-right: 4px solid;
-    border-bottom: 4px solid;
-    border-left: 4px solid;
-      border-image:linear-gradient(
-        to bottom,
-        rgba(8, 85, 201, 0.5),
-        rgba(8, 255, 255, 0.8),
-        rgba(255, 25, 224, 0.8),
-        rgba(255, 25, 224, 0.1)
-      ) 1 2 10% 90%; 
-}
-.blog-post-2 {
-    max-width:15em;
-    padding: 1em 1.2em;
-    margin: 0;
-    position: relative;
-    text-align: center;
-    background-color: black;
-    border-top: 4px solid;
-    border-right: 4px solid;
-    border-bottom: 4px solid;
-    border-left: 4px solid;
-      border-image:linear-gradient(
-        to bottom,
-        rgba(8, 85, 201, 0.5),
-        rgba(8, 255, 255, 0.8),
-        rgba(255, 25, 224, 0.8),
-        rgba(255, 25, 224, 0.1)
-      ) 1 2 10% 90%; 
-}
+
+.blog-post,
+.blog-post-2,
 .blog-post-3 {
-    max-width:15em;
-    padding: 1em 1.2em;
-    margin: 0;
-    position: relative;
-    text-align: center;
-    background-color: black;
-    border-top: 4px solid;
-    border-right: 4px solid;
-    border-bottom: 4px solid;
-    border-left: 4px solid;
-      border-image:linear-gradient(
-        to bottom,
-        rgba(8, 85, 201, 0.5),
-        rgba(8, 255, 255, 0.8),
-        rgba(255, 25, 224, 0.8),
-        rgba(255, 25, 224, 0.1)
-      ) 1 2 10% 90%; 
-}
-.blog-post img {
-    border-radius: 10% 10%;
-    width: 100%;
-    height: 7em;
-}
-.blog-post-2 img {
-    border-radius: 10% 10%;
-    width: 100%;
-    height: 7em;
-}
+max-width:15em;
+padding: 1em 1.2em;
+background-color: black;
+border-top: 4px solid;
+border-right: 4px solid;
+border-bottom: 4px solid;
+border-left: 4px solid;
+border-image:linear-gradient(
+to bottom,
+rgba(8, 85, 201, 0.5),
+rgba(8, 255, 255, 0.8),
+rgba(255, 25, 224, 0.8),
+rgba(255, 25, 224, 0.1)
+) 1 2 10% 90%; } 
+
+.blog-post img,
+.blog-post-2 img,
 .blog-post-3 img {
-    border-radius: 10% 10%;
-    width: 100%;
-    height: 7em;
-}
+width: 100%;
+height: 7em;
+border-top: 8px solid;
+border-right: 8px solid;
+border-bottom: 8px solid;
+border-left: 8px solid;
+border-image:linear-gradient(
+to bottom,
+rgba(8, 85, 201, 0.5),
+rgba(8, 255, 255, 0.8),
+rgba(255, 25, 224, 0.8),
+rgba(255, 25, 224, 0.1)
+) 1 2 10% 90%; } 
 
 .blog-post h2,
 .blog-post-2 h2,
 .blog-post-3 h2 {
-    /* margin: 0.3em 0; */
     text-align:start;
     font-size: clamp(1rem, 0.5vw + 1rem, 2rem);
 }
 .blog-post h3,
 .blog-post-2 h3,
 .blog-post-3 h3 {
-    /* margin: 0.3em 0; */
     text-align:start;
     font-size: clamp(1rem, 0.5vw + 1rem, 2rem);
 }
@@ -244,7 +195,6 @@ body {
 .blog-post p,
 .blog-post-2 p,
 .blog-post-3 p {
-    /* display:none; */
     text-align:start;
     font-family: Arial, Helvetica, sans-serif;
     font-size: clamp(1rem, 0.5vw + 1rem, 1rem);
@@ -271,13 +221,10 @@ body {
     align-items: center;
     justify-content: center;
     width: 80%;
-    /* display: none; */
-   /* outline: auto; */
 }
 .newsletter{
     padding: 0.5em;
     width: 30%;
-    /* outline: auto red; */
 }
 .newsletter-container h2{
     display:none;
@@ -288,7 +235,6 @@ body {
     font-size: clamp(1rem, 1vw + 3rem, 5rem);
 }
 .newsletter h3{
-    /* display: none; */
     text-align: center;
     color:cyan;
     font-size: clamp(1rem, 1vw + 1rem, 1.7rem);
@@ -376,38 +322,57 @@ input[type="email"]{
 }
 
 
- /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
- /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
- /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
- /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
- /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
- /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
+/* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
 
- /* 320px = 20em */
+/* 320px = 20em */
  @media screen and (min-width: 20em) and (max-width: 23em){
   
 /* -------------- HEADER -------------- */ 
 .header-container
 {
-        display:flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;  
-        height: 8.125em;    
-        width: 100%;
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;  
+    height: 8.125em;    
+    width: 100%;
 }
 #branding  {
-        display:flex;
-        justify-content: center;
+    display:flex;
+    justify-content: center;
 }
 .logotype {
-        position: relative;
-        left: 0.1em;
-        top: 0.5em;
-        margin: 0;
-        padding: 0;
-        font-size: clamp(2.5rem, 1vw + 0.5rem, 3rem);
+    position: relative;
+    left: 0.1em;
+    top: 0.5em;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(2.5rem, 1vw + 0.5rem, 3rem);
 }
+
+/* -------------- NAVBAR -------------- */ 
+.navbar {
+    position: relative;
+    display: flex;
+    left: 0em;
+    top: 1em;
+    width: 100%;
+    height: 100%;
+    margin: 0em;
+    padding: 0.2em;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+}
+.navbar a {
+    padding: 0;
+    margin: 0 em;
+    font-size: clamp(1.8rem, 1vw + 1rem, 3rem);
+}
+
 /* -------------- LANDING VIDEO -------------- */ 
 .landing-video,
 .landing-overlay { 
@@ -426,7 +391,6 @@ input[type="email"]{
     background-position: center;
 }
 .landing-overlay {
-
     background: #524399;
     mix-blend-mode: overlay;
 }
@@ -436,39 +400,17 @@ input[type="email"]{
     display: none;
 }
 
-/* -------------- NAVBAR -------------- */ 
-.navbar {
-        position: relative;
-        display: flex;
-        
-        
-        left: 0em;
-        top: 1em;
-        width: 100%;
-        height: 100%;
-        margin: 0em;
-        padding: 0.2em;
-
-}
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    width: 100%;
-    /* outline: auto; */
-}
-.navbar a {
-        padding: 0;
-        margin: 0 em;
-        font-size: clamp(1.8rem, 1vw + 1rem, 3rem);
-}
-.landing-video {
-        transform: translateX(-30%) translateY(-40%);
+/* -------------- LANDING TEXT -------------- */
+.landing-text {
+    display:none;
+    margin: 0;
+    padding: 3em 2em;
+    position: absolute;
+    top: 25em;
 }
 
 /* -------------- BLOG -------------- */
 .blog-container {
-    /* outline: 5px solid red; */
     background-color: black;
     position: relative;
     top: -35em;
@@ -490,18 +432,24 @@ input[type="email"]{
       ) 1 2 10% 90%;
 }
 .blog-post {
-    /* outline: auto; */
     margin: 0;
-    padding: 0.8em 0.8em;
+    /* padding: 0.8em 0.8em; */
     flex: 0 0 100%;
     position: relative;
     text-align: center;
-}
-.blog-post img {
-    border-radius: 10% 10%;
-    max-width: 70%;
-    max-height: 50%;
-}
+    background-color: black;
+    border-top: 0px solid;
+    border-right: 0px solid;
+    border-bottom: 0px solid;
+    border-left: 0px solid;
+    border-image:linear-gradient(
+    to bottom,
+    rgba(8, 85, 201, 0.5),
+    rgba(8, 255, 255, 0.8),
+    rgba(255, 25, 224, 0.8),
+    rgba(255, 25, 224, 0.1)
+    ) 1 2 10% 90%; } 
+
 .blog-post h2 {
     font-size: clamp(0.5rem, 0.5vw + 1rem, 1rem);
     margin: 0em 0;
@@ -525,6 +473,13 @@ input[type="email"]{
     margin: 0.3em;
     color: cyan;
 }
+
+.blog-post-2 img,
+.blog-post-3 img,
+.blog-post-2,
+.blog-post-3 {
+        display: none;
+} 
 
 /* -------------- NEWSLETTER -------------- */
 .newsletter-container {
@@ -618,30 +573,52 @@ input[type="email"]{
 /* 375px = 23.438em */
 @media screen and (min-width: 23.438em) and (max-width: 29em){
 
-
 /* -------------- HEADER -------------- */ 
 .header-container
 {
-        display:flex;
-        flex-direction: column;
-        margin: 0;
-        margin-bottom: 1em;
-        padding: 0;  
-        height: 8.125em;    
-        width: 100%;
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;  
+    height: 8.125em;    
+    width: 100%;
 }
 #branding  {
-        display:flex;
-        justify-content: center;
+    display:flex;
+    justify-content: center;
 }
 .logotype {
-        position: relative;
-        left: 0.1em;
-        top: 0.5em;
-        margin: 0;
-        padding: 0;
-        font-size: clamp(2.5rem, 1vw + 0.5rem, 3rem);
+    position: relative;
+    left: 0.1em;
+    top: 0.5em;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(2.5rem, 1vw + 0.5rem, 3rem);
 }
+
+/* -------------- NAVBAR -------------- */ 
+.navbar {
+    position: relative;
+    display: flex;
+    left: 0em;
+    top: 1em;
+    width: 100%;
+    height: 100%;
+    margin: 0em;
+    padding: 0.2em;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+}
+.navbar a {
+    padding: 0;
+    margin: 0 em;
+    font-size: clamp(1.8rem, 1vw + 1rem, 3rem);
+}
+
 /* -------------- LANDING VIDEO -------------- */ 
 .landing-video,
 .landing-overlay { 
@@ -660,7 +637,6 @@ input[type="email"]{
     background-position: center;
 }
 .landing-overlay {
-
     background: #524399;
     mix-blend-mode: overlay;
 }
@@ -670,34 +646,13 @@ input[type="email"]{
     display: none;
 }
 
-/* -------------- NAVBAR -------------- */ 
-.navbar {
-        position: relative;
-        display: flex;
-        
-        
-        left: 0em;
-        top: 1em;
-        width: 100%;
-        height: 100%;
-        margin: 0em;
-        padding: 0.2em;
-
-}
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    width: 100%;
-    /* outline: auto; */
-}
-.navbar a {
-        padding: 0;
-        margin: 0 em;
-        font-size: clamp(1.8rem, 0.5vw + 0.5rem, 3rem);
-}
-.landing-video {
-        transform: translateX(-30%) translateY(-40%);
+/* -------------- LANDING TEXT -------------- */
+.landing-text {
+    display:none;
+    margin: 0;
+    padding: 3em 2em;
+    position: absolute;
+    top: 25em;
 }
 
 /* -------------- BLOG -------------- */
@@ -724,18 +679,24 @@ input[type="email"]{
       ) 1 2 10% 90%;
 }
 .blog-post {
-    /* outline: auto; */
     margin: 0;
-    padding: 0.8em 0.8em;
+    /* padding: 0.8em 0.8em; */
     flex: 0 0 100%;
     position: relative;
     text-align: center;
-}
-.blog-post img {
-    border-radius: 10% 10%;
-    max-width: 70%;
-    max-height: 50%;
-}
+    background-color: black;
+    border-top: 0px solid;
+    border-right: 0px solid;
+    border-bottom: 0px solid;
+    border-left: 0px solid;
+    border-image:linear-gradient(
+    to bottom,
+    rgba(8, 85, 201, 0.5),
+    rgba(8, 255, 255, 0.8),
+    rgba(255, 25, 224, 0.8),
+    rgba(255, 25, 224, 0.1)
+    ) 1 2 10% 90%; } 
+
 .blog-post h2 {
     font-size: clamp(0.5rem, 0.5vw + 1rem, 1rem);
     margin: 0em 0;
@@ -759,6 +720,13 @@ input[type="email"]{
     margin: 0.3em;
     color: cyan;
 }
+
+.blog-post-2 img,
+.blog-post-3 img,
+.blog-post-2,
+.blog-post-3 {
+        display: none;
+} 
 
 /* -------------- NEWSLETTER -------------- */
 .newsletter-container {
@@ -855,26 +823,50 @@ input[type="email"]{
 /* -------------- HEADER -------------- */ 
 .header-container
 {
-        display:flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;  
-        height: 130px;    
-        width: 100%;
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;  
+    height: 8.125em;    
+    width: 100%;
 }
 #branding  {
-        display:flex;
-        justify-content: center;
+    display:flex;
+    justify-content: center;
 }
 .logotype {
-        position: relative;
-        left: 0.1em;
-        top: 0.5em;
-        margin: 0;
-        padding: 0;
-        font-size: clamp(2.5rem, 1vw + 0.5rem, 3rem);
+    position: relative;
+    left: 0.1em;
+    top: 0.5em;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(2.5rem, 1vw + 0.5rem, 3rem);
 }
-/* -------------- VIDEO -------------- */ 
+
+/* -------------- NAVBAR -------------- */ 
+.navbar {
+    position: relative;
+    display: flex;
+    left: 0em;
+    top: 1em;
+    width: 100%;
+    height: 100%;
+    margin: 0em;
+    padding: 0.2em;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+}
+.navbar a {
+    padding: 0;
+    margin: 0 em;
+    font-size: clamp(1.8rem, 1vw + 1rem, 3rem);
+}
+
+/* -------------- LANDING VIDEO -------------- */ 
 .landing-video,
 .landing-overlay { 
     margin: 0;
@@ -892,53 +884,34 @@ input[type="email"]{
     background-position: center;
 }
 .landing-overlay {
-
     background: #524399;
     mix-blend-mode: overlay;
 }
+
 /* -------------- LANDING IMAGE -------------- */ 
 .landing-image-container img {
     display: none;
 }
-/* -------------- NAVBAR -------------- */ 
-.navbar {
-        position: relative;
-        display: flex;
-        
-        
-        left: 0em;
-        top: 1em;
-        width: 100%;
-        height: 100%;
-        margin: 0em;
-        padding: 0.2em;
 
-}
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    width: 100%;
-    /* outline: auto; */
-}
-.navbar a {
-        padding: 0;
-        margin: 0 em;
-        font-size: clamp(1.8rem, 0.5vw + 0.5rem, 3rem);
-}
-.landing-video {
-        transform: translateX(-30%) translateY(-40%);
+/* -------------- LANDING TEXT -------------- */
+.landing-text {
+    display:none;
+    margin: 0;
+    padding: 3em 2em;
+    position: absolute;
+    top: 25em;
 }
 
 /* -------------- BLOG -------------- */
 .blog-container {
-    /* outline: 5px solid red; */
     background-color: black;
     position: relative;
-    top: -32em;
+    top: -35em;
     left:0;
-    max-width: 18em;
-    max-height: 20em;
+    max-width: 15em;
+    height: 15em;
+    padding: 0.4em;
+    margin: 0 auto;
     border-top: 3px solid ;
     border-right: 3px solid ;
     border-bottom: 3px solid;
@@ -951,44 +924,55 @@ input[type="email"]{
         rgba(255, 25, 224, 0.1)
       ) 1 2 10% 90%;
 }
-
 .blog-post {
-    flex: 0 0 100%;
     margin: 0;
+    /* padding: 0.8em 0.8em; */
+    flex: 0 0 100%;
+    position: relative;
     text-align: center;
-}
-.blog-post img {
-    border-radius: 10% 10%;
-   
-}
+    background-color: black;
+    border-top: 0px solid;
+    border-right: 0px solid;
+    border-bottom: 0px solid;
+    border-left: 0px solid;
+    border-image:linear-gradient(
+    to bottom,
+    rgba(8, 85, 201, 0.5),
+    rgba(8, 255, 255, 0.8),
+    rgba(255, 25, 224, 0.8),
+    rgba(255, 25, 224, 0.1)
+    ) 1 2 10% 90%; } 
+
 .blog-post h2 {
-    margin: 0.3em 0;
+    font-size: clamp(0.5rem, 0.5vw + 1rem, 1rem);
+    margin: 0em 0;
     text-align:start;
 }
 .blog-post h3 {
+    font-size: clamp(0.5rem, 0.5vw + 1rem, 0.8rem);
     margin: 0.3em 0;
     text-align:start;
-    font-size: clamp(0.5rem, 0.5vw + 1rem, 1.2rem);
 }
 .blog-post p {
     display:none;
     text-align:start;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(0.2rem, 0.5vw + 0.7rem, 1rem);
+    font-size: clamp(0.2rem, 0.5vw + 0.7rem, 0.5rem);
 }
 .blog-post a {
     position: relative;
-    top: 0;
-    margin:0;
-    font-size: clamp(1rem, 0.8vw + 1rem, 1.5rem);
+    top: 0em;
+    font-size: clamp(0.7rem, 0.8vw + 1rem, 1rem);
+    margin: 0.3em;
     color: cyan;
 }
-.blog-post-2 {
-    display:none;
-}
+
+.blog-post-2 img,
+.blog-post-3 img,
+.blog-post-2,
 .blog-post-3 {
-    display:none;
-}
+        display: none;
+} 
 /* -------------- NEWSLETTER -------------- */
 .newsletter-container {
     position: relative;
@@ -1096,7 +1080,7 @@ input[type="email"]{
         flex-direction: column;
         margin: 0;
         padding: 0;  
-        height: 130px;    
+        height: 150px;    
         width: 100%;
 }
 #branding  {
@@ -1137,14 +1121,24 @@ input[type="email"]{
 .landing-image-container img {
     display: none;
 }
+
+/* -------------- LANDING TEXT -------------- */
+.landing-text {
+    justify-content: center;
+    margin: 0;
+    padding: 3em 2em;
+    position: absolute;
+    left: 2em;
+    top: 42em;
+    font-size: clamp(1rem, 0.5vw + 0.5rem, 2rem);
+}
+
 /* -------------- NAVBAR -------------- */ 
 .navbar {
         position: relative;
         display: flex;
-        
-        
         left: 0em;
-        top: 1em;
+        top: 1.5em;
         width: 100%;
         height: 100%;
         margin: 0em;
@@ -1154,14 +1148,14 @@ input[type="email"]{
 .navbar ul {
     display: flex;
     justify-content: center;
-    gap: 2em;
+    gap: 4em;
     width: 100%;
     /* outline: auto; */
 }
 .navbar a {
         padding: 0;
         margin: 0 em;
-        font-size: clamp(1.8rem, 0.5vw + 0.5rem, 3rem);
+        font-size: clamp(2.5rem, 1vw + 1rem, 3rem);
 }
 .landing-video {
         transform: translateX(-30%) translateY(-40%);
@@ -1169,7 +1163,6 @@ input[type="email"]{
 
 /* -------------- BLOG -------------- */
 .blog-container {
-    outline: 5px solid red;
     background-color: black;
     position: relative;
     gap: 4em;
@@ -1177,8 +1170,7 @@ input[type="email"]{
     left:-15em;
     max-width: 12em;
     max-height: 20em;
-    /* margin: 0 1em; */
-    
+
 }
 
 .blog-post {
@@ -1348,7 +1340,7 @@ input[type="email"]{
         flex-direction: column;
         margin: 0;
         padding: 0;  
-        height: 130px;    
+        height: 150px;    
         width: 100%;
 }
 #branding  {
@@ -1389,14 +1381,24 @@ input[type="email"]{
 .landing-image-container img {
     display: none;
 }
+
+/* -------------- LANDING TEXT -------------- */
+.landing-text {
+    justify-content: center;
+    margin: 0;
+    padding: 3em 2em;
+    position: absolute;
+    left: 10em;
+    top: 55em;
+    font-size: clamp(1rem, 0.5vw + 0.5rem, 2rem);
+}
+
 /* -------------- NAVBAR -------------- */ 
 .navbar {
         position: relative;
         display: flex;
-        
-        
         left: 0em;
-        top: 1em;
+        top: 1.5em;
         width: 100%;
         height: 100%;
         margin: 0em;
@@ -1406,14 +1408,14 @@ input[type="email"]{
 .navbar ul {
     display: flex;
     justify-content: center;
-    gap: 2em;
+    gap: 4em;
     width: 100%;
     /* outline: auto; */
 }
 .navbar a {
         padding: 0;
         margin: 0 em;
-        font-size: clamp(1.8rem, 0.5vw + 0.5rem, 3rem);
+        font-size: clamp(2.5rem, 1vw + 1rem, 3rem);
 }
 .landing-video {
         transform: translateX(-30%) translateY(-40%);
@@ -1421,7 +1423,6 @@ input[type="email"]{
 
 /* -------------- BLOG -------------- */
 .blog-container {
-    outline: 5px solid red;
     background-color: black;
     position: relative;
     gap: 4em;
@@ -1429,8 +1430,7 @@ input[type="email"]{
     left:-15em;
     max-width: 12em;
     max-height: 20em;
-    /* margin: 0 1em; */
-    
+
 }
 
 .blog-post {
@@ -1496,6 +1496,7 @@ input[type="email"]{
     font-size: clamp(1rem, 0.8vw + 1rem, 1rem);
     color: cyan;
 }
+
 
 /* -------------- NEWSLETTER -------------- */
 .newsletter-container {
