@@ -6,6 +6,7 @@ NeuroGen is a blog that provides the user with brain enhancement tools and infor
 ## Features
 
 ### Home
+![Presentation 1 - Home](https://user-images.githubusercontent.com/122515678/222894656-997735df-e35f-4b06-98a3-9c2e48af8676.png)
 
  - Contains a **header** consisting of a logo and a navbar which is visible on all pages and all screen sizes.
 
@@ -20,6 +21,7 @@ NeuroGen is a blog that provides the user with brain enhancement tools and infor
  - Contains a **footer** consisting of social links which is visible on all pages and all screen sizes.
 
 ### About
+![Presentation 2 - About](https://user-images.githubusercontent.com/122515678/222894661-1e99d5cf-c8d5-4332-933d-61f720f26efe.png)
 
 - Consists of the three boxes with the three **main features** that the company offers resources for, one of which contains a link to a quiz app.
 
@@ -28,6 +30,7 @@ NeuroGen is a blog that provides the user with brain enhancement tools and infor
 - Contains a footer consisting of social links which is visible on all pages and all screen sizes.
 
 ### Contact
+![Presentation 3 - Contact](https://user-images.githubusercontent.com/122515678/222894665-3451e90c-438c-406a-9c64-21f114e17bcf.png)
 
 - Contains a contact form consisting of two inputs: Email and Message.
 - The form button activates sound playback when clicked.
