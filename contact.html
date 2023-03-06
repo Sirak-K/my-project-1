@@ -42,11 +42,11 @@
     <h3>Contact Us</h3>
         <form id="formEmail" method="POST"
         action="https://formdump.codeinstitute.net">
-        <input type="email" id="contact-form-email" name="nameEmail" placeholder="Enter Email...">
-        <input type="email" id="contact-form-text" name="nameEmail"placeholder="Write a Message...">
+        <input type="email" id="contact-form-email" name="Email" placeholder="Enter Email..." required>
+        <textarea type="email" id="contact-form-text" name="Message"placeholder="Write a Message..." required></textarea>
         <button type="submit" class="form-button" onclick="audio.play();">Send</button>
         <script>
-            const audio = new Audio (); audio.src="./audio/Percz (38).mp3"
+            const audio = new Audio (); audio.src="./assets/media/audio/click_sound.mp3"
         </script>
     </form>
 </div>

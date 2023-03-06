@@ -103,3 +103,8 @@ NeuroGen is a blog that provides the user with brain enhancement tools and infor
 ### Media: Icons
 
 - Font Awesome
+
+
+### Article: Paragraph
+
+- ChatGPT
