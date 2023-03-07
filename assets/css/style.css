@@ -2,17 +2,20 @@
 
 /* Global */
 *{
+    outline: greenyellow 1px solid;
     box-sizing: border-box;
     margin: 0;
     padding:0;
 }
 
 body {
+    
     font-family: 'Rajdhani', sans-serif;
     font-size: clamp(1rem, 1vw + 0.5rem, 5rem);
     color: white;
     width: 100%;
     overflow:hidden;
+    background-color: rgb(68, 62, 62);
 }
 /* -------------- HEADER -------------- */ 
 .header-container{
@@ -84,6 +87,7 @@ body {
 /* -------------- LANDING VIDEO -------------- */ 
 .landing-video,
 .landing-overlay { 
+    display: none;
     margin: 0;
     padding: 0;
     position: fixed;
