@@ -1,182 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
 
-/* Global */
-*{
-    /* outline: 1px solid greenyellow; */
-    box-sizing: border-box;
-    margin: 0;
-    padding:0;
-}
 
-body {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: clamp(1rem, 1vw + 0.5rem, 5rem);
-    color: white;
-    width: 100%;
-    overflow:hidden;
-}
-.header-container{
-    display:flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 3em;
-    background-color:rgba(7, 7, 7, 0.9);
-    border-bottom: 2px solid;
-        border-image: linear-gradient(
-        to right,
-        #FF00FF 10%,
-        rgb(0, 255, 255) 60%,
-        #FF00FF 70%
-        ) 1 2 10%;
-}
-.logotype{
-    position: relative;
-    top: 0.2em;
-    left: 4%;
-    color:#ffffff;
-    text-decoration: unset;
-    font-size: clamp(3rem, 1vw + 1rem, 5rem);
-    margin: 0.5em;
-    font-family: "Conthrax";
-}
-
+/* -------------- LANDING VIDEO -------------- */ 
 .landing-video,
 .landing-overlay { 
-    margin: 0;
-    padding: 0;
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: -100;
+    min-width: 200%;
+    min-height: 200%;
     width: auto;
     height: auto;
-    min-width: 130%;
-    min-height: 500%;
-    transform: translateX(-40%) translateY(-60%) rotateX(230deg);
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%) rotateX(0deg) rotateY(30deg);
     background-size: cover;
     background-position: center;
 }
 .landing-overlay {
-    background-color:rgba(25, 0, 252, 0.4);
+    background: rgb(3, 3, 3);
     mix-blend-mode: overlay;
 }
 
+
+/* -------------- LANDING IMAGE -------------- */ 
+.landing-image-container img {
+    display: none;
+}
+/* -------------- LANDING TEXT -------------- */
 .landing-text {
-    margin: 0;
-    padding: 3em 2em;
-    position: absolute;
-    top: 25em;
-}
-.landing-text h2 {
-    margin: 0;
-    padding: 0;
-    font-size: clamp(5rem, 1vw + 1rem, 5rem);
+    display: none;
 }
 
-/* ----------- NAV-BAR ----------- */
 
-.navbar {
-    display: flex;
-    justify-content: end;
-    width: 100%;
-    position: relative;
-    top: -1.5em;
-    left: 0em;
-    margin: 1em;
-}
-.navbar ul {
-    display: flex;
-    gap: 3em;
-    list-style: none;
-    margin: 0;
-    padding: 1em;
-}
-.navbar a {
-    color:#ffffff;
-    font-size: clamp(3rem, 1vw + 1rem, 5rem);
-    text-transform: uppercase;
-    text-decoration: unset;
-}
-.navbar .highlight, 
-.navbar .current a
-{
- color:e8491d;
- font-weight:bold;
-}
- .navbar a:hover{
- color:#05f7ff;
- font-weight:bold;
-}
- .logotype:hover{
- color:#05f7ff;
-}
 
-.form-button:hover{
- background-color:#05f7ff;
- color: black;
-}
-
-/* -------------- CONTACT FORM -------------- */
+/* ---- FORMS ---- */
+.newsletter-container,
 .contact-form-container {
-    padding: 0.5em;
+    /* height:12em; */
     display:flex;
     align-items: center;
     justify-content: center;
+   
+    /* margin: 0.8em;
+    padding: 0.5em 1.7em; */
+}
+.contact-form,
+.newsletter-form {
+    max-width: 18em;
     position: relative;
-    top: 10em;
-}
-.contact-form{
-    padding: 0.5em;
-    width: 30%;
-}
-.contact-form-container h2{
-    display:none;
-    font-style: italic;
-    text-align: center;
-    margin-top: 0em;
-    padding: 0.3em;
-    font-size: clamp(1rem, 1vw + 3rem, 5rem);
-}
-.contact-form h3{
-    text-align: center;
-    color:cyan;
-    font-size: clamp(1rem, 1vw + 1rem, 1.7rem);
-    background-color: black;
-}
-#contact-form-text {
-    text-align: center;
-    width: 100%;
-    height: 3em;
-    font-family: "Rajdhani";
-    font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
-    margin: 0;
-    padding: 0em;
-    background-color: none;
-    color:black;
-    outline: unset;
+    top: 4em;
 }
 
-input[type="email"]{
-    padding:1em;
-    outline: unset;
-}
-#contact-form-email {
+.contact-form h3,
+.newsletter-form h3{
+    padding: 0.4em;
     text-align: center;
-    width: 100%;
-    font-family: "Rajdhani";
-    font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
-    margin: 0;
-    padding: 0.2em;
-    background-color: none;
-    color:black;
-    outline: unset;
+    color:white;
+    font-size: clamp(0.5rem, 1vw + 1rem, 2rem);
+    background-color: black;
 }
+
+#contact-form-email,
+#email-form  {
+    width: 100%;
+    height: 2em;
+    margin-top: 0em;
+}
+
 .form-button{
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.966));
+    margin-top:0.3em;
+    padding:0.1em;
     font-family: "Conthrax";
     width: 100%;
-    font-size: clamp(1rem, 1vw + 1rem, 1.7rem);
+    font-size: clamp(1.5rem, 1vw + 1rem, 3rem);
     background-color: black;
     color:cyan;
     border-top: 0.2em solid ;
@@ -191,24 +88,188 @@ input[type="email"]{
             rgba(255, 25, 224, 0.1)
           ) 1 2 10% 90%;
 }
+input[type="email"]{
+    padding:1em;
+    outline: unset;
+}
+
+/* -------------- SUBSCRIPTION FORM -------------- */
+.newsletter-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    left:0;
+}
+
+.newsletter-container h2{
+    font-style: italic;
+    text-align: center;
+    margin: 0em;
+    padding: 0em;
+    font-size: clamp(0.3rem, 1vw + 1rem, 3rem);
+}
+
+
+/* -------------- CONTACT FORM -------------- */
+
+
+.contact-form{
+    width: 100%;
+}
+
+#contact-form-email,
+#contact-form-text {
+    text-align: center;
+    width: 100%;
+    font-family: "Rajdhani";
+    font-size: clamp(1rem, 1vw + 1rem, 2rem);
+    background-color: none;
+    color:black;
+    outline: unset;
+}
+
+#contact-form-text {
+   
+    margin-top: 0.5em;
+    width: 100%;
+    height: 3em;
+}
+#contact-form-text::placeholder {
+    padding: 0.7em;
+}
+
+/* -------------- FOOTER -------------- */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    right:0;
+    bottom: 0;
+    width: 100%;
+    height: 4.5em;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-top: 2px solid;
+    border-image: linear-gradient(
+    to left,
+    #FF00FF 10%,
+    rgb(0, 255, 255) 60%,
+    #FF00FF 70%
+    ) 1 2 10%;
+}
+
+#footer-details {
+padding:0em;
+}
+
+.social-links {
+    position: relative;
+    top: 0.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+}
+
+.social-links li a i {
+    padding: 0;
+    width: 70px;
+    height: 70px;
+    line-height:4.5rem;
+    font-size: clamp(3.2rem, 1vw + 1rem, 5rem);
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(35, 0, 236);
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+
+}
+
+
+
+
+
+
+/* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
+/* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
+/* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
+/* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
+/* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
+
+/* 320px = 20em */
+ @media screen and (min-width: 20em) and (max-width:64em) {
+
+/* -------------- LANDING VIDEO -------------- */ 
+.landing-video,
+.landing-overlay { 
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 200%;
+    min-height: 400%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-60%) translateY(-80%) rotateX(30deg) rotateY(0deg);
+    background-size: cover;
+    background-position: center;
+}
+.landing-overlay {
+    background: rgba(50, 8, 201, 0.7);
+    /* background-color: rgba(0, 0, 0); */
+    mix-blend-mode: color-dodge;
+}
+
+.newsletter-container {
+    position: relative;
+    left:0;
+    display:flex;
+    justify-content: center;
+}
+
+
+/* ---- FORMS ---- */
+.newsletter-container,
+.contact-form-container {
+    margin: 0.8em;
+    padding: 0.5em 1.7em;
+}
+.contact-form,
+.newsletter-form {
+    max-width: 18em;
+    position: relative;
+    top: 0em;
+}
 
 
 /* -------------- FOOTER -------------- */
 .footer-container {
-    width: 30%;
-    height: auto;
-    margin: 0;
-    padding:0;
-    position: absolute;
-    left: 48em;
-    bottom: 0.2em;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    right:0;
+    bottom: 0;
+    width: 100%;
+    height: 4em;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-top: 2px solid;
+    border-image: linear-gradient(
+    to left,
+    #FF00FF 10%,
+    rgb(0, 255, 255) 60%,
+    #FF00FF 70%
+    ) 1 2 10%;
 }
 
 #footer-details {
-    margin: 0;
-    padding: 0;
+padding:0.3em;
 }
 
 .social-links {
@@ -216,954 +277,70 @@ input[type="email"]{
     justify-content: center;
     align-items: center;
     list-style: none;
-    padding-top: 0.3em;
-    margin: 0;
+    top: 0;
+}
+.social-links a{
+    outline: unset;
+    
 }
 .social-links li a i {
-    margin: 0.5em;
-    padding: 0;
-    width: 60px;
-    height: 60px;
+    padding:0;
+    width: 42px;
+    height: 42px;
+    line-height:2.7rem;
+    font-size: clamp(1.8rem, 1vw + 1rem, 3rem);
     border-radius: 50%;
-    font-size: clamp(2.5rem, 1vw + 1rem, 5rem);
-    line-height: 3.8rem;
-    text-align: center;
     color: white;
     background-color: rgb(35, 0, 236);
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
-}
-.social-links li a i:hover {
-    background:greenyellow;
-    color: black;
-    
-}
-/* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
 
-/* 320px = 20em */
- @media screen and (min-width: 20em) and (max-width: 23em){
-
-/* -------------- HEADER -------------- */ 
-.header-container
-{
-    display:flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;  
-    height: 8.125em;    
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-#branding  {
-    display:flex;
-    justify-content: center;
-}
-.logotype {
-    position: relative;
-    left: 0.1em;
-    top: 0.5em;
-    margin: 0;
-    padding: 0;
-    font-size: clamp(2.5rem, 1vw + 0.5rem, 3rem);
 }
 
-/* -------------- NAVBAR -------------- */ 
-.navbar {
-    position: relative;
-    display: flex;
-    left: 0em;
-    top: 1em;
-    width: 100%;
-    height: 100%;
-    margin: 0em;
-    padding: 0.2em;
-}
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    width: 100%;
-}
-.navbar a {
-    padding: 0;
-    margin: 0 em;
-    font-size: clamp(1.8rem, 1vw + 1rem, 3rem);
-}
-
-/* -------------- LANDING VIDEO -------------- */ 
-.landing-video,
-.landing-overlay { 
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 300%;
-    min-height: 300%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%) rotateX(0deg) rotateY(10deg);
-    background-size: cover;
-    background-position: center;
-}
-.landing-overlay {
-    background: #524399;
-    mix-blend-mode: overlay;
-}
-
-/* -------------- LANDING IMAGE -------------- */ 
-.landing-image-container img {
-    display: none;
-}
-/* -------------- LANDING TEXT -------------- */
-.landing-text {
-    display: none;
-}
-
-
-
-/* -------------- CONTACT FORM -------------- */
-.contact-form-container {
-    padding: 0;
-    margin: 0;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 3em;
-    /* margin-top: 8em; */
-    /* width: 70%; */
-}
-.contact-form{
-    padding: 0;
-    margin: 0;
-    width: 80%;
-}
-
-.contact-form h3{
-    text-align: center;
-    color:cyan;
-    font-size: clamp(1rem, 1vw + 1rem, 1.7rem);
-    background-color: black;
-}
-#contact-form-text {
-    text-align: center;
-    width: 100%;
-    height: 3em;
-    font-family: "Rajdhani";
-    font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
-    margin: 0;
-    padding: 0em;
-    background-color: none;
-    color:black;
-    outline: unset;
-}
-
-input[type="email"]{
-    padding:1em;
-    outline: unset;
-}
-#contact-form-email {
-    text-align: center;
-    width: 100%;
-    font-family: "Rajdhani";
-    font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
-    margin: 0;
-    padding: 0.2em;
-    background-color: none;
-    color:black;
-    outline: unset;
-}
-.form-button{
-    font-family: "Conthrax";
-    width: 100%;
-    font-size: clamp(1rem, 1vw + 1rem, 1.7rem);
-    background-color: black;
-    color:cyan;
-    border-top: 0.2em solid ;
-        border-right: 0.2em solid ;
-        border-bottom: 0.2em solid;
-        border-left: 0.2em solid ;
-        border-image:linear-gradient(
-            to bottom,
-            rgba(50, 8, 201, 0.5),
-            rgba(8, 255, 255, 0.8),
-            rgba(255, 25, 224, 0.8),
-            rgba(255, 25, 224, 0.1)
-          ) 1 2 10% 90%;
-}
-/* -------------- FOOTER -------------- */
-.footer-container {  
-        display:flex;
-        margin: 0;
-        padding: 0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: auto;
-        left:0;
-        
-        border-top: 2px solid;
-        border-image: linear-gradient(
-        to left,
-        #FF00FF 10%,
-        rgb(0, 255, 255) 60%,
-        #FF00FF 70%
-        ) 1 2 10%;
-}
-.social-links li a i { 
-        margin: 0.3em;
-        padding: 0;
-        width: 40px;
-        height: 40px;
-        font-size: clamp(1.7rem, 0.8vw + 1rem, 2rem);
-        line-height: 2.5rem;  
-}
-#footer-details {
-    padding: 0.2em;
-}
-}
+ }
 
 /* 375px = 23.438em */
-@media screen and (min-width: 23.438em) and (max-width: 29em){
-   
-/* -------------- HEADER -------------- */ 
-.header-container
-{
-    display:flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;  
-    height: 8.125em;    
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-#branding  {
-    display:flex;
-    justify-content: center;
-}
-.logotype {
-    position: relative;
-    left: 0.1em;
-    top: 0.5em;
-    margin: 0;
-    padding: 0;
-    font-size: clamp(2.5rem, 1vw + 0.5rem, 3rem);
+@media screen and (min-width: 23.438em) {
+    .contact-form-container {
+        position: relative;
+        top: 3em;   
+    }
 }
 
-/* -------------- NAVBAR -------------- */ 
-.navbar {
-    position: relative;
-    display: flex;
-    left: 0em;
-    top: 1em;
-    width: 100%;
-    height: 100%;
-    margin: 0em;
-    padding: 0.2em;
-}
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    width: 100%;
-}
-.navbar a {
-    padding: 0;
-    margin: 0 em;
-    font-size: clamp(1.8rem, 1vw + 1rem, 3rem);
-}
+/* 600px = 37.5em */
+@media screen and (min-width: 37.5em) and (max-width:119.938em) {
 
-/* -------------- LANDING VIDEO -------------- */ 
-.landing-video,
-.landing-overlay { 
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 300%;
-    min-height: 300%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%) rotateX(0deg) rotateY(10deg);
-    background-size: cover;
-    background-position: center;
-}
-.landing-overlay {
-    background: #524399;
-    mix-blend-mode: overlay;
-}
-
-/* -------------- LANDING IMAGE -------------- */ 
-.landing-image-container img {
-    display: none;
-}
-/* -------------- LANDING TEXT -------------- */
-.landing-text {
-    display: none;
-}
-
-
-/* -------------- CONTACT FORM -------------- */
+.newsletter-container,
 .contact-form-container {
-    padding: 0;
-    margin: 0;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 3em;
-    /* margin-top: 8em; */
-    /* width: 70%; */
-}
-.contact-form{
-    padding: 0;
-    margin: 0;
-    width: 80%;
+    margin-top: 2em;
 }
 
-.contact-form h3{
-    text-align: center;
-    color:cyan;
-    font-size: clamp(1rem, 1vw + 1rem, 1.7rem);
-    background-color: black;
+.footer-container{
+position: fixed;
+bottom:0;
+height: auto;
 }
-#contact-form-text {
-    text-align: center;
-    width: 100%;
-    height: 3em;
-    font-family: "Rajdhani";
-    font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
-    margin: 0;
-    padding: 0em;
-    background-color: none;
-    color:black;
-    outline: unset;
+.social-links li a i {
+padding: 0;
+width: 70px;
+height: 70px;
+line-height:4.5rem;
+font-size: clamp(3.2rem, 1vw + 1rem, 5rem);
 }
 
-input[type="email"]{
-    padding:1em;
-    outline: unset;
-}
-#contact-form-email {
-    text-align: center;
-    width: 100%;
-    font-family: "Rajdhani";
-    font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
-    margin: 0;
-    padding: 0.2em;
-    background-color: none;
-    color:black;
-    outline: unset;
-}
-.form-button{
-    font-family: "Conthrax";
-    width: 100%;
-    font-size: clamp(1rem, 1vw + 1rem, 1.7rem);
-    background-color: black;
-    color:cyan;
-    border-top: 0.2em solid ;
-        border-right: 0.2em solid ;
-        border-bottom: 0.2em solid;
-        border-left: 0.2em solid ;
-        border-image:linear-gradient(
-            to bottom,
-            rgba(50, 8, 201, 0.5),
-            rgba(8, 255, 255, 0.8),
-            rgba(255, 25, 224, 0.8),
-            rgba(255, 25, 224, 0.1)
-          ) 1 2 10% 90%;
-}
-/* -------------- FOOTER -------------- */
-.footer-container {  
-        display:flex;
-        margin: 0;
-        padding: 0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: auto;
-        left:0;
-        
-        border-top: 2px solid;
-        border-image: linear-gradient(
-        to left,
-        #FF00FF 10%,
-        rgb(0, 255, 255) 60%,
-        #FF00FF 70%
-        ) 1 2 10%;
-}
-.social-links li a i { 
-        margin: 0.3em;
-        padding: 0;
-        width: 40px;
-        height: 40px;
-        font-size: clamp(1.7rem, 0.8vw + 1rem, 2rem);
-        line-height: 2.5rem;  
-}
-#footer-details {
-    padding: 0.2em;
-}
-}
-    
-/* 480px = 30em  */
-@media screen and (min-width: 30em) and (max-width: 47em) {
-
-/* -------------- HEADER -------------- */ 
-.header-container
-{
-    display:flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;  
-    height: 8.125em;    
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-#branding  {
-    display:flex;
-    justify-content: center;
-}
-.logotype {
-    position: relative;
-    left: 0.1em;
-    top: 0.5em;
-    margin: 0;
-    padding: 0;
-    font-size: clamp(2.5rem, 1vw + 0.5rem, 3rem);
-}
-
-/* -------------- NAVBAR -------------- */ 
-.navbar {
-    position: relative;
-    display: flex;
-    left: 0em;
-    top: 1em;
-    width: 100%;
-    height: 100%;
-    margin: 0em;
-    padding: 0.2em;
-}
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    width: 100%;
-}
-.navbar a {
-    padding: 0;
-    margin: 0 em;
-    font-size: clamp(1.8rem, 1vw + 1rem, 3rem);
-}
-
-/* -------------- LANDING VIDEO -------------- */ 
-.landing-video,
-.landing-overlay { 
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 300%;
-    min-height: 300%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%) rotateX(0deg) rotateY(10deg);
-    background-size: cover;
-    background-position: center;
-}
-.landing-overlay {
-    background: #524399;
-    mix-blend-mode: overlay;
-}
-
-/* -------------- LANDING IMAGE -------------- */ 
-.landing-image-container img {
-    display: none;
-}
-/* -------------- LANDING TEXT -------------- */
-.landing-text {
-    display: none;
-}
-
-
-/* -------------- CONTACT FORM -------------- */
-.contact-form-container {
-    padding: 0;
-    margin: 0;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 3em;
-    /* margin-top: 8em; */
-    /* width: 70%; */
-}
-.contact-form{
-    padding: 0;
-    margin: 0;
-    width: 80%;
-}
-
-.contact-form h3{
-    text-align: center;
-    color:cyan;
-    font-size: clamp(1rem, 1vw + 1rem, 1.7rem);
-    background-color: black;
-}
-#contact-form-text {
-    text-align: center;
-    width: 100%;
-    height: 3em;
-    font-family: "Rajdhani";
-    font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
-    margin: 0;
-    padding: 0em;
-    background-color: none;
-    color:black;
-    outline: unset;
-}
-
-input[type="email"]{
-    padding:1em;
-    outline: unset;
-}
-#contact-form-email {
-    text-align: center;
-    width: 100%;
-    font-family: "Rajdhani";
-    font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
-    margin: 0;
-    padding: 0.2em;
-    background-color: none;
-    color:black;
-    outline: unset;
-}
-.form-button{
-    font-family: "Conthrax";
-    width: 100%;
-    font-size: clamp(1rem, 1vw + 1rem, 1.7rem);
-    background-color: black;
-    color:cyan;
-    border-top: 0.2em solid ;
-        border-right: 0.2em solid ;
-        border-bottom: 0.2em solid;
-        border-left: 0.2em solid ;
-        border-image:linear-gradient(
-            to bottom,
-            rgba(50, 8, 201, 0.5),
-            rgba(8, 255, 255, 0.8),
-            rgba(255, 25, 224, 0.8),
-            rgba(255, 25, 224, 0.1)
-          ) 1 2 10% 90%;
-}
-/* -------------- FOOTER -------------- */
-.footer-container {  
-        display:flex;
-        margin: 0;
-        padding: 0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: auto;
-        left:0;
-        
-        border-top: 2px solid;
-        border-image: linear-gradient(
-        to left,
-        #FF00FF 10%,
-        rgb(0, 255, 255) 60%,
-        #FF00FF 70%
-        ) 1 2 10%;
-}
-.social-links li a i { 
-        margin: 0.3em;
-        padding: 0;
-        width: 40px;
-        height: 40px;
-        font-size: clamp(1.7rem, 0.8vw + 1rem, 2rem);
-        line-height: 2.5rem;  
-}
-#footer-details {
-    padding: 0.2em;
-}
 }
 
 /* 768px = 48em */
-@media screen and (min-width: 48em) and (max-width: 61em){
-  
-/* -------------- HEADER -------------- */ 
-.header-container
-{
-    display:flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;  
-    height: 8.125em;    
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-#branding  {
-    display:flex;
-    justify-content: center;
-}
-.logotype {
-    position: relative;
-    left: 0.1em;
-    top: 0.5em;
-    margin: 0;
-    padding: 0;
-    font-size: clamp(2.5rem, 1vw + 0.5rem, 3rem);
-}
+@media screen and (min-width: 48em) and (max-width:119.938em) {
 
-/* -------------- NAVBAR -------------- */ 
-.navbar {
-    position: relative;
-    display: flex;
-    left: 0em;
-    top: 1em;
-    width: 100%;
-    height: 100%;
-    margin: 0em;
-    padding: 0.2em;
+    .newsletter-container,
+.contact-form-container { 
+margin-top: 6em;
 }
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    width: 100%;
-}
-.navbar a {
-    padding: 0;
-    margin: 0 em;
-    font-size: clamp(1.8rem, 1vw + 1rem, 3rem);
-}
-
-/* -------------- LANDING VIDEO -------------- */ 
-.landing-video,
-.landing-overlay { 
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 300%;
-    min-height: 300%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%) rotateX(0deg) rotateY(10deg);
-    background-size: cover;
-    background-position: center;
-}
-.landing-overlay {
-    background: #524399;
-    mix-blend-mode: overlay;
-}
-
-/* -------------- LANDING IMAGE -------------- */ 
-.landing-image-container img {
-    display: none;
-}
-/* -------------- LANDING TEXT -------------- */
-.landing-text {
-    display: none;
-}
-
-
-/* -------------- CONTACT FORM -------------- */
-.contact-form-container {
-    padding: 0;
-    margin: 0;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 3em;
-    /* margin-top: 8em; */
-    /* width: 70%; */
-}
-.contact-form{
-    padding: 0;
-    margin: 0;
-    width: 80%;
-}
-
-.contact-form h3{
-    text-align: center;
-    color:cyan;
-    font-size: clamp(1rem, 1vw + 1rem, 1.7rem);
-    background-color: black;
-}
-#contact-form-text {
-    text-align: center;
-    width: 100%;
-    height: 3em;
-    font-family: "Rajdhani";
-    font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
-    margin: 0;
-    padding: 0em;
-    background-color: none;
-    color:black;
-    outline: unset;
-}
-
-input[type="email"]{
-    padding:1em;
-    outline: unset;
-}
-#contact-form-email {
-    text-align: center;
-    width: 100%;
-    font-family: "Rajdhani";
-    font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
-    margin: 0;
-    padding: 0.2em;
-    background-color: none;
-    color:black;
-    outline: unset;
-}
-.form-button{
-    font-family: "Conthrax";
-    width: 100%;
-    font-size: clamp(1rem, 1vw + 1rem, 1.7rem);
-    background-color: black;
-    color:cyan;
-    border-top: 0.2em solid ;
-        border-right: 0.2em solid ;
-        border-bottom: 0.2em solid;
-        border-left: 0.2em solid ;
-        border-image:linear-gradient(
-            to bottom,
-            rgba(50, 8, 201, 0.5),
-            rgba(8, 255, 255, 0.8),
-            rgba(255, 25, 224, 0.8),
-            rgba(255, 25, 224, 0.1)
-          ) 1 2 10% 90%;
-}
-/* -------------- FOOTER -------------- */
-.footer-container {  
-        display:flex;
-        margin: 0;
-        padding: 0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: auto;
-        left:0;
-        
-        border-top: 2px solid;
-        border-image: linear-gradient(
-        to left,
-        #FF00FF 10%,
-        rgb(0, 255, 255) 60%,
-        #FF00FF 70%
-        ) 1 2 10%;
-}
-.social-links li a i { 
-        margin: 0.3em;
-        padding: 0;
-        width: 40px;
-        height: 40px;
-        font-size: clamp(1.7rem, 0.8vw + 1rem, 2rem);
-        line-height: 2.5rem;  
-}
-#footer-details {
-    padding: 0.2em;
+.newsletter-form,
+.contact-form {
+min-width: 30em;
 }
 }
-
-/* 992px = 62em */
-@media screen and (min-width: 62em) and (max-width: 74em) {
- 
-/* -------------- HEADER -------------- */ 
-.header-container
-{
-    display:flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;  
-    height: 8.125em;    
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-#branding  {
-    display:flex;
-    justify-content: center;
-}
-.logotype {
-    position: relative;
-    left: 0.1em;
-    top: 0.5em;
-    margin: 0;
-    padding: 0;
-    font-size: clamp(2.5rem, 1vw + 0.5rem, 3rem);
-}
-
-/* -------------- NAVBAR -------------- */ 
-.navbar {
-    position: relative;
-    display: flex;
-    left: 0em;
-    top: 1em;
-    width: 100%;
-    height: 100%;
-    margin: 0em;
-    padding: 0.2em;
-}
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    width: 100%;
-}
-.navbar a {
-    padding: 0;
-    margin: 0 em;
-    font-size: clamp(1.8rem, 1vw + 1rem, 3rem);
-}
-
-/* -------------- LANDING VIDEO -------------- */ 
-.landing-video,
-.landing-overlay { 
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 300%;
-    min-height: 300%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%) rotateX(0deg) rotateY(10deg);
-    background-size: cover;
-    background-position: center;
-}
-.landing-overlay {
-    background: #524399;
-    mix-blend-mode: overlay;
-}
-
-/* -------------- LANDING IMAGE -------------- */ 
-.landing-image-container img {
-    display: none;
-}
-/* -------------- LANDING TEXT -------------- */
-.landing-text {
-    display: none;
-}
-
-
-/* -------------- CONTACT FORM -------------- */
-.contact-form-container {
-    padding: 0;
-    margin: 0;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 3em;
-    /* margin-top: 8em; */
-    /* width: 70%; */
-}
-.contact-form{
-    padding: 0;
-    margin: 0;
-    width: 80%;
-}
-
-.contact-form h3{
-    text-align: center;
-    color:cyan;
-    font-size: clamp(1rem, 1vw + 1rem, 1.7rem);
-    background-color: black;
-}
-#contact-form-text {
-    text-align: center;
-    width: 100%;
-    height: 3em;
-    font-family: "Rajdhani";
-    font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
-    margin: 0;
-    padding: 0em;
-    background-color: none;
-    color:black;
-    outline: unset;
-}
-
-input[type="email"]{
-    padding:1em;
-    outline: unset;
-}
-#contact-form-email {
-    text-align: center;
-    width: 100%;
-    font-family: "Rajdhani";
-    font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
-    margin: 0;
-    padding: 0.2em;
-    background-color: none;
-    color:black;
-    outline: unset;
-}
-.form-button{
-    font-family: "Conthrax";
-    width: 100%;
-    font-size: clamp(1rem, 1vw + 1rem, 1.7rem);
-    background-color: black;
-    color:cyan;
-    border-top: 0.2em solid ;
-        border-right: 0.2em solid ;
-        border-bottom: 0.2em solid;
-        border-left: 0.2em solid ;
-        border-image:linear-gradient(
-            to bottom,
-            rgba(50, 8, 201, 0.5),
-            rgba(8, 255, 255, 0.8),
-            rgba(255, 25, 224, 0.8),
-            rgba(255, 25, 224, 0.1)
-          ) 1 2 10% 90%;
-}
-/* -------------- FOOTER -------------- */
-.footer-container {  
-        display:flex;
-        margin: 0;
-        padding: 0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: auto;
-        left:0;
-        
-        border-top: 2px solid;
-        border-image: linear-gradient(
-        to left,
-        #FF00FF 10%,
-        rgb(0, 255, 255) 60%,
-        #FF00FF 70%
-        ) 1 2 10%;
-}
-.social-links li a i { 
-        margin: 0.3em;
-        padding: 0;
-        width: 40px;
-        height: 40px;
-        font-size: clamp(1.7rem, 0.8vw + 1rem, 2rem);
-        line-height: 2.5rem;  
-}
-#footer-details {
-    padding: 0.2em;
-}
-}
-
-
-/* 1200px = 75em */
-/* @media screen and (min-width: 75em) and (max-width: 80em)  */
-

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/style_contact.css">
     <title>Contact | NeuroGen</title>
 </head>
@@ -18,7 +19,7 @@
         <!-- NAVBAR--> 
         <nav class="navbar"><ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
         <li class="current"><a href="contact.html" >Contact</a></li>
         </ul></nav>
     </div>
@@ -36,6 +37,20 @@
 </div>
 
 
+<!-- NEWSLETTER: SUBSCRIPTION FORM -->
+<div class="newsletter-container">
+    <div class="newsletter-form">
+        <h3>Subscribe To Our Newsletter</h3>
+        <form id="formEmail" method="POST" action="https://formdump.codeinstitute.net">
+            <input type="email" id="email-form" name="Email" placeholder="Enter Email..." required>
+            <button type="submit" class="form-button" onclick="audio.play();">Subscribe</button>
+            <script>
+                const audio = new Audio (); audio.src="./assets/media/audio/click_sound.mp3"
+            </script>
+        </form>
+    </div>
+    </div>
+
    <!-- CONTACT FORM -->
 <div class="contact-form-container">
 <div class="contact-form">
@@ -43,7 +58,7 @@
         <form id="formEmail" method="POST"
         action="https://formdump.codeinstitute.net">
         <input type="email" id="contact-form-email" name="Email" placeholder="Enter Email..." required>
-        <textarea type="email" id="contact-form-text" name="Message"placeholder="Write a Message..." required></textarea>
+        <textarea type="email" id="contact-form-text" name="Message" placeholder="Write a Message..." required></textarea>
         <button type="submit" class="form-button" onclick="audio.play();">Send</button>
         <script>
             const audio = new Audio (); audio.src="./assets/media/audio/click_sound.mp3"
@@ -51,6 +66,8 @@
     </form>
 </div>
 </div>
+
+
 
 <!-- FOOTER -->
 <footer class="footer-container">

@@ -29,7 +29,7 @@
 <!-- VIDEO BG -->
     <video src="assets/media/video/video-1.mp4" class="landing-video" autoplay loop muted></video>
     <div class="landing-overlay"></div>
-
+    
 <!-- IMAGE BG -->
 <div class="landing-image-container">
     <div class="landing-image">
@@ -47,28 +47,27 @@
 <!-- BLOG SECTION -->
 <div class="blog-container">
       <article class="blog-post">
+        <h4>Latest Article</h4>
         <img src="./assets/media/img/post_img_1.jpg" alt="Blog Post 1 Image">
-        <h2>Noopept</h2>
         <h3>Have you heard of Noopept?</h3>
         <p>Noopept is a synthetic nootropic compound that was first introduced as a treatment for cognitive impairments and neurodegenerative diseases such as Alzheimer's and Parkinson's disease.
         Noopept has gained popularity as a cognitive enhancer and is widely used for its purported memory-boosting and mood-enhancing effects.</p>
-        <a href="./article.html">Read More</a>
+        <div class="read-more"><a href="./article.html">Read More</a>
+ 
       </article>
       <article class="blog-post-2">
         <img src="./assets/media/img/post_img_2.jpg" alt="Blog Post 2 Image">
-        <h2>Alpha-GPC</h2>
         <h3>What is Alpha-GPC?</h3>
         <p>Did you know that Alpha-GPC can be found in the brain? This is a natural choline compound that can be found in the brain and is also available as a dietary supplement.
             Studies have shown that Alpha-GPC supplementation can improve cognitive function and memory in both young and older adults, and may also have neuroprotective effects.</p>
-        <a href="https://en.wikipedia.org/wiki/Alpha-GPC">Read More</a>
+        <div><a href="https://en.wikipedia.org/wiki/Alpha-GPC">Read More</a></div>
       </article>
       <article class="blog-post-3">
         <img src="./assets/media/img/post_img_3.jpg" alt="Blog Post 3 Image">
-        <h2>The Racetam Family</h2>
         <h3>The pros and cons of Racetams</h3>
         <p>Racetams are a family of nootropic compounds that have been shown to improve cognitive function, memory, and focus.  
             The mechanism of action of Racetams is not well understood and their long-term effects are not fully known. Racetams are not regulated by the FDA and their quality and purity may vary between different suppliers.</p>
-        <a href="https://nootropicsexpert.com/the-top-7-racetams-which-one-is-best/">Read More</a>
+        <div><a href="https://nootropicsexpert.com/the-top-7-racetams-which-one-is-best/">Read More</a></div>
       </article>
   </div>
   
@@ -78,7 +77,7 @@
 <div class="newsletter">
     <h3>Subscribe To Our Newsletter</h3>
     <form id="formEmail" method="POST" action="https://formdump.codeinstitute.net">
-        <input type="email" id="validateEmail" name="Email" placeholder="Enter Email..." required>
+        <input type="email" id="email-form" name="Email" placeholder="Enter Email..." required>
         <button type="submit" class="form-button" onclick="audio.play();">Subscribe</button>
         <script>
             const audio = new Audio (); audio.src="./assets/media/audio/click_sound.mp3"
