@@ -10,11 +10,12 @@
 </head>
 <body>
 
-<!-- HEADER: START -->
+<!-- HEADER -->
 <header>
     <div class="header-container">
+        <!--SITE LOGO-->
         <div id="branding">
-            <h1><a class="logotype" href="index.html">NeuroGen</a></h1>
+        <h1><a class="logotype" href="index.html">NeuroGen</a></h1>
         </div>
         <!-- NAVBAR--> 
         <nav class="navbar"><ul>
@@ -22,14 +23,13 @@
         <li><a href="resources.html">Resources</a></li>
         <li class="current"><a href="contact.html" >Contact</a></li>
         </ul></nav>
- <!-- VIDEO BG -->
- <div class="video-container">
-    <video src="assets/media/video/video-1.mp4" class="landing-video" autoplay loop muted></video>
-    <div class="landing-overlay"></div>
+        <!-- VIDEO BG -->
+        <div class="video-container">
+        <video src="assets/media/video/video-1.mp4" class="landing-video" autoplay loop muted></video>
+        <div class="landing-overlay"></div>
+        </div>
     </div>
-</div>
 </header>
-<!-- HEADER: END-->
 
 <!-- LANDING TEXT  -->
 <div class="landing-text">
@@ -39,10 +39,10 @@
 
 
 <!-- NEWSLETTER: SUBSCRIPTION FORM -->
-<div class="newsletter-container">
+<section class="newsletter-container">
     <div class="newsletter-form">
         <h3>Subscribe To Our Newsletter</h3>
-        <form id="formEmail" method="POST" action="https://formdump.codeinstitute.net">
+        <form id="formEmail-1" method="POST" action="https://formdump.codeinstitute.net">
             <input type="email" id="email-form" name="Email" placeholder="Enter Email..." required>
             <button type="submit" class="form-button" onclick="audio.play();">Subscribe</button>
             <script>
@@ -50,25 +50,22 @@
             </script>
         </form>
     </div>
-    </div>
+</section>
 
-   <!-- CONTACT FORM -->
-<div class="contact-form-container">
+<!-- CONTACT FORM -->
+<section class="contact-form-container">
 <div class="contact-form">
     <h3>Contact Us</h3>
-        <form id="formEmail" method="POST"
-        action="https://formdump.codeinstitute.net">
+        <form id="formEmail-2" method="POST" action="https://formdump.codeinstitute.net">
         <input type="email" id="contact-form-email" name="Email" placeholder="Enter Email..." required>
-        <textarea type="email" id="contact-form-text" name="Message" placeholder="Write a Message..." required></textarea>
+        <textarea id="contact-form-text" name="Message" placeholder="Write a Message..." required></textarea>
         <button type="submit" class="form-button" onclick="audio.play();">Send</button>
         <script>
             const audio = new Audio (); audio.src="./assets/media/audio/click_sound.mp3"
         </script>
     </form>
 </div>
-</div>
-
-
+</section>
 
 <!-- FOOTER -->
 <footer class="footer-container">
