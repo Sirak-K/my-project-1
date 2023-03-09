@@ -1,24 +1,15 @@
 
-/* -------------- LANDING IMAGE -------------- */ 
-.landing-image-container img {
-    /* display: none; */
-}
-/* -------------- LANDING TEXT -------------- */
+/* - HIDDEN - */
 .landing-text {
-    display: none;
-}
+    display:none;
+    }
 
-
-/* ---- FORMS ---- */
+/* ---- FORMS: BOTH ---- */
 .newsletter-container,
 .contact-form-container {
-    /* height:12em; */
     display:flex;
     align-items: center;
     justify-content: center;
-   
-    /* margin: 0.8em;
-    padding: 0.5em 1.7em; */
 }
 .contact-form,
 .newsletter-form {
@@ -40,22 +31,17 @@
 #email-form  {
     width: 100%;
     height: 2em;
-    margin-top: 0em;
 }
 
 .form-button{
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.966));
     margin-top:0.3em;
     padding:0.1em;
-    font-family: "Conthrax";
     width: 100%;
     font-size: clamp(1.5rem, 1vw + 1rem, 3rem);
     background-color: black;
     color:cyan;
-    border-top: 0.2em solid ;
-        border-right: 0.2em solid ;
-        border-bottom: 0.2em solid;
-        border-left: 0.2em solid ;
+    border: 4px solid;
         border-image:linear-gradient(
             to bottom,
             rgba(50, 8, 201, 0.5),
@@ -69,32 +55,17 @@ input[type="email"]{
     outline: unset;
 }
 
-/* -------------- SUBSCRIPTION FORM -------------- */
+/* -------------- FORM: NEWSLETTER  -------------- */
 .newsletter-container {
-    display:flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
     top: 0;
     left:0;
 }
 
-.newsletter-container h2{
-    font-style: italic;
-    text-align: center;
-    margin: 0em;
-    padding: 0em;
-    font-size: clamp(0.3rem, 1vw + 1rem, 3rem);
-}
-
-
-/* -------------- CONTACT FORM -------------- */
-
-
+/* -------------- FORM: CONTACT -------------- */
 .contact-form{
     width: 100%;
 }
-
 #contact-form-email,
 #contact-form-text {
     text-align: center;
@@ -107,7 +78,6 @@ input[type="email"]{
 }
 
 #contact-form-text {
-   
     margin-top: 0.5em;
     width: 100%;
     height: 3em;
@@ -118,8 +88,6 @@ input[type="email"]{
 
 /* -------------- FOOTER -------------- */
 .footer-container {
-    display: flex;
-    justify-content: center;
     position: fixed;
     left: 0;
     right:0;
@@ -136,79 +104,13 @@ input[type="email"]{
     ) 1 2 10%;
 }
 
-#footer-details {
-padding:0em;
-}
-
 .social-links {
     position: relative;
     top: 0.3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-
 }
-
-.social-links li a i {
-    padding: 0;
-    width: 70px;
-    height: 70px;
-    line-height:4.5rem;
-    font-size: clamp(3.2rem, 1vw + 1rem, 5rem);
-    border-radius: 50%;
-    color: white;
-    background-color: rgb(35, 0, 236);
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-
-}
-
-
-
-
-
-
-/* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
-/* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
-/* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
-/* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
-/* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */ /* RESPONSIVENESS: MEDIA QUERIES */
 
 /* 320px = 20em */
  @media screen and (min-width: 20em) and (max-width:64em) {
-
-/* -------------- LANDING VIDEO -------------- */ 
-.landing-video,
-.landing-overlay { 
-    display: block;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 200%;
-    min-height: 400%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-60%) translateY(-80%) rotateX(30deg) rotateY(0deg);
-    background-size: cover;
-    background-position: center;
-}
-.landing-overlay {
-    background: rgba(50, 8, 201, 0.7);
-    /* background-color: rgba(0, 0, 0); */
-    mix-blend-mode: color-dodge;
-}
-
-.newsletter-container {
-    position: relative;
-    left:0;
-    display:flex;
-    justify-content: center;
-}
-
 
 /* ---- FORMS ---- */
 .newsletter-container,
@@ -220,68 +122,15 @@ padding:0em;
 .newsletter-form {
     max-width: 18em;
     position: relative;
-    top: 0em;
+    top: -1em;
 }
-
-
-/* -------------- FOOTER -------------- */
-.footer-container {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    left: 0;
-    right:0;
-    bottom: 0;
-    width: 100%;
-    height: 4em;
-    background-color: rgba(0, 0, 0, 0.9);
-    border-top: 2px solid;
-    border-image: linear-gradient(
-    to left,
-    #FF00FF 10%,
-    rgb(0, 255, 255) 60%,
-    #FF00FF 70%
-    ) 1 2 10%;
 }
-
-#footer-details {
-padding:0.3em;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    top: 0;
-}
-.social-links a{
-    outline: unset;
-    
-}
-.social-links li a i {
-    padding:0;
-    width: 42px;
-    height: 42px;
-    line-height:2.7rem;
-    font-size: clamp(1.8rem, 1vw + 1rem, 3rem);
-    border-radius: 50%;
-    color: white;
-    background-color: rgb(35, 0, 236);
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-
-}
-
- }
 
 /* 375px = 23.438em */
 @media screen and (min-width: 23.438em) {
     .contact-form-container {
-        position: relative;
-        top: 3em;   
+    position: relative;
+    top: 3em;   
     }
 }
 
@@ -305,13 +154,12 @@ height: 70px;
 line-height:4.5rem;
 font-size: clamp(3.2rem, 1vw + 1rem, 5rem);
 }
-
 }
 
 /* 768px = 48em */
 @media screen and (min-width: 48em) and (max-width:119.938em) {
 
-    .newsletter-container,
+.newsletter-container,
 .contact-form-container { 
 margin-top: 6em;
 }
