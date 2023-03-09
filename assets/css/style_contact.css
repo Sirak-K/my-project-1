@@ -1,36 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
-
-
-/* -------------- LANDING VIDEO -------------- */ 
-.landing-video,
-.landing-overlay { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 200%;
-    min-height: 200%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%) rotateX(0deg) rotateY(30deg);
-    background-size: cover;
-    background-position: center;
-}
-.landing-overlay {
-    background: rgb(3, 3, 3);
-    mix-blend-mode: overlay;
-}
-
 
 /* -------------- LANDING IMAGE -------------- */ 
 .landing-image-container img {
-    display: none;
+    /* display: none; */
 }
 /* -------------- LANDING TEXT -------------- */
 .landing-text {
     display: none;
 }
-
 
 
 /* ---- FORMS ---- */

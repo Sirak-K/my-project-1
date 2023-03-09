@@ -81,64 +81,29 @@ body {
  background-color:#05f7ff;
  color: black;
 }
+
 /* -------------- LANDING VIDEO -------------- */ 
+
+
 .landing-video,
 .landing-overlay { 
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 300%;
-    min-height: 300%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%) rotateX(0deg) rotateY(30deg);
-    background-size: cover;
-    background-position: center;
+    z-index: -400;
+   
+
 }
-.landing-overlay {
-    background: #524399;
-    mix-blend-mode: overlay;
-}
-/* -------------- LANDING IMAGE -------------- */ 
-.landing-image-container{
-    height: 36em;
-    width: 100%;
-    margin: 0;
-    padding: 0;
- 
-}
-.landing-image{
-    width: 100%;
-    height: 80em;
-}
-.landing-image img{
-    width: 100%;
-    height: 33em;
-}
-/* -------------- LANDING TEXT -------------- */ 
+
+
 .landing-text {
     display: none;
-    margin: 0;
-    padding: 3em 2em;
-    position: absolute;
-    top: 25em;
-}
-.landing-text h2 {
-    font-size: clamp(5rem, 1vw + 1rem, 5rem);
 }
 
 /* -------------- BLOG -------------- */
 .blog-container {
-    /* outline: solid 10px red; */
     position: absolute;
-    top: 5em;
+    top: 4em;
     left: 15em;
     max-width: 100%;
     height: auto;
-   
     margin: auto auto;
     text-align: center;
     filter: drop-shadow(0 0 8px rgba(14, 0, 214, 0.966));

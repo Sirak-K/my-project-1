@@ -14,7 +14,7 @@ body {
     color: white;
     width: 100%;
     overflow:hidden;
-    background-color: rgb(68, 62, 62);
+    background-color: black;
 }
 
 
@@ -92,42 +92,58 @@ body {
 }
 
 /* -------------- LANDING VIDEO -------------- */ 
+.video-container {
+    position: absolute;
+    height: 3em; /* Set the desired height */
+    width: 100%;
+    overflow: hidden; /* Hide any content that exceeds the container */
+    z-index: -100;
+}
+
+.video-container video {
+    position: relative;
+}
 .landing-video,
 .landing-overlay { 
-    /* display: none; */
-    margin: 0;
-    padding: 0;
     position: fixed;
     top: 50%;
     left: 50%;
     min-width: 300%;
     min-height: 300%;
-    width: auto;
-    height: auto;
-    z-index: -100;
     transform: translateX(-50%) translateY(-50%) rotateX(0deg) rotateY(30deg);
     background-size: cover;
     background-position: center;
+
 }
 .landing-overlay {
+    position: absolute;
     background: #524399;
     mix-blend-mode: overlay;
 }
+
+
 /* -------------- LANDING IMAGE -------------- */ 
 .landing-image-container{
-    height: 36em;
+    height: 100vh;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    overflow:hidden;
  
 }
-.landing-image{
+.landing-image {
+    
     width: 100%;
-    height: 80em;
+    height: 100%;
+    /* min-height: 33em; */
+    
 }
 .landing-image img{
+    position: relative;
+    top: -5%;
     width: 100%;
-    height: 33em;
+    height: 100%;
+    min-height: 33em;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /* -------------- LANDING TEXT -------------- */ 
 .landing-text {
