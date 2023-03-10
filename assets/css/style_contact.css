@@ -72,7 +72,6 @@ input[type="email"]{
     width: 100%;
     font-family: "Rajdhani";
     font-size: clamp(1rem, 1vw + 1rem, 2rem);
-    background-color: none;
     color:black;
     outline: unset;
 }

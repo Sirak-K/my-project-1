@@ -25,7 +25,7 @@ display:none;
 .navbar .highlight, 
 .navbar .current a
 {
-color:e8491d;
+color:cyan;
 font-weight:bold;
 }
 .navbar a:hover{
@@ -269,7 +269,6 @@ input[type="email"]{
     font-family: "Rajdhani";
     font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
     padding: 0em;
-    background-color: none;
     color:black;
     outline: unset;
 }
