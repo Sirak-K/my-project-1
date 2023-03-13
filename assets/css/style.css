@@ -98,7 +98,6 @@ color: black;
     text-decoration: unset;
 }
 
-
 /* -------------- LANDING VIDEO -------------- */ 
 .video-container {
     position: absolute;
@@ -128,7 +127,6 @@ color: black;
     background: #524399;
     mix-blend-mode: overlay;
 }
-
 
 /* -------------- LANDING IMAGE -------------- */ 
 .landing-image-container{
@@ -206,8 +204,6 @@ rgba(255, 25, 224, 0.8),
 rgba(255, 25, 224, 0.1)
 ) 1 2 10% 90%; } 
 
-
-
 .blog-post h2,
 .blog-post-2 h2,
 .blog-post-3 h2 {
@@ -221,7 +217,6 @@ rgba(255, 25, 224, 0.1)
     text-align:start;
     font-size: clamp(1rem, 0.5vw + 1rem, 2rem);
 }
-
 .blog-post p,
 .blog-post-2 p,
 .blog-post-3 p {
