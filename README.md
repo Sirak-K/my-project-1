@@ -61,11 +61,18 @@ NeuroGen is a blog that provides the user with brain enhancement tools and infor
 
 - An user will be able to buy relevant products through the website.
 
-## Testing & Validation
 
+## Testing
+![Testing Table](https://user-images.githubusercontent.com/122515678/224761111-95873a73-7929-4b70-ba8a-3cdfe94e28cf.png)
+
+### Lighthouse
+![Lighthouse - Performance](https://user-images.githubusercontent.com/122515678/224761272-ab8a9983-cf45-4e35-b84b-b9620576b333.png)
+
+
+## Validation
+![Validation Confirmation](https://user-images.githubusercontent.com/122515678/224761208-78521278-2fac-4527-93a0-a0681d6d9880.png)
 
 ### HTML: W3C
-
 ### CSS: Jigsaw
 
   
