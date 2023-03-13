@@ -4,8 +4,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-}
+  padding: 0;}
 
 body {
   font-family: 'Rajdhani', sans-serif;
@@ -13,45 +12,32 @@ body {
   color: white;
   width: 100%;
   overflow: hidden;
-  background-color: black;
-}
+  background-color: black;}
 
 /* - HIDDEN - */
 .blog-post h4 {
-  display: none;
-}
+  display: none;}
 
 /* --- ALL HOVERS --- */ 
 .navbar .highlight,
 .navbar .current a {
   color: cyan;
-  font-weight: bold;
-}
-
+  font-weight: bold;}
 .navbar a:hover {
   color: #05f7ff;
-  font-weight: bold;
-}
-
+  font-weight: bold;}
 .logotype:hover {
-  color: #05f7ff;
-}
-
+  color: #05f7ff;}
 .form-button:hover {
   background-color: #05f7ff;
-  color: black;
-}
-
+  color: black;}
 .blog-container a:hover {
-  color: cyan;
-}
-
+  color: cyan;}
 .social-links li a i:hover {
   background: greenyellow;
-  color: black;
-}
+  color: black;}
 
-/* -------------- HEADER -------------- */ 
+/* - HEADER - */ 
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -59,9 +45,7 @@ body {
   height: 3em;
   background-color: rgba(7, 7, 7, 0.2);
   border-bottom: 2px solid;
-  border-image: linear-gradient(to right, #FF00FF 10%, rgb(0, 255, 255) 60%, #FF00FF 70%) 1 2 10%;
-}
-
+  border-image: linear-gradient(to right, #FF00FF 10%, rgb(0, 255, 255) 60%, #FF00FF 70%) 1 2 10%;}
 .logotype {
   position: relative;
   top: 0.15em;
@@ -71,47 +55,37 @@ body {
   font-size: clamp(3rem, 1vw + 1rem, 5rem);
   margin: 0.5em;
   font-family: "Conthrax";
-  filter: drop-shadow(0px 3px 2px rgba(8, 245, 253, 0.9));
-}
+  filter: drop-shadow(0px 3px 2px rgba(8, 245, 253, 0.9));}
 
-/* ----------- NAV-BAR ----------- */
+/* - NAV-BAR - */
 .navbar {
   display: flex;
   justify-content: end;
   width: 100%;
   position: relative;
   top: -1.5em;
-  margin: 1em;
-}
-
+  margin: 1em;}
 .navbar ul {
   display: flex;
   gap: 3em;
   height: 4em;
   list-style: none;
-  padding: 1em;
-}
-
+  padding: 1em;}
 .navbar a {
   color: #ffffff;
   font-size: clamp(3rem, 1vw + 1rem, 5rem);
   text-transform: uppercase;
-  text-decoration: unset;
-}
+  text-decoration: unset;}
 
-/* -------------- LANDING VIDEO -------------- */ 
+/* - LANDING VIDEO - */ 
 .video-container {
   position: absolute;
   height: 3em;
   width: 100%;
   overflow: hidden; 
-  z-index: -100;
-}
-
+  z-index: -100;}
 .video-container video {
-  position: relative;
-}
-
+  position: relative;}
 .landing-video,
 .landing-overlay { 
   position: fixed;
@@ -121,28 +95,20 @@ body {
   min-height: 300%;
   transform: translateX(-50%) translateY(-50%) rotateX(0deg) rotateY(30deg);
   background-size: cover;
-  background-position: center;
-}
-
+  background-position: center;}
 .landing-overlay {
   position: absolute;
   background: #524399;
-  mix-blend-mode: overlay;
-}
+  mix-blend-mode: overlay;}
 
-
-/* -------------- LANDING IMAGE -------------- */ 
+/* - LANDING IMAGE - */ 
 .landing-image-container {
     height: 100vh;
     width: 100%;
-    overflow: hidden;
-}
-  
+    overflow: hidden;}
 .landing-image {
     width: 100%;
-    height: 100%;
-}
-  
+    height: 100%;}
 .landing-image img {
     position: relative;
     top: -5%;
@@ -150,22 +116,18 @@ body {
     height: 100%;
     min-height: 33em;
     background-size: cover;
-    background-repeat: no-repeat;
-}
-  
-/* -------------- LANDING TEXT -------------- */ 
+    background-repeat: no-repeat;}
+
+/* - LANDING TEXT - */ 
 .landing-text {
     margin: 0;
     padding: 3em 2em;
     position: absolute;
-    top: 25.5em;
-}
-  
+    top: 25.5em;}
 .landing-text h2 {
-    font-size: clamp(5rem, 1vw + 1rem, 5rem);
-}
+    font-size: clamp(5rem, 1vw + 1rem, 5rem);}
   
-/* -------------- BLOG -------------- */
+/* - BLOG - */
 .blog-container {
     display: flex;
     justify-content: center;
@@ -174,9 +136,7 @@ body {
     position: absolute;
     top: 7em;
     left: 5em;
-    height: auto;
-}
-  
+    height: auto;}
 .blog-post,
 .blog-post-2,
 .blog-post-3 {
@@ -190,9 +150,7 @@ body {
       rgba(8, 255, 255, 0.8),
       rgba(255, 25, 224, 0.8),
       rgba(255, 25, 224, 0.1)
-    ) 1 2 10% 90%;
-} 
-  
+    ) 1 2 10% 90%;} 
 .blog-post img,
 .blog-post-2 img,
 .blog-post-3 img {
@@ -205,32 +163,24 @@ body {
       rgba(8, 255, 255, 0.8),
       rgba(255, 25, 224, 0.8),
       rgba(255, 25, 224, 0.1)
-    ) 1 2 10% 90%;
-} 
-  
+    ) 1 2 10% 90%;} 
 .blog-post h2,
 .blog-post-2 h2,
-.blog-post-3 h2 {
+.blog-post-3 h2{
     text-align: start;
-    font-size: clamp(1rem, 0.5vw + 1rem, 2rem);
-}
-  
+    font-size: clamp(1rem, 0.5vw + 1rem, 2rem);}
 .blog-post h3,
 .blog-post-2 h3,
 .blog-post-3 h3 {
     margin: 0.3em 0;
     text-align: start;
-    font-size: clamp(1rem, 0.5vw + 1rem, 2rem);
-}
-  
+    font-size: clamp(1rem, 0.5vw + 1rem, 2rem);}
 .blog-post p,
 .blog-post-2 p,
 .blog-post-3 p {
     text-align: start;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(1rem, 0.5vw + 1rem, 1rem);
-}
-  
+    font-size: clamp(1rem, 0.5vw + 1rem, 1rem);}
 .blog-post a,
 .blog-post-2 a,
 .blog-post-3 a {
@@ -238,35 +188,26 @@ body {
     position: relative;
     top: 0.4em;
     font-size: clamp(1rem, 1vw + 1rem, 1.2rem);
-    color: cyan;
-}
-  
-/* -------------- NEWSLETTER -------------- */
+    color: cyan;}
+
+/* - NEWSLETTER - */
 .newsletter-container {
     position: absolute;
     top: 27em;
     left: 49.3em;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-  
+    justify-content: center;}
 .newsletter {
-    padding: 0.5em;
-}
-  
+    padding: 0.5em;}
 .newsletter h3 { 
     text-align: center;
     color: cyan;
     font-size: clamp(1rem, 1vw + 1rem, 1.7rem);
-    background-color: black;
-}
-  
+    background-color: black;}
 input[type="email"] {
     padding: 1em;
-    outline: unset;
-}
-  
+    outline: unset;}
 #email-form {
     text-align: center;
     width: 100%;
@@ -274,9 +215,7 @@ input[type="email"] {
     font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
     padding: 0em;
     color: black;
-    outline: unset;
-}
-  
+    outline: unset;}
 .form-button {
     font-family: "Conthrax";
     width: 100%;
@@ -290,10 +229,9 @@ input[type="email"] {
       rgba(8, 255, 255, 0.8),
       rgba(255, 25, 224, 0.8),
       rgba(255, 25, 224, 0.1)
-    ) 1 2 10% 90%;
-}
-  
-/* -------------- FOOTER -------------- */
+    ) 1 2 10% 90%;}
+
+/* - FOOTER - */
 .footer-container {
     width: 30%;
     height: auto;
@@ -301,16 +239,12 @@ input[type="email"] {
     left: 48em;
     bottom: 0.2em;
     display: flex;
-    justify-content: space-evenly;
-}
-  
+    justify-content: space-evenly;}
 .social-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
-}
-  
+    list-style: none;}
 .social-links li a i {
     text-align: center;
     margin: 0.3em;
@@ -324,12 +258,9 @@ input[type="email"] {
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
+    -o-transition: all 0.35s ease-in-out;}
   
-/* RESPONSIVENESS: MEDIA QUERIES */ 
-
-/* 320px = 20em */
+/* - MEDIA QUERIES - */
 @media screen and (min-width: 20em) and (max-width:119.938em) {
 
 /* - HIDDEN - */
@@ -493,10 +424,7 @@ input[type="email"] {
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
-  }
-}
-
-/* 375px = 23.438em */
+  }}
 @media screen and (min-width: 23.438em) and (max-width:119.938em) {
     .blog-post {
       max-width: 23em;
@@ -517,11 +445,8 @@ input[type="email"] {
     }
     .blog-container a {
       font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
-    }
-}
-  
-  /* 600px = 37.5em */
-  @media screen and (min-width: 37.5em) and (max-width:119.938em) {
+    }}
+@media screen and (min-width: 37.5em) and (max-width:119.938em) {
     .blog-container {
       margin-top: 3em;
     }
@@ -536,11 +461,8 @@ input[type="email"] {
       height: 70px;
       line-height: 4.5rem;
       font-size: clamp(3.2rem, 1vw + 1rem, 5rem);
-    }
-}
-  
-  /* 768px = 48em */
-  @media screen and (min-width: 48em) and (max-width:119.938em) {
+    }}
+@media screen and (min-width: 48em) and (max-width:119.938em) {
     .blog-post h4 {
       font-size: clamp(1.8rem, 1vw + 1rem, 3rem);
       padding: 0.5em 0;
@@ -558,5 +480,4 @@ input[type="email"] {
     .blog-post {
       min-height: 30em;
       left: 0;
-    }
-}
+    }}

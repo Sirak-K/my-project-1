@@ -1,38 +1,29 @@
-
 /* - HIDDEN - */
 .landing-text {
-    display:none;
-}
+    display:none;}
 
 /* ---- ALL FORMS (IN CONTACT PAGE) ---- */
 .newsletter-container,
 .contact-form-container {
     display:flex;
     align-items: center;
-    justify-content: center;
-}
+    justify-content: center;}
 .contact-form,
 .newsletter-form {
     max-width: 18em;
     position: relative;
-    top: 4em;
-}
-
+    top: 4em;}
 .contact-form h3,
 .newsletter-form h3{
     padding: 0.4em;
     text-align: center;
     color:white;
     font-size: clamp(0.5rem, 1vw + 1rem, 2rem);
-    background-color: black;
-}
-
+    background-color: black;}
 #contact-form-email,
 #email-form  {
     width: 100%;
-    height: 2em;
-}
-
+    height: 2em;}
 .form-button{
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.966));
     margin-top:0.3em;
@@ -48,24 +39,20 @@
             rgba(8, 255, 255, 0.8),
             rgba(255, 25, 224, 0.8),
             rgba(255, 25, 224, 0.1)
-          ) 1 2 10% 90%;
-}
+          ) 1 2 10% 90%;}
 input[type="email"]{
     padding:1em;
-    outline: unset;
-}
+    outline: unset;}
 
-/* -------------- FORM: NEWSLETTER  -------------- */
+/* - FORM: NEWSLETTER  - */
 .newsletter-container {
     position: relative;
     top: 0;
-    left:0;
-}
+    left:0;}
 
-/* -------------- FORM: CONTACT -------------- */
+/* - FORM: CONTACT - */
 .contact-form{
-    width: 100%;
-}
+    width: 100%;}
 #contact-form-email,
 #contact-form-text {
     text-align: center;
@@ -73,19 +60,15 @@ input[type="email"]{
     font-family: "Rajdhani";
     font-size: clamp(1rem, 1vw + 1rem, 2rem);
     color:black;
-    outline: unset;
-}
-
+    outline: unset;}
 #contact-form-text {
     margin-top: 0.5em;
     width: 100%;
-    height: 3em;
-}
+    height: 3em;}
 #contact-form-text::placeholder {
-    padding: 0.7em;
-}
+    padding: 0.7em;}
 
-/* -------------- FOOTER -------------- */
+/* - FOOTER - */
 .footer-container {
     position: fixed;
     left: 0;
@@ -100,18 +83,13 @@ input[type="email"]{
     #FF00FF 10%,
     rgb(0, 255, 255) 60%,
     #FF00FF 70%
-    ) 1 2 10%;
-}
-
+    ) 1 2 10%;}
 .social-links {
     position: relative;
-    top: 0.3em;
-}
+    top: 0.3em;}
 
-/* RESPONSIVENESS: MEDIA QUERIES */ 
-
-/* 320px = 20em */
- @media screen and (min-width: 20em) and (max-width:64em) {
+/* - MEDIA QUERIES - */
+@media screen and (min-width: 20em) and (max-width:64em) {
 
 /* ---- FORMS ---- */
 .newsletter-container,
@@ -124,18 +102,12 @@ input[type="email"]{
     max-width: 18em;
     position: relative;
     top: -1em;
-}
-}
-
-/* 375px = 23.438em */
+}}
 @media screen and (min-width: 23.438em) {
     .contact-form-container {
     position: relative;
     top: 3em;   
-    }
-}
-
-/* 600px = 37.5em */
+    }}
 @media screen and (min-width: 37.5em) and (max-width:119.938em) {
 
 .newsletter-container,
@@ -154,10 +126,7 @@ width: 70px;
 height: 70px;
 line-height:4.5rem;
 font-size: clamp(3.2rem, 1vw + 1rem, 5rem);
-}
-}
-
-/* 768px = 48em */
+}}
 @media screen and (min-width: 48em) and (max-width:119.938em) {
 
 .newsletter-container,
@@ -167,5 +136,4 @@ margin-top: 6em;
 .newsletter-form,
 .contact-form {
 min-width: 30em;
-}
-}
+}}
