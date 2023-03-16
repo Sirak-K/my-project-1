@@ -63,7 +63,8 @@ NeuroGen is a blog that provides the user with brain enhancement tools and infor
 
 
 ## Testing
-![Testing Table](https://user-images.githubusercontent.com/122515678/224761111-95873a73-7929-4b70-ba8a-3cdfe94e28cf.png)
+![Testing Table - 2](https://user-images.githubusercontent.com/122515678/225526477-9d765b51-7918-404d-88ff-da1d43133954.png)
+
 
 ### Lighthouse
 ![Lighthouse - Performance](https://user-images.githubusercontent.com/122515678/224761272-ab8a9983-cf45-4e35-b84b-b9620576b333.png)
