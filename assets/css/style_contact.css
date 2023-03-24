@@ -70,23 +70,42 @@ input[type="email"]{
 
 /* - FOOTER - */
 .footer-container {
-    position: fixed;
-    left: 0;
-    right:0;
-    bottom: 0;
-    width: 100%;
-    height: 4.5em;
-    background-color: rgba(0, 0, 0, 0.9);
-    border-top: 2px solid;
-    border-image: linear-gradient(
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4.5em;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-top: 2px solid;
+  border-image: linear-gradient(
     to left,
     #FF00FF 10%,
     rgb(0, 255, 255) 60%,
     #FF00FF 70%
-    ) 1 2 10%;}
+  ) 1 2 10%;}
 .social-links {
-    position: relative;
-    top: 0.3em;}
+  position: relative;
+  top: 0.3em;
+  list-style: none;}
+.social-links li a i {
+  width: 70px;
+  height: 70px;
+  line-height: 4.5rem;
+  font-size: clamp(3.2rem, 1vw + 1rem, 5rem);
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(35, 0, 236);
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;}
+
+
+
+
 
 /* - MEDIA QUERIES - */
 @media screen and (min-width: 20em) and (max-width:64em) {
@@ -103,6 +122,32 @@ input[type="email"]{
     position: relative;
     top: -1em;
 }}
+
+/* -------------- FOOTER-------------- */
+    .footer-container {
+      position: fixed;
+      left: 0;
+      right:0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      border-top: 2px solid;
+      border-image: linear-gradient(
+        to left,
+        #FF00FF 10%,
+        rgb(0, 255, 255) 60%,
+        #FF00FF 70%
+      ) 1 2 10%;
+    }
+  
+    .social-links li a i {
+      width: 42px;
+      height: 42px;
+      line-height: 2.7rem;
+      font-size: clamp(1.8rem, 1vw + 1rem, 3rem);
+    }
+
+
 @media screen and (min-width: 23.438em) {
     .contact-form-container {
     position: relative;

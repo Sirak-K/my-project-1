@@ -1,5 +1,4 @@
 /* - VISIBLE - */
-.landing-video,
 .landing-image-container,
 .blog-post,
 .blog-post-2,
@@ -134,7 +133,7 @@
       font-size: clamp(1rem, 1vw + 1rem, 1rem);
     }
   
-    /* -------------- FOOTER-------------- */
+  /* -------------- FOOTER-------------- */
     .footer-container {
       position: fixed;
       left: 0;
