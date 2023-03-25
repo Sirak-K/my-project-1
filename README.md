@@ -79,10 +79,29 @@ NeuroGen is a blog that provides the user with brain enhancement tools and infor
   
 
 ## Deployment
+This project was deployed to GitHub Pages.
+
+You can view the deployed version here: 
+https://sirak-k.github.io/my-project-1/
 
 
+## Cloning the project
 
-### Github Pages
+To clone the project to your local machine, follow these steps:
+
+1. Open your terminal or command prompt.
+2. Navigate to the directory where you want to clone the project.
+3. Run the following command: 
+   git clone https://github.com/<username>/<repository>.git
+4. Replace `<username>` with your GitHub username and `<repository>` with the name of the repository you want to clone.
+5. Press Enter to execute the command.
+6. Wait for the cloning process to complete.
+7. Once the process is complete, navigate to the project directory using the `cd` command.
+
+That's it! You now have a local copy of the project on your machine.
+
+For more information on using Git and GitHub, please see the [official Git documentation](https://git-scm.com/docs) and [GitHub Help](https://docs.github.com/en/github).
+
 
 ## Credits
 
