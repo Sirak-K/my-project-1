@@ -1,3 +1,7 @@
+body {
+  overflow:scroll;
+  overflow-x:hidden;
+}
 /* - VISIBLE - */
 .landing-image-container,
 .blog-post,
@@ -16,19 +20,25 @@
 
 /* - BLOG - */
 .blog-container {
-  height: auto;
-  position: absolute;
-  top: 7em;
-  left: 25.4em;
+  position: relative;
+  top: 0em;
+  left: 25em;
+  display: flex;
   flex-direction: column;
-  gap: 3em;}
+  justify-content: center;
+  gap: 2em;
+  width: 20em;
+  padding:0;
+  margin:0;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
 .blog-post,
 .blog-post-2,
 .blog-post-3 {
-  min-width: 20em;
-  min-height: 3em;
-  max-height: 5em;
-  padding: 0.5em 1em;
+  max-width: 100%;
+  max-height: 7em;
+  padding: 0em 0em;
   background-color: black;
   border: 4px solid;
   border-image: linear-gradient(
@@ -38,33 +48,38 @@
     rgba(255, 25, 224, 0.8),
     rgba(255, 25, 224, 0.1)
   ) 1 2 10% 90%;}
-.blog-container h2 {
+.blog-post h2,
+.blog-post-2 h2,
+.blog-post-3 h2 {
   margin: 0em;
   padding: 0.2em;
   text-align: center;
-  font-size: clamp(1rem, 1vw + 1rem, 2rem);}
-.blog-container h3 {
-  text-align: start;
-  font-size: clamp(0.2rem, 1vw + 0.8rem, 2rem);}
-.blog-container p {
+  font-size: clamp(2rem, 1vw + 2rem, 4rem);}
+.blog-post p, 
+.blog-post-2 p, 
+.blog-post-3 p {
   text-align: center;
+  min-height: 2em;
   padding: 0.2em 0.3em;
-  font-size: clamp(1rem, 1vw + 1rem, 3rem);}
+  font-size: clamp(2rem, 1vw + 1rem, 3rem);}
 .blog-container a {
   float: none;
   text-decoration: unset;
   color: white;}
 
+  .blog-post a {
+    width: auto;
+  }
+
 /* - FOOTER - */
 .footer-container {
-  display: flex;
-  justify-content: center;
-  position: fixed;
+  
+  position: relative;
   left: 0;
   right: 0;
+  top:0em;
   bottom: 0;
   width: 100%;
-  height: 4.5em;
   background-color: rgba(0, 0, 0, 0.9);
   border-top: 2px solid;
   border-image: linear-gradient(
@@ -92,18 +107,11 @@
 
 /* - MEDIA QUERIES - */
 
-@media screen and (min-width: 20em) and (max-width: 119.938em) {
+@media screen and (min-width: 0em) and (max-width: 119em) {
 
-    /* - VISIBLE - */
-    .blog-post,
-    .blog-post-2,
-    .blog-post-3 {
-      display: block;
-    }
-  
     /* -------------- BLOG -------------- */
     .blog-container {
-      height: auto;
+      height:20em;
       position: relative;
       top: 0em;
       left: 0em;
@@ -113,17 +121,17 @@
       flex-direction: column;
       gap: 0.2em;
       margin: 0;
-      padding: 0;
-      margin: 3em 0;
+      /* padding: 10em; */
+      margin: 2em 0;
     }
   
     .blog-post,
     .blog-post-2,
     .blog-post-3 {
+      display: block;
       margin: 0.3em 0;
       min-width: 15em;
-      max-width: 15em;
-      max-height: 12em;
+      max-height: 5em;
     }
   
     .blog-container p {
@@ -134,11 +142,13 @@
   
   /* -------------- FOOTER-------------- */
     .footer-container {
-      position: fixed;
+      /* display: none; */
       left: 0;
       right:0;
       bottom: 0;
+      top: 0;
       width: 100%;
+      height:4.5em;
       background-color: rgba(0, 0, 0, 0.9);
       border-top: 2px solid;
       border-image: linear-gradient(
@@ -148,24 +158,53 @@
         #FF00FF 70%
       ) 1 2 10%;
     }
-  
     .social-links li a i {
       width: 42px;
       height: 42px;
       line-height: 2.7rem;
       font-size: clamp(1.8rem, 1vw + 1rem, 3rem);
     }}
-@media screen and (min-width: 48em) and (max-width: 64em) {
+
+
+@media screen and (min-width: 23em) and (max-width: 119em){
+  /* -------------- BLOG -------------- */
+.blog-container {
+  gap: 3em;
+  margin-top: 5em;
+  margin-bottom:5em;
+  }
   
-    /* -------------- BLOG -------------- */
-    .blog-container {
-      position: relative;
-      top: 5em;
-      gap: 5em;
-    }
-  
-    .blog-post,
-    .blog-post-2,
-    .blog-post-3 {
-      min-width: 25em;
-    }}
+}
+@media screen and (min-width: 25em) and (max-width: 119em){
+  /* -------------- BLOG -------------- */
+.blog-container {
+    margin-bottom:9.2em;
+  }
+}
+/* HEIGHT !! */
+@media screen and (min-height: 50.75em) and (max-width: 119em){
+  /* -------------- BLOG -------------- */
+.blog-container {
+    margin-bottom:14em;
+  }
+}
+@media screen and (min-width: 37.5em) and (max-width: 119em){
+  .blog-container {
+    margin-bottom:13em;
+  }
+}
+@media screen and (min-width: 48em) and (max-width: 119em){
+.blog-container {
+
+    margin-bottom:17em;
+  }
+}
+@media screen and (min-width:62em) and (max-width: 119em) {
+  .blog-container {
+  margin-top: 10em;
+  gap: 10em;
+    margin-bottom:23.4em;
+  }
+}
+
+
