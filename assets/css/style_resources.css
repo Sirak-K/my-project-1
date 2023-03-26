@@ -19,25 +19,30 @@ body {
   display: none;}
 
 /* - BLOG - */
+.blog-container-wrapper{
+  display: flex;
+  justify-content: center;
+}
 .blog-container {
   position: relative;
   top: 0em;
-  left: 25em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 2em;
+  /* justify-content: center; */
+  gap: 1.5em;
   width: 20em;
   padding:0;
   margin:0;
   margin-top: 3em;
-  margin-bottom: 3em;
+  margin-bottom: 5.7em;
 }
 .blog-post,
 .blog-post-2,
 .blog-post-3 {
+  /* outline: auto; */
   max-width: 100%;
-  max-height: 7em;
+  height: auto;
+  margin:0;
   padding: 0em 0em;
   background-color: black;
   border: 4px solid;
@@ -48,27 +53,31 @@ body {
     rgba(255, 25, 224, 0.8),
     rgba(255, 25, 224, 0.1)
   ) 1 2 10% 90%;}
+
+.blog-post p, 
+.blog-post-2 p, 
+.blog-post-3 p {
+  text-align: center;
+  height: 2em;
+  padding: 0.2em 0.3em;
+  font-size: clamp(1rem, 1vw + 0.5rem, 3rem);}
 .blog-post h2,
 .blog-post-2 h2,
 .blog-post-3 h2 {
   margin: 0em;
   padding: 0.2em;
   text-align: center;
-  font-size: clamp(2rem, 1vw + 2rem, 4rem);}
-.blog-post p, 
-.blog-post-2 p, 
-.blog-post-3 p {
-  text-align: center;
-  min-height: 2em;
-  padding: 0.2em 0.3em;
-  font-size: clamp(2rem, 1vw + 1rem, 3rem);}
-.blog-container a {
-  float: none;
-  text-decoration: unset;
-  color: white;}
+  font-size: clamp(1rem, 1vw + 2rem, 4rem);}
 
-  .blog-post a {
+  .blog-post a, 
+  .blog-post-2 a, 
+  .blog-post-3 a {
+    position: relative;
+    top:0;
     width: auto;
+    float: none;
+    text-decoration: unset;
+    color: white;
   }
 
 /* - FOOTER - */
@@ -107,7 +116,7 @@ body {
 
 /* - MEDIA QUERIES - */
 
-@media screen and (min-width: 0em) and (max-width: 119em) {
+@media screen and (min-width: 0em) and (max-width:119em){
 
     /* -------------- BLOG -------------- */
     .blog-container {
@@ -119,7 +128,7 @@ body {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      gap: 0.2em;
+      gap: 1em;
       margin: 0;
       /* padding: 10em; */
       margin: 2em 0;
@@ -129,15 +138,27 @@ body {
     .blog-post-2,
     .blog-post-3 {
       display: block;
-      margin: 0.3em 0;
-      min-width: 15em;
-      max-height: 5em;
+      margin: 0;
+      padding:0em;
+     
+      width: 15em;
+      /* max-width: auto; */
+      height: auto;
     }
   
-    .blog-container p {
-      margin-bottom: 0.3em;
-      padding: 0.2em 0.3em;
-      font-size: clamp(1rem, 1vw + 1rem, 1rem);
+    .blog-post p, 
+    .blog-post-2 p, 
+    .blog-post-3 p {
+      margin: 0.3em 0;
+      /* padding: 0.7em 0.3em; */
+      font-size: clamp(0.2rem, 1vw + 1rem, 1rem);
+    }
+    .blog-post h2, 
+    .blog-post-2 h2, 
+    .blog-post-3 h2 {
+      margin: 0.2em 0;
+      padding: 0.2em 0;
+      font-size: clamp(0.2rem, 1vw + 1.5rem, 2rem);
     }
   
   /* -------------- FOOTER-------------- */
@@ -165,44 +186,65 @@ body {
       font-size: clamp(1.8rem, 1vw + 1rem, 3rem);
     }}
 
-
-@media screen and (min-width: 23em) and (max-width: 119em){
+@media screen and (min-width: 23em) and (max-width:119em){
   /* -------------- BLOG -------------- */
 .blog-container {
   gap: 3em;
   margin-top: 5em;
   margin-bottom:5em;
+  width: auto;
   }
   
 }
-@media screen and (min-width: 25em) and (max-width: 119em){
+@media screen and (min-width: 25em)and (max-width:119em) {
   /* -------------- BLOG -------------- */
 .blog-container {
     margin-bottom:9.2em;
   }
 }
 /* HEIGHT !! */
-@media screen and (min-height: 50.75em) and (max-width: 119em){
+@media screen and (min-height: 50.75em) and (max-width:119em){
   /* -------------- BLOG -------------- */
 .blog-container {
-    margin-bottom:14em;
-  }
-}
-@media screen and (min-width: 37.5em) and (max-width: 119em){
-  .blog-container {
     margin-bottom:13em;
   }
 }
-@media screen and (min-width: 48em) and (max-width: 119em){
-.blog-container {
 
-    margin-bottom:17em;
+/* 600px */
+@media screen and (min-width: 37.5em) and (max-width:119em){
+  .blog-container {
+    margin-bottom:13em;
+  }
+  
+.blog-post {
+  min-width: auto;
+}
+ 
+}
+@media screen and (min-width: 48em) and (max-width:119em){
+.blog-container-wrapper {
+
+  height:auto;
+  display: flex;
+  justify-content: center;
+}
+  .blog-container {
+    /* margin-top:5em; */
+    margin-bottom:13em;
+    gap: 3.5em;
+    height:auto;
+  }
+  .blog-post,
+  .blog-post-2,
+  .blog-post-3 {
+    margin: 1em 0;
   }
 }
-@media screen and (min-width:62em) and (max-width: 119em) {
+/* 992px */
+@media screen and (min-width:62em) and (max-width:119em){
   .blog-container {
-  margin-top: 10em;
-  gap: 10em;
+  /* margin-top: 10em; */
+  gap: 5em;
     margin-bottom:23.4em;
   }
 }
