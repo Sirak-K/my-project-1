@@ -1,37 +1,52 @@
-.body {
-overflow:scroll;
-    background-color: grey;
-}
+
 /* - HIDDEN - */
 .landing-text {
     display:none;}
 
 /* ---- ALL FORMS (IN CONTACT PAGE) ---- */
-.newsletter-container,
-.contact-form-container {
+.forms-container-wrapper {
     display:flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 0.5em;
+    width: 20em;
+    margin:auto;
+    margin: 2em auto;
+    gap:2em;
+    margin-bottom: 4.2em;
+  
 }
-.contact-form-container {
-    margin-bottom: 8.8em;
+.newsletter-container{
+    position: relative;
+    top:0;
+    left:0;
+    display: block;
 }
 
-.contact-form,
-.newsletter-form {
-    max-width: 18em;
-    position: relative;
-    top: 4em;}
+.newsletter-container,
+.contact-form-container {
+    margin-top: 1em;
+}
+
+
 .contact-form h3,
 .newsletter-form h3{
     padding: 0.4em;
     text-align: center;
     color:white;
     font-size: clamp(0.5rem, 1vw + 0.9rem, 2rem);
-    background-color: black;}
+    background-color: black;
+  
+        border:3px solid;
+        border-image: linear-gradient(
+            to right,
+            #73028a 10%,
+            rgb(2, 233, 241) 60%,
+            #73028a 70%
+            ) 1 2 10%;
+    }
 #contact-form-email,
 #email-form  {
+    font-size: clamp(1rem, 1vw + 0.5rem, 2rem);
     width: 100%;
     height: 2em;}
 .form-button{
@@ -54,31 +69,27 @@ input[type="email"]{
     padding:1em;
     outline: unset;}
 
-/* - FORM: NEWSLETTER  - */
-.newsletter-container {
-    position: relative;
-    top: 0;
-    left:0;}
+
 
 /* - FORM: CONTACT - */
-.contact-form{
-    width: 100%;}
+
 #contact-form-email,
 #contact-form-text {
     text-align: center;
     width: 100%;
     font-family: "Rajdhani";
-    font-size: clamp(1rem, 1vw + 1rem, 2rem);
+    
     color:black;
     outline: unset;}
 #contact-form-text {
-    margin-top: 0.5em;
-    width: 100%;
-    height: 3em;}
+    font-size: clamp(0.5rem, 1vw + 0.5rem, 2rem);
+    
+    height: 3em;
+    
+}
 #contact-form-text::placeholder {
     padding: 0.7em;}
 
-/* - FOOTER - */
 
 
 /* - MEDIA QUERIES - */

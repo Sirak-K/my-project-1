@@ -6,19 +6,9 @@
     display: none;} 
 
 
-/* - LANDING IMAGE - */ 
-.landing-image-container {
-    height: 95vh;
-  }
 
 /* - BLOG - */
-.blog-container-wrapper {
-    position: relative;
-   top:9em;
-   margin-bottom:3em;
-   height:0em;
-   width:100%;
-}
+
 .blog-container {
     margin:0;
     padding:0;
@@ -81,9 +71,8 @@ rgba(255, 25, 224, 0.1)
     font-size: clamp(1rem, 1vw + 1rem, 1.2rem);
     color: cyan;}
 
-/* - FOOTER - */
 .footer-container {
-    top: -8em;
+    top:-32em;
 }
 
 

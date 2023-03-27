@@ -22,19 +22,20 @@ body {
 .blog-container-wrapper{
   display: flex;
   justify-content: center;
+  top: 0em;
+  margin:0;
+  margin-top: 3em;
+  margin-bottom: 3.94em;
 }
 .blog-container {
-  position: relative;
-  top: 0em;
+  
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   gap: 1.5em;
   width: 20em;
   padding:0;
-  margin:0;
-  margin-top: 3em;
-  margin-bottom: 5.7em;
+ 
 }
 .blog-post,
 .blog-post-2,
@@ -93,9 +94,9 @@ body {
   border-top: 2px solid;
   border-image: linear-gradient(
     to left,
-    #FF00FF 10%,
-    rgb(0, 255, 255) 60%,
-    #FF00FF 70%
+    #301aaf 10%,
+        rgb(0, 255, 255) 60%,
+        #301aaf 70%
   ) 1 2 10%;}
 .social-links {
   position: relative;
@@ -163,7 +164,6 @@ body {
   
   /* -------------- FOOTER-------------- */
     .footer-container {
-      /* display: none; */
       left: 0;
       right:0;
       bottom: 0;
@@ -174,9 +174,11 @@ body {
       border-top: 2px solid;
       border-image: linear-gradient(
         to left,
-        #FF00FF 10%,
+        
+        #301aaf 10%,
         rgb(0, 255, 255) 60%,
-        #FF00FF 70%
+        #301aaf 70%
+        
       ) 1 2 10%;
     }
     .social-links li a i {
