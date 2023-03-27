@@ -380,7 +380,6 @@ input[type="email"] {
     margin: 0;
     margin-bottom:1em;
     height: 10em;
-    /* outline: auto; */
   }
   
   .blog-post a {
@@ -462,7 +461,7 @@ input[type="email"] {
 
   }
   .blog-post {
-    min-width:20em;
+    width:20em;
   }
   .blog-post h3 {
     font-size: clamp(0.2rem, 1vw + 1.2rem, 3rem);
@@ -513,7 +512,6 @@ input[type="email"] {
     height: 37em;
   }
   .blog-post p {
-    outline: auto;
     height:10.5em;
   }
   .blog-post img {
