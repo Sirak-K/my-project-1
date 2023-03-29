@@ -12,12 +12,15 @@
 <body>
 
 <!-- HEADER -->
-<header>
-    <div class="header-container">
-        <div id="branding">
-            <h1><a class="logotype" href="index.html">NeuroGen</a></h1>
-        </div>
-    </div>
+<header class="header-container">
+       
+    <!--SITE LOGO-->
+    <container class="logotype-container">
+    <a class="logotype" href="index.html">NeuroGen</a></container>
+
+<!-- NAVBAR--> 
+<nav class="navbar-container">
+  </nav>
 </header>
 
   <!--404 MESSAGE-->
@@ -28,42 +31,57 @@
 
   <!-- FOOTER -->
 <footer class="footer-container">
-    <div id="footer-details" class="row">
-        <div class="col-sm-4">
-            <ul class="list-inline social-links">
-                <li class="list-item">
-                    <a target="_blank" href="https://www.facebook.com/sirak.dev/">
-                        <i class="iconez fab fa-facebook" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
-                    </a>
-                </li>
-                <li class="list-item">
-                    <a target="_blank" href="https://twitter.com/sirak_dev">
-                        <i class="iconez fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">Twitter</span>
-                    </a>
-                </li>
-                <li class="list-item">
-                    <a target="_blank" href="https://www.linkedin.com/in/sirak-k-a203b1156/">
-                        <i class="iconez fab fa-linkedin" aria-hidden="true"></i>
-                        <span class="sr-only">LinkedIn</span>
-                    </a>
-                </li>
-                <li class="list-item">
-                    <a target="_blank" href="https://www.pinterest.se/sirakdev/">
-                        <i class="iconez fab fa-pinterest" aria-hidden="true"></i>
-                        <span class="sr-only">Pinterest</span>
-                    </a>
-                </li>
-                <li class="list-item">
-                    <a target="_blank" href="https://www.instagram.com/sirak.dev/">
-                        <i class="iconez fab fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <ul class="list-inline social-links">
+        <li class="list-item">
+            <a target="_blank" href="https://www.facebook.com/sirak.dev/">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+                <span class="sr-only">Facebook</span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a target="_blank" href="https://twitter.com/sirak_dev">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+                <span class="sr-only">Twitter</span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a target="_blank" href="https://www.linkedin.com/in/sirak-k-a203b1156/">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                <span class="sr-only">LinkedIn</span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a target="_blank" href="https://www.pinterest.se/sirakdev/">
+                <i class="fab fa-pinterest" aria-hidden="true"></i>
+                <span class="sr-only">Pinterest</span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a target="_blank" href="https://www.instagram.com/sirak.dev/">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+                <span class="sr-only">Instagram</span>
+            </a>
+        </li>
+    </ul>
+     <!-- NEWSLETTER -->
+    <container class="newsletter-container">
+        <section class="newsletter-section">
+            <h3 class="newsletter-header">Subscribe To Our Newsletter</h3>
+            <form id="newsletter-form" method="POST" action="https://formdump.codeinstitute.net/">
+                <input type="email" class="newsletter-form-input" name="Email" placeholder="Enter Email..." required>
+                <button type="submit" class="newsletter-button" onclick="audio.play();">Subscribe</button>
+                <script>
+                    const audio = new Audio (); audio.src="./assets/media/audio/click_sound.mp3"
+                </script>
+            </form>
+        </section>
+        </container>
+
+        <!-- LANDING TEXT  -->
+<div class="landing-text">
+<h2>Enhance Your Brain.</h2>
+<h2>Enhance Your Life.</h2>
+</div>
 </footer>
 
 
