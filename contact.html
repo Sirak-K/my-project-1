@@ -13,97 +13,92 @@
 <body>
 
 <!-- HEADER -->
-<header>
-    <div class="header-container">
-        <!--SITE LOGO-->
-        <div id="branding">
-        <h1><a class="logotype" href="index.html">NeuroGen</a></h1>
-        </div>
-        <!-- NAVBAR--> 
-        <nav class="navbar"><ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li class="current"><a href="contact.html" >Contact</a></li>
-        </ul></nav>
-    </div>
+
+<header class="header-container">
+    
+    <!--SITE LOGO-->
+    <container class="logotype-container">
+    <a class="logotype" href="index.html">NeuroGen</a></container>
+
+    <!-- NAVBAR--> 
+    <nav class="navbar-container"><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li class="current"><a href="contact.html">Contact</a></li>
+    </ul></nav>
+
 </header>
 
-<!-- LANDING TEXT  -->
-<div class="landing-text">
-    <h2>Enhance Your Brain.</h2>
-    <h2>Enhance Your Life.</h2>
-</div>
 
-
-<!-- NEWSLETTER: SUBSCRIPTION FORM -->
-<container class="forms-container-wrapper">
-<section class="newsletter-container">
-    <div class="newsletter-form">
-        <h3>Subscribe To Our Newsletter</h3>
-        <form id="formEmail-1" method="POST" action="https://formdump.codeinstitute.net">
-            <input type="email" id="email-form" name="Email" placeholder="Enter Email..." required>
-            <button type="submit" class="form-button" onclick="audio.play();">Subscribe</button>
+<!-- CONTACT FORM -->
+<container class="contact-section-container">
+    <section class="contact-section">
+            <h2 class="contact-header">Contact Us</h2>
+            <form class="contact-form" method="POST" action="https://formdump.codeinstitute.net">
+            <input class="contact-form-input" type="email" name="Email" placeholder="Enter Email..." required>
+            <textarea class="contact-form-text" name="Message" placeholder="Write a Message..."></textarea>
+            <button class="contact-button" type="submit"  onclick="audio.play();">Send</button>
             <script>
                 const audio = new Audio (); audio.src="./assets/media/audio/click_sound.mp3"
             </script>
-        </form>
-    </div>
-</section>
-
-<!-- CONTACT FORM -->
-<section class="contact-form-container">
-<div class="contact-form">
-    <h3>Contact Us</h3>
-        <form id="formEmail-2" method="POST" action="https://formdump.codeinstitute.net">
-        <input type="email" id="contact-form-email" name="Email" placeholder="Enter Email..." required>
-        <textarea id="contact-form-text" name="Message" placeholder="Write a Message..."></textarea>
-        <button type="submit" class="form-button" onclick="audio.play();">Send</button>
-        <script>
-            const audio = new Audio (); audio.src="./assets/media/audio/click_sound.mp3"
-        </script>
-    </form>
-</div>
-</section>
+            </form>
+    </section>
 </container>
+
 
 <!-- FOOTER -->
 <footer class="footer-container">
-    <div id="footer-details" class="row">
-        <div class="col-sm-4">
-            <ul class="list-inline social-links">
-                <li class="list-item">
-                    <a target="_blank" href="https://www.facebook.com/sirak.dev/">
-                        <i class="iconez fab fa-facebook" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
-                    </a>
-                </li>
-                <li class="list-item">
-                    <a target="_blank" href="https://twitter.com/sirak_dev">
-                        <i class="iconez fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">Twitter</span>
-                    </a>
-                </li>
-                <li class="list-item">
-                    <a target="_blank" href="https://www.linkedin.com/in/sirak-k-a203b1156/">
-                        <i class="iconez fab fa-linkedin" aria-hidden="true"></i>
-                        <span class="sr-only">LinkedIn</span>
-                    </a>
-                </li>
-                <li class="list-item">
-                    <a target="_blank" href="https://www.pinterest.se/sirakdev/">
-                        <i class="iconez fab fa-pinterest" aria-hidden="true"></i>
-                        <span class="sr-only">Pinterest</span>
-                    </a>
-                </li>
-                <li class="list-item">
-                    <a target="_blank" href="https://www.instagram.com/sirak.dev/">
-                        <i class="iconez fab fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <ul class="list-inline social-links">
+        <li class="list-item">
+            <a target="_blank" href="https://www.facebook.com/sirak.dev/">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+                <span class="sr-only">Facebook</span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a target="_blank" href="https://twitter.com/sirak_dev">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+                <span class="sr-only">Twitter</span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a target="_blank" href="https://www.linkedin.com/in/sirak-k-a203b1156/">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                <span class="sr-only">LinkedIn</span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a target="_blank" href="https://www.pinterest.se/sirakdev/">
+                <i class="fab fa-pinterest" aria-hidden="true"></i>
+                <span class="sr-only">Pinterest</span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a target="_blank" href="https://www.instagram.com/sirak.dev/">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+                <span class="sr-only">Instagram</span>
+            </a>
+        </li>
+    </ul>
+     <!-- NEWSLETTER -->
+    <container class="newsletter-container">
+        <section class="newsletter-section">
+            <h3 class="newsletter-header">Subscribe To Our Newsletter</h3>
+            <form id="newsletter-form" method="POST" action="https://formdump.codeinstitute.net/">
+                <input type="email" class="newsletter-form-input" name="Email" placeholder="Enter Email..." required>
+                <button type="submit" class="newsletter-button" onclick="audio.play();">Subscribe</button>
+                <script>
+                    const audio = new Audio (); audio.src="./assets/media/audio/click_sound.mp3"
+                </script>
+            </form>
+        </section>
+        </container>
+
+        <!-- LANDING TEXT  -->
+<div class="landing-text">
+<h2>Enhance Your Brain.</h2>
+<h2>Enhance Your Life.</h2>
+</div>
 </footer>
 
 </body>

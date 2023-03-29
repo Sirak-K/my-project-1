@@ -10,82 +10,61 @@
 <body>
 
 <!-- HEADER -->
-<header>
-    <div class="header-container">
-        <!--SITE LOGO-->
-        <div id="branding">
-        <h1><a class="logotype" href="index.html">NeuroGen</a></h1>
-        </div>
-        <!-- NAVBAR--> 
-        <nav class="navbar"><ul>
-        <li class="current"><a href="index.html">Home</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        </ul></nav>
-    </div>
+
+<header class="header-container">
+
+    <!--SITE LOGO-->
+    <container class="logotype-container">
+    <a class="logotype" href="index.html">NeuroGen</a></container>
+
+    <!-- NAVBAR--> 
+    <nav class="navbar-container"><ul>
+    <li class="current"><a href="index.html">Home</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    </ul></nav>
 </header>
 
-<!-- IMAGE BG -->
-<container class="landing-image-container">
-    <div class="landing-image">
-    <img src="assets/media/img/landing_img_1.png" alt="Landing Image">
-    </div>
-</container>
 
+<!-- POSTS SECTION -->
 
-
-<!-- BLOG SECTION -->
-<container class="blog-container-wrapper">
-<section class="blog-container">
-      <article class="blog-post">
-        <h4>Latest Article</h4>
-        <img src="./assets/media/img/post_img_1.jpg" alt="Blog Post 1 Image">
-        <h3>Have you heard of Noopept?</h3>
-        <p>Noopept is a synthetic nootropic compound that was first introduced as a treatment for cognitive impairments and neurodegenerative diseases such as Alzheimer's and Parkinson's disease.
+<container class="post-section-container">
+    <section class="post-section">
+        <article class="post">
+        <img class="post-image" src="./assets/media/img/post_img_1.jpg" alt="Post 1 Image">
+        <div class="post-content">
+        <h2 class="post-header">Have you heard of Noopept?</h2>
+        <p class="post-text">Noopept is a synthetic nootropic compound that was first introduced as a treatment for cognitive impairments and neurodegenerative diseases such as Alzheimer's and Parkinson's disease.
         Noopept has gained popularity as a cognitive enhancer and is widely used for its purported memory-boosting and mood-enhancing effects.</p>
-        <div class="read-more"><a href="./article.html">Read More</a></div>
-      </article>
+        <div class="post-read-more"><a class="post-read-more-text" href="./article.html">Read More</a></div>
+        </div>  
+        </article>
 
-      <article class="blog-post-2">
-        <img src="./assets/media/img/post_img_2.jpg" alt="Blog Post 2 Image">
-        <h3>What is Alpha-GPC?</h3>
-        <p>Did you know that Alpha-GPC can be found in the brain? This is a natural choline compound that can be found in the brain and is also available as a dietary supplement.
+        <article class="post">
+        <img class="post-image" src="./assets/media/img/post_img_2.jpg" alt="Post 2 Image">
+        <div class="post-content">
+        <h3 class="post-header">What is Alpha-GPC?</h3>
+        <p class="post-text">Did you know that Alpha-GPC can be found in the brain? This is a natural choline compound that can be found in the brain and is also available as a dietary supplement.
             Studies have shown that Alpha-GPC supplementation can improve cognitive function and memory in both young and older adults, and may also have neuroprotective effects.</p>
-        <div><a target="_blank" href="https://en.wikipedia.org/wiki/Alpha-GPC">Read More</a></div>
-      </article>
+        <div class="post-read-more"><a class="post-read-more-text" target="_blank" href="https://en.wikipedia.org/wiki/Alpha-GPC">Read More</a></div>
+        </div>  
+        </article>
 
-      <article class="blog-post-3">
-        <img src="./assets/media/img/post_img_3.jpg" alt="Blog Post 3 Image">
-        <h3>The pros and cons of Racetams</h3>
-        <p>Racetams are a family of nootropic compounds that have been shown to improve cognitive function, memory, and focus.  
+        <article class="post">
+        <img class="post-image" src="./assets/media/img/post_img_3.jpg" alt="Post 3 Image">
+        <div class="post-content">
+        <h3 class="post-header">The pros and cons of Racetams</h3>
+        <p class="post-text">Racetams are a family of nootropic compounds that have been shown to improve cognitive function, memory, and focus.  
             The mechanism of action of Racetams is not well understood and their long-term effects are not fully known. Racetams are not regulated by the FDA and their quality and purity may vary between different suppliers.</p>
-        <div><a target="_blank"  href="https://nootropicsexpert.com/the-top-7-racetams-which-one-is-best/">Read More</a></div>
-      </article>
-  </section>
+        <div class="post-read-more"><a class="post-read-more-text" target="_blank"  href="https://nootropicsexpert.com/the-top-7-racetams-which-one-is-best/">Read More</a></div>
+        </div>  
+        </article>
+    </section>
 </container>
-<!-- LANDING TEXT  -->
-<div class="landing-text">
-    <h2>Enhance Your Brain.</h2>
-    <h2>Enhance Your Life.</h2>
-</div>
-<!-- NEWSLETTER: SUBSCRIPTION FORM -->
-<section class="newsletter-container">
-<div class="newsletter">
-    <h3>Subscribe To Our Newsletter</h3>
-    <form id="formEmail-1" method="POST" action="https://formdump.codeinstitute.net/">
-        <input type="email" id="email-form" name="Email" placeholder="Enter Email..." required>
-        <button type="submit" class="form-button" onclick="audio.play();">Subscribe</button>
-        <script>
-            const audio = new Audio (); audio.src="./assets/media/audio/click_sound.mp3"
-        </script>
-    </form>
-</div>
-</section>
+
     
 <!-- FOOTER -->
 <footer class="footer-container">
-    <div id="footer-details" class="row">
-        <div class="col-sm-4">
             <ul class="list-inline social-links">
                 <li class="list-item">
                     <a target="_blank" href="https://www.facebook.com/sirak.dev/">
@@ -118,8 +97,25 @@
                     </a>
                 </li>
             </ul>
-        </div>
-    </div>
+             <!-- NEWSLETTER -->
+            <container class="newsletter-container">
+                <section class="newsletter-section">
+                    <h3 class="newsletter-header">Subscribe To Our Newsletter</h3>
+                    <form id="newsletter-form" method="POST" action="https://formdump.codeinstitute.net/">
+                        <input type="email" class="newsletter-form-input" name="Email" placeholder="Enter Email..." required>
+                        <button type="submit" class="newsletter-button" onclick="audio.play();">Subscribe</button>
+                        <script>
+                            const audio = new Audio (); audio.src="./assets/media/audio/click_sound.mp3"
+                        </script>
+                    </form>
+                </section>
+                </container>
+
+                <!-- LANDING TEXT  -->
+<div class="landing-text">
+    <h2>Enhance Your Brain.</h2>
+    <h2>Enhance Your Life.</h2>
+</div>
 </footer>
 
 </body>
