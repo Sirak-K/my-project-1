@@ -15,19 +15,19 @@
 <!-- HEADER -->
 
 <header class="header-container">
-    
+
     <!--SITE LOGO-->
     <container class="logotype-container">
     <a class="logotype" href="index.html">NeuroGen</a></container>
 
     <!-- NAVBAR--> 
-    <nav class="navbar-container">
-        <ul class="navbar-list">
-        <li class="navbar-list-item"><a class="navbar-link" href="index.html">Home</a></li>
-        <li class="navbar-list-item"><a class="navbar-link" href="resources.html">Resources</a></li>
-        <li class="current navbar-list-item"><a class="navbar-link" href="contact.html">Contact</a></li>
-        </ul></nav>
-    </header>
+    <nav class="navbar">
+    <ul class="navbar-list">
+    <li class="navbar-list-item"><a class="navbar-link" href="index.html">Home</a></li>
+    <li class="navbar-list-item"><a class="navbar-link" href="resources.html">Resources</a></li>
+    <li class="current navbar-list-item"><a class="navbar-link" href="contact.html">Contact</a></li>
+    </ul></nav>
+</header>
 
 
 <!-- CONTACT FORM -->
@@ -36,7 +36,7 @@
             <h2 class="contact-header">Contact Us</h2>
             <form class="contact-form" method="POST" action="https://formdump.codeinstitute.net">
             <input class="contact-form-input" type="email" name="Email" placeholder="Enter Email..." required>
-            <textarea class="contact-form-text" name="Message" placeholder="Write a Message..."></textarea>
+            <textarea class="contact-message-input" name="Message" placeholder="Write a Message..."></textarea>
             <button class="contact-button" type="submit"  onclick="audio.play();">Send</button>
             <script>
                 const audio = new Audio (); audio.src="./assets/media/audio/click_sound.mp3"
