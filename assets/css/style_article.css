@@ -1,48 +1,31 @@
 
-.body {
-  background-color: grey;
-}
+
 .article-section-container {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* margin-bottom: 1.6em;
-    margin-top: 2em; */
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .article-section {
-    display: flex;
-    flex-direction: row-reverse;
-    background-color: black;
-    /* outline: auto; */
-    /* width: 80em; */
-    /* height: 20em; */
-    /* padding: 2em; */
-    border: 4px solid;
-    border-image: linear-gradient(
-      to bottom,
-      rgba(8, 85, 201, 0.5),
-      rgba(8, 255, 255, 0.8),
-      rgba(255, 25, 224, 0.8),
-      rgba(255, 25, 224, 0.1)
-    ) 1 2 10% 90%;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: black;
+  width: 80em;
+  border: 4px solid;
 }
 
-.article {
-   
-}
 
 .article-image {
-    /* outline: auto; */
-    /* object-fit: contain; */
-    /* width: 10em; */
-    aspect-ratio: 1.7;
-    /* margin-bottom: 1em; */
-    
-  }
-
+  object-fit: contain;
+  width: 20em;
+  aspect-ratio: 1.7;
+  margin-bottom: 0.5em;
+}
 .article-content {
-    font-family: Arial, Helvetica, sans-serif;
+  padding: 1em 3em;
 }
 .article-header {
     font-family: "Rajdhani";
@@ -51,16 +34,13 @@
 }
 .article-text {
 font-family: Arial, Helvetica, sans-serif;
+line-height: 1.3;
+}
+.article-list {
+  margin: 1em 0;
 }
 
-  .article-list {
-    margin: 1em 0;
-  }
-
-
-
 /* - MEDIA QUERIES - */
-
 
 @media screen and (min-width: 0em) and (max-width: 119em){
 .article-section-container {
@@ -73,130 +53,57 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .article-section{
-  /* outline: auto; */
-  /* padding: 0 60em; */
   margin: 0 clamp(0.2em, 1vw + 1em, 40em);
-display: flex;
-flex-direction: row;
-justify-content: center;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .article {
   padding: 0 clamp(0.2em, 1vw + 1em, 30em);
-
-  /* height: clamp(20em, 1vw + 24em, 60em); */
-
- width: auto;
- text-align: center;
+  width: auto;
+  text-align: center;
   border: 2px solid;
-  border-image:linear-gradient(
-    to bottom,
-    rgba(8, 85, 201, 0.5),
-    rgba(8, 255, 255, 0.8),
-    rgba(255, 25, 224, 0.8),
-    rgba(255, 25, 224, 0.1)
-  ) 1 2 10% 90%;
+  
 }
 
 .article-image {
-  /* outline: auto; */
-object-fit: contain;
-margin-top: clamp(0.5em, 1vh + 0.5em, 10em);
-width: 10em;
-border: 2px solid;
-border-image:linear-gradient(
-  to bottom,
-  rgba(8, 85, 201, 0.5),
-  rgba(8, 255, 255, 0.8),
-  rgba(255, 25, 224, 0.8),
-  rgba(255, 25, 224, 0.1)
-) 1 2 10% 90%;
-
+  object-fit: contain;
+  margin-top: clamp(0.5em, 1vh + 0.5em, 10em);
+  width: 10em;
+  border: 2px solid;
+  
 }
-
+.article-text, 
+.article-list, 
 .article-header {
   text-align: start;
 }
-.article-text {
-  text-align: start;
+}
+  
+  
+@media screen and (min-width: 0em) and (max-width:119em){
+
+.article-section {
+  padding:0;
+}
+.article-content {
+  padding:0;
+}
 }
 
-.article-list {
-  text-align: start;
-}
 
-  }
-  
-  
-  @media screen and (min-width: 23em) and (max-width:119em){
-  
-
-  
-  }
-  
-  @media screen and (min-width: 25.875em) and (max-width:119em){
-
-  
-  }
-  
-  /* iPhone X - MIN-HEIGHT  */
-  @media screen and (min-height: 50.75em) and (max-width:119em){
-
-
-  }
-  @media screen and (min-width: 37.5em) and (max-width:119em){
-    .header-container{
-      height: 8em;
-      padding:0;
-      
-    }
-    .logotype-container {
-      margin-top: 1em;
-      margin-bottom: 1em;
-     }
-    .logotype {
-      
-      font-size: clamp(0.5rem, 1vw + 1.5rem, 3rem);
-    }
-    .navbar {
-      margin:0;
-    }
-    .navbar-link {
-      font-size: clamp(0.5rem, 1vw + 1.5rem, 3rem);
-    }
-
-  }
   
   @media screen and (min-width: 48em) and (max-width:119em){
-
-
-    .header-container{
-      height: 10em;
+    
+    .article-section-container {
+      margin-bottom: 1.6em;
       
-    }
-    .logotype {
-      font-size: clamp(0.5rem, 1vw + 3rem, 7rem);
-    }
-    .navbar-list {
-      gap: 3em;
-    }
-    .navbar-link {
-      font-size: clamp(0.5rem, 1vw + 2rem, 5rem);
     }
 
     .article-image {
-
       width: 12em;
       border: 4px solid;
-      border-image:linear-gradient(
-        to bottom,
-        rgba(8, 85, 201, 0.5),
-        rgba(8, 255, 255, 0.8),
-        rgba(255, 25, 224, 0.8),
-        rgba(255, 25, 224, 0.1)
-      ) 1 2 10% 90%;
-      
     }
     .article-header {
       font-size: clamp(0.5rem, 1vw + 1.5rem, 3rem);

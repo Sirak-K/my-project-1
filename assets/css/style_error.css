@@ -1,19 +1,33 @@
 
-.error-message {
-    margin: 5em;}
-.error-message h2{
+.error-message-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 2em;
+}
+.error-message-header,
+.error-message-text{
     color: red;
-    margin:0;
-    font-size: 2em;
-    font-style: italic;}
-.error-message p{  
-    font-size: 2em;}
-
-/* 320px = 20em */
-@media screen and (min-width: 20em) and (max-width:119.938em) {
-
-.logotype {
-    position: relative;
-    top: -1em;
+    font-size: 1.8rem;
+    font-style: italic;
 }
+
+.footer-container {
+    position: fixed;
+    bottom:0;
+    width: 100%;
 }
+
+
+@media screen and (min-width: 0em) and (max-width:119.938em) {
+.error-message-section {
+    margin: 2em 5em;
+    outline: auto;
+}
+
+.error-message-header,
+.error-message-text{
+    font-size: clamp(0.2rem, 1vw + 1.5rem, 5rem)
+}}
