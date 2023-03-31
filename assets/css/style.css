@@ -254,7 +254,7 @@ input[type="email"] {
   gap:0;
   width: 100%;
  }
-.logotype-container{
+.logotype-section{
   margin-top: 1em;
   margin-bottom: 0.4em;
 }
@@ -305,7 +305,7 @@ input[type="email"] {
 } 
 
 .post-header {
-  margin-bottom: clamp(0.3em, 1vw + 0.2em, 10em) 0;
+  margin-bottom: clamp(0.3em, 1vw + 0.2em, 10em);
   text-align: start;
   font-size: clamp(0.2rem, 1vw + 0.9rem, 2rem);
 }
@@ -419,7 +419,7 @@ margin:1em 0;
 .header-container{
   height: 8em;
   }
-.logotype-container {
+.logotype-section {
   margin-top: 1em;
   margin-bottom: 0.2em;
    }
