@@ -80,8 +80,6 @@ To clone the NeuroGen project to your local machine, follow these steps:
 3) Run the following command:
 git clone https://github.com/Sirak-K/my-project-1.git
 
-Press Enter to execute the command.
-
 4) Wait for the cloning process to complete.
 
 5) Once the process is complete, navigate to the project directory using the cd command:
@@ -97,27 +95,17 @@ For more information on using Git and GitHub, please see the [official Git docum
 ### Media: Images
 
 #### Page: Home
-- BG-Image: Milad Fakurian, Unsplash.com
 - Blog Post 1: Noopept, Wikipedia.com
 - Blog Post 2: Elliot Angelier, Unsplash
 - Blog Post 3: Anshu A, Unsplash
 
-#### Page: About
-
-- BG-Image: Milad Fakurian, Unsplash.com
+#### Page: Resources
 
 - Box Image #1: Danilo Alves, Unsplash.com
 - Box Image #2: "Games", page author
 - Box Image #3: Suzy Hazelwood, Pexels.com
 
-### Media: Video
-
-#### Pages: All
-
-- BG-Video: Pressmaster, Pexels.com
-
   
-
 ### Media: Icons
 
 - Font Awesome
