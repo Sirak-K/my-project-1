@@ -74,18 +74,19 @@ https://sirak-k.github.io/my-project-1/
 
 To clone the NeuroGen project to your local machine, follow these steps:
 
-Open your terminal or command prompt.
-Navigate to the directory where you want to clone the project.
+1) Open your terminal or command prompt.
+2) Navigate to the directory where you want to clone the project.
 
-Run the following command:
+3) Run the following command:
 git clone https://github.com/Sirak-K/my-project-1.git
 
 Press Enter to execute the command.
 
-Wait for the cloning process to complete.
-Once the process is complete, navigate to the project directory using the cd command:
+4) Wait for the cloning process to complete.
 
+5) Once the process is complete, navigate to the project directory using the cd command:
 cd my-project-1
+
 That's it! You now have a local copy of the NeuroGen project on your machine.
 
 For more information on using Git and GitHub, please see the [official Git documentation](https://git-scm.com/docs) and [GitHub Help](https://docs.github.com/en/github).
