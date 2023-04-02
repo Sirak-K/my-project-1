@@ -14,7 +14,6 @@ body {
 
 /* --- EFFECT: HIGHLIGHT --- */ 
 .current a,
-.logotype,
 .landing-text h2 {
   filter: drop-shadow(2px 2px 2px rgba(155, 141, 13, 0.9));
   background-clip: text;
@@ -39,19 +38,19 @@ body {
   background: greenyellow;
   color: black;}
 
-
-  .article-section,
-  .article,
-  .article-image,
-  .resource-image {
-        border-image:linear-gradient(
-          to bottom,
-          rgba(8, 85, 201, 0.5),
-          rgba(8, 255, 255, 0.8),
-          rgba(255, 25, 224, 0.8),
-          rgba(255, 25, 224, 0.1)
-        ) 1 2 10% 90%;
-  }
+/* - BORDER: ARTICLE & POST CARDS - */ 
+.article-section,
+.article,
+.article-image,
+.resource-image {
+      border-image:linear-gradient(
+        to bottom,
+        rgba(8, 85, 201, 0.5),
+        rgba(8, 255, 255, 0.8),
+        rgba(255, 25, 224, 0.8),
+        rgba(255, 25, 224, 0.1)
+      ) 1 2 10% 90%;
+}
 
 /* - BORDER: HEADER & FOOTER - */ 
 .header-container,
@@ -82,9 +81,7 @@ body {
  }
 
 .logotype {
-  text-decoration: unset;
-  font-family: "Conthrax";
-  font-size: 3rem;
+  
 }
 
 /* - NAV-BAR - */
@@ -256,10 +253,10 @@ input[type="email"] {
  }
 .logotype-section{
   margin-top: 1em;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.2em;
 }
-.logotype {
-  font-size: 1.7rem;
+.logotype img{
+ width: 13em;
 }
 
 /* ----------- NAV-BAR ----------- */
@@ -419,13 +416,9 @@ margin:1em 0;
 .header-container{
   height: 8em;
   }
-.logotype-section {
-  margin-top: 1em;
-  margin-bottom: 0.2em;
+  .logotype img{
+    width: 20em;
    }
-.logotype {
-  font-size: clamp(0.5rem, 1vw + 2.2rem, 5rem);
-  }
 
 .navbar-link {
   font-size: clamp(0.5rem, 1vw + 1.5rem, 3rem);
@@ -454,9 +447,10 @@ margin:1em 0;
 .header-container {
   height: 10em;
 }
-.logotype {
-  font-size: clamp(0.5rem, 1vw + 3rem, 7rem);
-}
+
+.logotype img{
+  width: 25em;
+ }
 .navbar-list {
   gap: 3em;
 }
@@ -500,9 +494,25 @@ margin:1em 0;
 }
 
 @media screen and (min-width: 62em) and (max-width:119em) {
+
+  .header-container {
+    height: 13em;
+  }
+  .logotype-section {
+margin: 1em 0;
+  }
+  .logotype img{
+    width: 30em;
+   }
+/* ----------- NAV-BAR ----------- */
+.navbar {
+
+  margin: 0.2em 0;
+}
+
 .post-section-container {
-  margin-top: 5em;
-  margin-bottom: 6.5em;
+  margin-top: 3em;
+  margin-bottom: 5em;
   }
 .post-section {
   margin: 0 5em;

@@ -136,8 +136,8 @@
 
 @media screen and (min-width:62em) and (max-width:119em){
 .resource-section-container{
-  margin-top: clamp(0.2em, 1vw + 7em, 40em);
-  margin-bottom: clamp(0.2em, 1vw + 10em, 40em);
+  margin-top: 7em;
+  margin-bottom: 8em;
 }
 .resource-section{
   gap: 5.4em;

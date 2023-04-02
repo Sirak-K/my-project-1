@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 2em 2em;
 }
 .error-message-header,
@@ -13,7 +14,10 @@
     font-size: 1.8rem;
     font-style: italic;
 }
-
+.error-message-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+}
 .footer-container {
     position: fixed;
     bottom:0;
@@ -23,11 +27,10 @@
 
 @media screen and (min-width: 0em) and (max-width:119.938em) {
 .error-message-section {
-    margin: 2em 5em;
-    outline: auto;
+    margin: 2em 2em;
 }
 
 .error-message-header,
 .error-message-text{
-    font-size: clamp(0.2rem, 1vw + 1.5rem, 5rem)
+    font-size: 1.5rem;
 }}
