@@ -53,15 +53,14 @@ The footer contains a text-based **value proposition** with large font-size and 
 ![performance_testing](https://user-images.githubusercontent.com/122515678/229335114-456bb428-ab7e-4113-8ac1-c464c45aed35.png)
 
 
-
-
 ## Validation
-![Validation Confirmation](https://user-images.githubusercontent.com/122515678/224761208-78521278-2fac-4527-93a0-a0681d6d9880.png)
-
 ### HTML: W3C
 ### CSS: Jigsaw
 
-  
+![validation](https://user-images.githubusercontent.com/122515678/229337683-ffd3e8d5-afbf-42bd-bbd0-77357be863fd.png)
+
+
+
 
 ## Deployment
 This project was deployed to GitHub Pages.
