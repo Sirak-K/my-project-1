@@ -6,34 +6,29 @@ NeuroGen is a blog that provides the user with brain enhancement tools and infor
 ## Features
 
 ### Home
-![Presentation 1 - Home](https://user-images.githubusercontent.com/122515678/222894656-997735df-e35f-4b06-98a3-9c2e48af8676.png)
+![p_image_homepage](https://user-images.githubusercontent.com/122515678/229334745-c6bc99d8-3e90-4fe9-9bce-7b4a33318c41.png)
 
- - Contains a **header** consisting of a logo and a navbar which is visible on all pages and all screen sizes.
+- Contains a **header** consisting of a logo and a navbar which is visible on all pages and all screen sizes.
 
-- Contains a landing page with **video** and **image background.**
+- Consists of the **main landing section** which contains the three latest articles.    
 
-- Contains a text-based **value proposition** with large font-size and hard-to-miss contrast. Visible on all pages for larger screens.
-
-- Contains the three **latest blog posts** with headings, subheadings, and on larger screens, small paragraphs.
-
-- Contains a **subscription form** with sound playback on submission.
+- Contains a **subscription form**.
   
- - Contains a **footer** consisting of social links which is visible on all pages and all screen sizes.
+- Contains a **footer** consisting of social links which is visible on all pages and all screen sizes. 
+The footer contains a text-based **value proposition** with large font-size and hard-to-miss contrast which is only visible on larger screens.
 
-### About
-![Presentation 2 - About](https://user-images.githubusercontent.com/122515678/222894661-1e99d5cf-c8d5-4332-933d-61f720f26efe.png)
+### Resources
+![p_image_resources](https://user-images.githubusercontent.com/122515678/229334793-f6afba04-7881-486b-8e9b-aafe1f185ab2.png)
 
-- Consists of the three boxes with the three **main features** that the company offers resources for, one of which contains a link to a quiz app.
+- Consists of the three boxes which contains the three **main features** that the company offers resources for.
 
-- Special static image background instead of video is shown here to reduce distraction from the three boxes of value.
-
-- Contains a footer consisting of social links which is visible on all pages and all screen sizes.
 
 ### Contact
-![Presentation 3 - Contact](https://user-images.githubusercontent.com/122515678/222894665-3451e90c-438c-406a-9c64-21f114e17bcf.png)
+![p_image_contact](https://user-images.githubusercontent.com/122515678/229334801-1ef6c441-a967-4edb-8e2a-393de4ddf902.png)
 
 - Contains a contact form consisting of two inputs: Email and Message.
-- The form button activates sound playback when clicked.
+
+- Contains a **subscription form**.
   
 
 ## Design
@@ -49,25 +44,15 @@ NeuroGen is a blog that provides the user with brain enhancement tools and infor
 
 ## Features left to implement
 
-### Games Page:
-
-- Make the Online Quiz App into it's own section instead having it under the About page.
-
 ### Account Page
 
-- An user will be able to store their favorite items, bookmark articles (about nootropics) and make their own customized book-collection.
-
-### Shop Page
-
-- An user will be able to buy relevant products through the website.
+- An user will be able to store their favorite items, bookmark articles and make their own customized book-collection.
 
 
 ## Testing
-![Testing Table - 2](https://user-images.githubusercontent.com/122515678/225526477-9d765b51-7918-404d-88ff-da1d43133954.png)
+![performance_testing](https://user-images.githubusercontent.com/122515678/229335114-456bb428-ab7e-4113-8ac1-c464c45aed35.png)
 
 
-### Lighthouse
-![Lighthouse - Performance](https://user-images.githubusercontent.com/122515678/224761272-ab8a9983-cf45-4e35-b84b-b9620576b333.png)
 
 
 ## Validation
