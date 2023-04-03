@@ -1,8 +1,7 @@
 .contact-section-container {
     display: flex;
     justify-content: center;
-    margin-top: 10em;
-    margin-bottom: 13.75em;
+    margin: 11.87em 0;
 }
 .contact-section {
     width:30em;
@@ -44,7 +43,9 @@
         ) 1 2 10%;
 }
 .contact-message-input {
+    resize: none;
     height:5em;
+    /* width: 10em; */
 }
 .contact-message-input::placeholder {
     font-style: italic;
