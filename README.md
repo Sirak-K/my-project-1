@@ -51,7 +51,7 @@ NeuroGen is a blog that provides the user with brain enhancement tools and infor
 
 
 ## Testing
-![performance_testing](https://user-images.githubusercontent.com/122515678/229335114-456bb428-ab7e-4113-8ac1-c464c45aed35.png)
+![performance_testing](https://user-images.githubusercontent.com/122515678/229456274-928db5a3-5266-4a89-87f6-f840047723ee.png)
 
 
 ## Validation
