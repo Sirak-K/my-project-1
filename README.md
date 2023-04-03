@@ -6,25 +6,26 @@ NeuroGen is a blog that provides the user with brain enhancement tools and infor
 ## Features
 
 ### Home
-![p_image_homepage](https://user-images.githubusercontent.com/122515678/229334745-c6bc99d8-3e90-4fe9-9bce-7b4a33318c41.png)
+![p_image_homepage](https://user-images.githubusercontent.com/122515678/229455184-3dab2df0-9077-4684-9447-66b8d7de4a3b.png)
+
 
 - Contains a **header** consisting of a logo and a navbar which is visible on all pages and all screen sizes.
 
-- Consists of the **main landing section** which contains the three latest articles.    
+- Consists of the **latest articles** section which contains the three latest articles.    
 
 - Contains a **subscription form**.
   
-- Contains a **footer** consisting of social links which is visible on all pages and all screen sizes. 
-The footer contains a text-based **value proposition** with large font-size and hard-to-miss contrast which is only visible on larger screens.
+- Contains a **footer** consisting of a slogan, a subscription form and social media links. The footer is visible on all pages and all screen sizes with certain footer elements hidden on smaller screens. 
 
 ### Resources
-![p_image_resources](https://user-images.githubusercontent.com/122515678/229334793-f6afba04-7881-486b-8e9b-aafe1f185ab2.png)
+![p_image_resources](https://user-images.githubusercontent.com/122515678/229454219-24b18b86-1592-4fbf-902a-e24d0919065a.png)
 
 - Consists of the three boxes which contains the three **main features** that the company offers resources for.
 
 
 ### Contact
-![p_image_contact](https://user-images.githubusercontent.com/122515678/229334801-1ef6c441-a967-4edb-8e2a-393de4ddf902.png)
+![p_image_contact](https://user-images.githubusercontent.com/122515678/229455414-b629aca5-5b72-4ea7-a8a2-92a081c4c318.png)
+
 
 - Contains a contact form consisting of two inputs: Email and Message.
 
